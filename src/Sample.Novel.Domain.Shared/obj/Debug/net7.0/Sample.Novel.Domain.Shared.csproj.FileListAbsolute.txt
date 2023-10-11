@@ -1,0 +1,12 @@
+D:\Test\Sample.Novel\src\Sample.Novel.Domain.Shared\bin\Debug\net7.0\Sample.Novel.Domain.Shared.deps.json
+D:\Test\Sample.Novel\src\Sample.Novel.Domain.Shared\bin\Debug\net7.0\Sample.Novel.Domain.Shared.dll
+D:\Test\Sample.Novel\src\Sample.Novel.Domain.Shared\bin\Debug\net7.0\Sample.Novel.Domain.Shared.pdb
+D:\Test\Sample.Novel\src\Sample.Novel.Domain.Shared\obj\Debug\net7.0\Sample.Novel.Domain.Shared.csproj.AssemblyReference.cache
+D:\Test\Sample.Novel\src\Sample.Novel.Domain.Shared\obj\Debug\net7.0\Sample.Novel.Domain.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\Test\Sample.Novel\src\Sample.Novel.Domain.Shared\obj\Debug\net7.0\Sample.Novel.Domain.Shared.AssemblyInfoInputs.cache
+D:\Test\Sample.Novel\src\Sample.Novel.Domain.Shared\obj\Debug\net7.0\Sample.Novel.Domain.Shared.AssemblyInfo.cs
+D:\Test\Sample.Novel\src\Sample.Novel.Domain.Shared\obj\Debug\net7.0\Sample.Novel.Domain.Shared.csproj.CoreCompileInputs.cache
+D:\Test\Sample.Novel\src\Sample.Novel.Domain.Shared\obj\Debug\net7.0\Sample.Novel.Domain.Shared.dll
+D:\Test\Sample.Novel\src\Sample.Novel.Domain.Shared\obj\Debug\net7.0\refint\Sample.Novel.Domain.Shared.dll
+D:\Test\Sample.Novel\src\Sample.Novel.Domain.Shared\obj\Debug\net7.0\Sample.Novel.Domain.Shared.pdb
+D:\Test\Sample.Novel\src\Sample.Novel.Domain.Shared\obj\Debug\net7.0\ref\Sample.Novel.Domain.Shared.dll
