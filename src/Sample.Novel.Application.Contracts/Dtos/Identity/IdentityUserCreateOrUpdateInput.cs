@@ -11,7 +11,7 @@ using Volo.Abp.Validation;
 
 namespace Sample.Novel.Application.Contracts.Dtos
 {
-    public class IdentityUserCreateOrUpdateDto : ExtensibleObject
+    public class IdentityUserCreateOrUpdateInput : ExtensibleObject
     {
         [Required]
         [DynamicStringLength(typeof(IdentityUserConsts), nameof(IdentityUserConsts.MaxUserNameLength))]
@@ -35,7 +35,7 @@ namespace Sample.Novel.Application.Contracts.Dtos
         [CanBeNull]
         public string[] RoleIds { get; set; }
 
-        protected IdentityUserCreateOrUpdateDto() : base(false)
+        protected IdentityUserCreateOrUpdateInput() : base(false)
         {
 
         }

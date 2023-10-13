@@ -113,5 +113,35 @@ namespace Sample.Novel.Domain.Identity.Entities
 
             Roles = new Collection<IdentityUserRole>();
         }
+
+        public virtual void AddRole(Guid roleId)
+        {
+            Check.NotNull(roleId, nameof(roleId));
+
+            if (IsInRole(roleId))
+            {
+                return;
+            }
+
+            Roles.Add(new IdentityUserRole(Id, roleId));
+        }
+
+        public virtual void RemoveRole(Guid roleId)
+        {
+            Check.NotNull(roleId, nameof(roleId));
+
+            if (!IsInRole(roleId))
+            {
+                return;
+            }
+
+            Roles.RemoveAll(r => r.RoleId == roleId);
+        }
+        public virtual bool IsInRole(Guid roleId)
+        {
+            Check.NotNull(roleId, nameof(roleId));
+
+            return Roles.Any(r => r.RoleId == roleId);
+        }
     }
 }

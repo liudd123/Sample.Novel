@@ -6,35 +6,35 @@ using Volo.Abp.AspNetCore.Mvc;
 
 namespace Sample.Novel.HttpApi.Host.Controllers
 {
-    [ControllerName("Book(书籍)")]
+    [ControllerName("Category(分类)")]
     [Route("api/[controller]/[action]")]
-    public class BookController : AbpControllerBase, IBookAppService
+    public class CategoryController : AbpControllerBase, ICategoryAppService
     {
-        private readonly IBookAppService bookAppService;
+        private readonly ICategoryAppService categoryAppService;
 
-        public BookController(IBookAppService bookAppService)
+        public CategoryController(ICategoryAppService categoryAppService)
         {
-            this.bookAppService = bookAppService;
+            this.categoryAppService = categoryAppService;
         }
         /// <summary>
-        ///创建书籍
+        /// 创建分类
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
         [HttpPost]
-        public async Task CreateBookAsync(CreateBookInput input)
+        public async Task CreateAsync(CreateCategoryInput input)
         {
-            await bookAppService.CreateBookAsync(input);
+            await categoryAppService.CreateAsync(input);
         }
         /// <summary>
-        /// 根据id获取书籍的详情
+        /// 根据id获取详情
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
         [HttpGet]
-        public async Task<BookDto> GetBookAsync(Guid id)
+        public async Task<CategoryDto> GetAsync(Guid id)
         {
-            return await bookAppService.GetBookAsync(id);
+            return await categoryAppService.GetAsync(id);
         }
         /// <summary>
         /// 分页查询
@@ -42,9 +42,9 @@ namespace Sample.Novel.HttpApi.Host.Controllers
         /// <param name="input"></param>
         /// <returns></returns>
         [HttpGet]
-        public async Task<PagedResultDto<BookDto>> GetBookListAsnyc(PagedAndSortedResultRequestDto input)
+        public async Task<PagedResultDto<CategoryDto>> GetListAsnyc(PagedAndSortedResultRequestDto input)
         {
-            return await bookAppService.GetBookListAsnyc(input);
+            return await categoryAppService.GetListAsnyc(input);
         }
     }
 }

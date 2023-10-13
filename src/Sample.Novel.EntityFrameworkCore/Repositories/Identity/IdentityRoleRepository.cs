@@ -15,25 +15,25 @@ namespace Sample.Novel.EntityFrameworkCore.Repositories
         }
 
         public virtual async Task<long> GetCountAsync(
-        string filter = null,
-        CancellationToken cancellationToken = default)
-        {
-            return await (await GetDbSetAsync())
-                .WhereIf(!filter.IsNullOrWhiteSpace(),
-                    x => x.Name.Contains(filter))
-                .LongCountAsync(GetCancellationToken(cancellationToken));
-        }
+            string filter = null,
+            CancellationToken cancellationToken = default)
+            {
+                return await (await GetDbSetAsync())
+                    .WhereIf(!filter.IsNullOrWhiteSpace(),
+                        x => x.Name.Contains(filter))
+                    .LongCountAsync(GetCancellationToken(cancellationToken));
+            }
 
         public virtual async Task<List<IdentityRole>> GetListAsync(
-      string sorting = null,
-      int maxResultCount = int.MaxValue,
-      int skipCount = 0,
-      string filter = null,
-      bool includeDetails = true,
-      CancellationToken cancellationToken = default)
-        {
-            return await GetListInternalAsync(sorting, maxResultCount, skipCount, filter, includeDetails, cancellationToken);
-        }
+          string sorting = null,
+          int maxResultCount = int.MaxValue,
+          int skipCount = 0,
+          string filter = null,
+          bool includeDetails = true,
+          CancellationToken cancellationToken = default)
+            {
+                return await GetListInternalAsync(sorting, maxResultCount, skipCount, filter, includeDetails, cancellationToken);
+            }
 
         public virtual async Task<List<IdentityRole>> GetListAsync(
             IEnumerable<Guid> ids,
@@ -45,28 +45,28 @@ namespace Sample.Novel.EntityFrameworkCore.Repositories
         }
 
         public virtual async Task<List<IdentityRoleWithUserCount>> GetListWithUserCountAsync(
-     string sorting = null,
-     int maxResultCount = int.MaxValue,
-     int skipCount = 0,
-     string filter = null,
-     bool includeDetails = false,
-     CancellationToken cancellationToken = default)
-        {
-            var roles = await GetListInternalAsync(sorting, maxResultCount, skipCount, filter, includeDetails, cancellationToken: cancellationToken);
+         string sorting = null,
+         int maxResultCount = int.MaxValue,
+         int skipCount = 0,
+         string filter = null,
+         bool includeDetails = false,
+         CancellationToken cancellationToken = default)
+            {
+                var roles = await GetListInternalAsync(sorting, maxResultCount, skipCount, filter, includeDetails, cancellationToken: cancellationToken);
 
-            var roleIds = roles.Select(x => x.Id).ToList();
-            var userCount = await (await GetDbContextAsync()).Set<IdentityUserRole>()
-                .Where(userRole => roleIds.Contains(userRole.RoleId))
-                .GroupBy(userRole => userRole.RoleId)
-                .Select(x => new
-                {
-                    RoleId = x.Key,
-                    Count = x.Count()
-                })
-                .ToListAsync(GetCancellationToken(cancellationToken));
+                var roleIds = roles.Select(x => x.Id).ToList();
+                var userCount = await (await GetDbContextAsync()).Set<IdentityUserRole>()
+                    .Where(userRole => roleIds.Contains(userRole.RoleId))
+                    .GroupBy(userRole => userRole.RoleId)
+                    .Select(x => new
+                    {
+                        RoleId = x.Key,
+                        Count = x.Count()
+                    })
+                    .ToListAsync(GetCancellationToken(cancellationToken));
 
-            return roles.Select(role => new IdentityRoleWithUserCount(role, userCount.FirstOrDefault(x => x.RoleId == role.Id)?.Count ?? 0)).ToList();
-        }
+                return roles.Select(role => new IdentityRoleWithUserCount(role, userCount.FirstOrDefault(x => x.RoleId == role.Id)?.Count ?? 0)).ToList();
+            }
 
         protected virtual async Task<List<IdentityRole>> GetListInternalAsync(
         string sorting = null,

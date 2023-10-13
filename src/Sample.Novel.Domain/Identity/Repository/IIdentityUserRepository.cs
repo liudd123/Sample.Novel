@@ -1,10 +1,21 @@
-﻿using Sample.Novel.Domain.Identity.Entities;
+﻿using JetBrains.Annotations;
+using Sample.Novel.Domain.Identity.Entities;
 using Volo.Abp.Domain.Repositories;
 
 namespace Sample.Novel.Domain.Identity.Repository
 {
     public interface IIdentityUserRepository : IRepository<IdentityUser, Guid>
     {
+        Task<IdentityUser> FindByUserNameAsync(
+            [NotNull] string userName,
+            bool includeDetails = true,
+            CancellationToken cancellationToken = default
+        );
+        Task<IdentityUser> FindByEmailAsync(
+           [NotNull] string email,
+           bool includeDetails = true,
+           CancellationToken cancellationToken = default
+       );
         Task<List<string>> GetRoleNamesAsync(
         Guid id,
         CancellationToken cancellationToken = default);

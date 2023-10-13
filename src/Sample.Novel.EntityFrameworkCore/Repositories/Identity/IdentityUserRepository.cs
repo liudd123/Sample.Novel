@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using JetBrains.Annotations;
+using Microsoft.EntityFrameworkCore;
 using Sample.Novel.Domain.Identity.Entities;
 using Sample.Novel.Domain.Identity.Repository;
 using Sample.Novel.EntityFrameworkCore.EntityFrameworkCore;
@@ -14,6 +15,25 @@ namespace Sample.Novel.EntityFrameworkCore.Repositories
     {
         public IdentityUserRepository(IDbContextProvider<NovelDbContext> dbContextProvider) : base(dbContextProvider)
         {
+        }
+
+        public async Task<IdentityUser> FindByEmailAsync([NotNull] string email, bool includeDetails = true, CancellationToken cancellationToken = default)
+        {
+            return await(await GetDbSetAsync())
+            .IncludeDetails(includeDetails)
+            .OrderBy(x => x.Id)
+            .FirstOrDefaultAsync(u => u.Email == email, GetCancellationToken(cancellationToken));
+        }
+
+        public async Task<IdentityUser> FindByUserNameAsync([NotNull] string userName, bool includeDetails = true, CancellationToken cancellationToken = default)
+        {
+            return await (await GetDbSetAsync())
+           .IncludeDetails(includeDetails)
+           .OrderBy(x => x.Id)
+           .FirstOrDefaultAsync(
+               u => u.UserName == userName,
+               GetCancellationToken(cancellationToken)
+           );
         }
 
         public virtual async Task<long> GetCountAsync(

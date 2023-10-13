@@ -10,14 +10,14 @@ using Volo.Abp.Validation;
 
 namespace Sample.Novel.Application.Contracts.Dtos
 {
-    public class IdentityRoleCreateOrUpdateDto : ExtensibleObject
+    public class IdentityRoleCreateOrUpdateInput : ExtensibleObject
     {
         [Required]
         [DynamicStringLength(typeof(IdentityRoleConsts), nameof(IdentityRoleConsts.MaxNameLength))]
         [Display(Name = "RoleName")]
         public string Name { get; set; }
 
-        protected IdentityRoleCreateOrUpdateDto() : base(false)
+        protected IdentityRoleCreateOrUpdateInput() : base(false)
         {
 
         }
