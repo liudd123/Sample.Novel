@@ -2,18 +2,19 @@
 using Sample.Novel.Domain.Author.Entities;
 using Sample.Novel.Domain.Book.Entities;
 using Sample.Novel.Domain.Category.Entities;
-using Sample.Novel.Domain.Identity.Entities;
 using Sample.Novel.EntityFrameworkCore.EntityFrameworkCore;
 using Sample.Novel.EntityFrameworkCore.Repositories;
 using Volo.Abp.EntityFrameworkCore;
 using Volo.Abp.EntityFrameworkCore.SqlServer;
+using Volo.Abp.Identity.EntityFrameworkCore;
 using Volo.Abp.Modularity;
 
 namespace Sample.Novel.EntityFrameworkCore
 {
     [DependsOn(typeof(NovelDomainModule),
         typeof(AbpEntityFrameworkCoreModule),
-        typeof(AbpEntityFrameworkCoreSqlServerModule))]
+        typeof(AbpEntityFrameworkCoreSqlServerModule),
+         typeof(AbpIdentityEntityFrameworkCoreModule))]
     public class NovelEntityFrameworkCoreModule : AbpModule
     {
         public override void ConfigureServices(ServiceConfigurationContext context)
@@ -29,8 +30,6 @@ namespace Sample.Novel.EntityFrameworkCore
                 options.AddRepository<Author, AuthorRepository>();
                 options.AddRepository<Category, CategoryRepository>();
 
-                options.AddRepository<IdentityRole, IdentityRoleRepository>();
-                options.AddRepository<IdentityUser, IdentityUserRepository>();
 
             });
             Configure<AbpDbContextOptions>(options =>
