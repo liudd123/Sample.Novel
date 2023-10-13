@@ -37,6 +37,13 @@ namespace Sample.Novel
             {
                 options.SwaggerDoc("v1", new OpenApiInfo { Title = "Nocel API", Version = "v1" });
                 options.DocInclusionPredicate((docName, description) => true);
+                options.CustomSchemaIds(type => type.FullName);
+
+                var xmlDto = Path.Combine(AppContext.BaseDirectory, "Sample.Novel.Application.Contracts.xml");
+                options.IncludeXmlComments(xmlDto);
+
+                var xmlControllers = Path.Combine(AppContext.BaseDirectory, "Sample.Novel.HttpApi.Host.xml");
+                options.IncludeXmlComments(xmlControllers);
             });
         }
         public override void OnApplicationInitialization(ApplicationInitializationContext context)
@@ -47,7 +54,10 @@ namespace Sample.Novel
             if (env.IsDevelopment())
             {
                 app.UseSwagger();
-                app.UseAbpSwaggerUI();
+                app.UseAbpSwaggerUI(c =>
+                {
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Novel API");
+                });
             }
 
             if (!env.IsDevelopment())

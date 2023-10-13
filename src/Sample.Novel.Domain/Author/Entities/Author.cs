@@ -14,6 +14,7 @@ namespace Sample.Novel.Domain.Author.Entities
     public class Author : Entity<Guid>
     {
         [MaxLength(AuthorConsts.MaxNameLength)]
+        [Required]
         public string Name { get; set; }
         [MaxLength(AuthorConsts.MaxDescriptionLength)]
         public string Description { get; set; }

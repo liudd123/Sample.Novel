@@ -2,6 +2,8 @@
 using Sample.Novel.Domain.Author.Entities;
 using Sample.Novel.Domain.Book.Entities;
 using Sample.Novel.Domain.Category.Entities;
+using Sample.Novel.Domain.Identity.Entities;
+using System.Diagnostics;
 using Volo.Abp.Data;
 using Volo.Abp.EntityFrameworkCore;
 
@@ -16,6 +18,12 @@ namespace Sample.Novel.EntityFrameworkCore.EntityFrameworkCore
         public DbSet<Chapter> Chapters { get; set; }
         public DbSet<ChapterText> ChapterTexts { get; set; }
         public DbSet<Volume> Volumes { get; set; }
+
+        public DbSet<IdentityUser> Users { get; set; }
+
+        public DbSet<IdentityRole> Roles { get; set; }
+        public DbSet<IdentityUserRole> UserRoles { get; set; }
+
         public NovelDbContext(DbContextOptions<NovelDbContext> options) : base(options)
         {
         }

@@ -2406,3 +2406,612 @@ Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/
 2023-10-10 19:38:09.057 +08:00 [INF] Executed action Sample.Novel.HttpApi.Host.Controllers.AuthorController.GetListAsnyc (Sample.Novel.HttpApi.Host) in 3136.3865ms
 2023-10-10 19:38:09.058 +08:00 [INF] Executed endpoint 'Sample.Novel.HttpApi.Host.Controllers.AuthorController.GetListAsnyc (Sample.Novel.HttpApi.Host)'
 2023-10-10 19:38:09.060 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7295/api/Author/GetListAsnyc - - - 200 - application/json;+charset=utf-8 3177.2837ms
+2023-10-12 10:28:29.870 +08:00 [INF] Starting Sample.Novel.HttpApi.Host.
+2023-10-12 10:28:37.373 +08:00 [INF] Loaded ABP modules:
+2023-10-12 10:28:37.374 +08:00 [INF] - Sample.Novel.NovelHttpApiHostModule
+2023-10-12 10:28:37.374 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2023-10-12 10:28:37.374 +08:00 [INF]     - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-10-12 10:28:37.374 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-10-12 10:28:37.374 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-10-12 10:28:37.374 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2023-10-12 10:28:37.374 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2023-10-12 10:28:37.374 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-10-12 10:28:37.374 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-10-12 10:28:37.374 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-10-12 10:28:37.374 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-10-12 10:28:37.374 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-10-12 10:28:37.374 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2023-10-12 10:28:37.374 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-10-12 10:28:37.374 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-10-12 10:28:37.374 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2023-10-12 10:28:37.374 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationModule
+2023-10-12 10:28:37.374 +08:00 [INF]                   - Volo.Abp.Settings.AbpSettingsModule
+2023-10-12 10:28:37.374 +08:00 [INF]                     - Volo.Abp.Security.AbpSecurityModule
+2023-10-12 10:28:37.374 +08:00 [INF]                   - Volo.Abp.Threading.AbpThreadingModule
+2023-10-12 10:28:37.374 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-10-12 10:28:37.374 +08:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-10-12 10:28:37.374 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-10-12 10:28:37.374 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2023-10-12 10:28:37.374 +08:00 [INF]           - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-10-12 10:28:37.374 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2023-10-12 10:28:37.374 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-10-12 10:28:37.374 +08:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-10-12 10:28:37.374 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2023-10-12 10:28:37.374 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-10-12 10:28:37.374 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-10-12 10:28:37.374 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-10-12 10:28:37.374 +08:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-10-12 10:28:37.374 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-10-12 10:28:37.374 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2023-10-12 10:28:37.374 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-10-12 10:28:37.374 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationModule
+2023-10-12 10:28:37.374 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2023-10-12 10:28:37.374 +08:00 [INF]           - Volo.Abp.EventBus.AbpEventBusModule
+2023-10-12 10:28:37.374 +08:00 [INF]             - Volo.Abp.Guids.AbpGuidsModule
+2023-10-12 10:28:37.374 +08:00 [INF]             - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-10-12 10:28:37.374 +08:00 [INF]             - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-10-12 10:28:37.374 +08:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-10-12 10:28:37.374 +08:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-10-12 10:28:37.374 +08:00 [INF]           - Volo.Abp.Caching.AbpCachingModule
+2023-10-12 10:28:37.374 +08:00 [INF]             - Volo.Abp.Serialization.AbpSerializationModule
+2023-10-12 10:28:37.374 +08:00 [INF]           - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-10-12 10:28:37.374 +08:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2023-10-12 10:28:37.374 +08:00 [INF]   - Sample.Novel.NovelApplicationModule
+2023-10-12 10:28:37.374 +08:00 [INF]     - Sample.Novel.NovelDomainModule
+2023-10-12 10:28:37.374 +08:00 [INF]     - Sample.Novel.NovelApplicationContractsModule
+2023-10-12 10:28:37.374 +08:00 [INF]       - Sample.Novel.NovelDomainSharedModule
+2023-10-12 10:28:37.375 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2023-10-12 10:28:37.375 +08:00 [INF]   - Sample.Novel.EntityFrameworkCore.NovelEntityFrameworkCoreModule
+2023-10-12 10:28:37.375 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-10-12 10:28:37.375 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2023-10-12 10:28:37.375 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2023-10-12 10:28:37.375 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2023-10-12 10:28:37.375 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2023-10-12 10:28:38.116 +08:00 [INF] User profile is available. Using 'C:\Users\liudd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-12 10:28:38.176 +08:00 [INF] Initialized all ABP modules.
+2023-10-12 10:28:38.191 +08:00 [INF] Creating key {3eb2f024-4cb4-46b1-b642-f55bc6a53b4c} with creation date 2023-10-12 02:28:38Z, activation date 2023-10-12 02:28:38Z, and expiration date 2024-01-10 02:28:38Z.
+2023-10-12 10:28:38.204 +08:00 [INF] Writing data to file 'C:\Users\liudd\AppData\Local\ASP.NET\DataProtection-Keys\key-3eb2f024-4cb4-46b1-b642-f55bc6a53b4c.xml'.
+2023-10-12 10:28:38.419 +08:00 [INF] Now listening on: https://localhost:7295
+2023-10-12 10:28:38.419 +08:00 [INF] Now listening on: http://localhost:5057
+2023-10-12 10:28:38.419 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-12 10:28:38.420 +08:00 [INF] Hosting environment: Development
+2023-10-12 10:28:38.420 +08:00 [INF] Content root path: D:\Test\Sample.Novel\src\Sample.Novel.HttpApi.Host
+2023-10-12 10:29:11.044 +08:00 [INF] Starting Sample.Novel.HttpApi.Host.
+2023-10-12 10:29:12.579 +08:00 [INF] Loaded ABP modules:
+2023-10-12 10:29:12.581 +08:00 [INF] - Sample.Novel.NovelHttpApiHostModule
+2023-10-12 10:29:12.581 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2023-10-12 10:29:12.581 +08:00 [INF]     - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-10-12 10:29:12.581 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-10-12 10:29:12.581 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-10-12 10:29:12.581 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2023-10-12 10:29:12.581 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2023-10-12 10:29:12.581 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-10-12 10:29:12.581 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-10-12 10:29:12.581 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-10-12 10:29:12.581 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-10-12 10:29:12.581 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-10-12 10:29:12.581 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2023-10-12 10:29:12.581 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-10-12 10:29:12.581 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-10-12 10:29:12.581 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2023-10-12 10:29:12.581 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationModule
+2023-10-12 10:29:12.581 +08:00 [INF]                   - Volo.Abp.Settings.AbpSettingsModule
+2023-10-12 10:29:12.581 +08:00 [INF]                     - Volo.Abp.Security.AbpSecurityModule
+2023-10-12 10:29:12.581 +08:00 [INF]                   - Volo.Abp.Threading.AbpThreadingModule
+2023-10-12 10:29:12.581 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-10-12 10:29:12.581 +08:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-10-12 10:29:12.581 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-10-12 10:29:12.581 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2023-10-12 10:29:12.581 +08:00 [INF]           - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-10-12 10:29:12.581 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2023-10-12 10:29:12.581 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-10-12 10:29:12.581 +08:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-10-12 10:29:12.581 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2023-10-12 10:29:12.581 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-10-12 10:29:12.581 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-10-12 10:29:12.581 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-10-12 10:29:12.581 +08:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-10-12 10:29:12.581 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-10-12 10:29:12.581 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2023-10-12 10:29:12.581 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-10-12 10:29:12.581 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationModule
+2023-10-12 10:29:12.581 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2023-10-12 10:29:12.581 +08:00 [INF]           - Volo.Abp.EventBus.AbpEventBusModule
+2023-10-12 10:29:12.581 +08:00 [INF]             - Volo.Abp.Guids.AbpGuidsModule
+2023-10-12 10:29:12.581 +08:00 [INF]             - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-10-12 10:29:12.581 +08:00 [INF]             - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-10-12 10:29:12.581 +08:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-10-12 10:29:12.581 +08:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-10-12 10:29:12.581 +08:00 [INF]           - Volo.Abp.Caching.AbpCachingModule
+2023-10-12 10:29:12.581 +08:00 [INF]             - Volo.Abp.Serialization.AbpSerializationModule
+2023-10-12 10:29:12.581 +08:00 [INF]           - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-10-12 10:29:12.581 +08:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2023-10-12 10:29:12.581 +08:00 [INF]   - Sample.Novel.NovelApplicationModule
+2023-10-12 10:29:12.581 +08:00 [INF]     - Sample.Novel.NovelDomainModule
+2023-10-12 10:29:12.581 +08:00 [INF]     - Sample.Novel.NovelApplicationContractsModule
+2023-10-12 10:29:12.581 +08:00 [INF]       - Sample.Novel.NovelDomainSharedModule
+2023-10-12 10:29:12.581 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2023-10-12 10:29:12.581 +08:00 [INF]   - Sample.Novel.EntityFrameworkCore.NovelEntityFrameworkCoreModule
+2023-10-12 10:29:12.581 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-10-12 10:29:12.581 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2023-10-12 10:29:12.581 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2023-10-12 10:29:12.581 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2023-10-12 10:29:12.581 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2023-10-12 10:29:12.929 +08:00 [INF] User profile is available. Using 'C:\Users\liudd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-12 10:29:12.993 +08:00 [INF] Initialized all ABP modules.
+2023-10-12 10:29:13.104 +08:00 [INF] Now listening on: http://localhost:5057
+2023-10-12 10:29:13.104 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-12 10:29:13.105 +08:00 [INF] Hosting environment: Development
+2023-10-12 10:29:13.105 +08:00 [INF] Content root path: D:\Test\Sample.Novel\src\Sample.Novel.HttpApi.Host
+2023-10-12 10:29:13.981 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger - -
+2023-10-12 10:29:14.110 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger - - - 301 0 - 129.8415ms
+2023-10-12 10:29:14.113 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/index.html - -
+2023-10-12 10:29:14.177 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/index.html - - - 200 - text/html;charset=utf-8 64.3195ms
+2023-10-12 10:29:14.214 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/swagger-ui.css - -
+2023-10-12 10:29:14.215 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/ui/abp.js - -
+2023-10-12 10:29:14.217 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/ui/abp.swagger.js - -
+2023-10-12 10:29:14.217 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/swagger-ui-bundle.js - -
+2023-10-12 10:29:14.218 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/swagger-ui-standalone-preset.js - -
+2023-10-12 10:29:14.220 +08:00 [WRN] Failed to determine the https port for redirect.
+2023-10-12 10:29:14.242 +08:00 [INF] Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'N/A'
+2023-10-12 10:29:14.242 +08:00 [INF] Sending file. Request path: '/swagger/ui/abp.swagger.js'. Physical path: 'N/A'
+2023-10-12 10:29:14.242 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/ui/abp.js - - - 200 3122 application/javascript 26.9377ms
+2023-10-12 10:29:14.242 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/ui/abp.swagger.js - - - 200 1363 application/javascript 25.6723ms
+2023-10-12 10:29:14.242 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/_framework/aspnetcore-browser-refresh.js - -
+2023-10-12 10:29:14.245 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 3.1239ms
+2023-10-12 10:29:14.250 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-10-12 10:29:14.250 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-10-12 10:29:14.258 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/swagger-ui.css - - - 200 143943 text/css 43.6159ms
+2023-10-12 10:29:14.258 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-10-12 10:29:14.258 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/swagger-ui-standalone-preset.js - - - 200 339486 text/javascript 39.8558ms
+2023-10-12 10:29:14.258 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/swagger-ui-bundle.js - - - 200 1095087 text/javascript 40.8647ms
+2023-10-12 10:29:14.783 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - -
+2023-10-12 10:29:14.809 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/favicon-32x32.png - -
+2023-10-12 10:29:14.810 +08:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-10-12 10:29:14.810 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/favicon-32x32.png - - - 200 628 image/png 0.6307ms
+2023-10-12 10:29:15.049 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 266.2501ms
+2023-10-12 10:29:56.519 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/index.html - -
+2023-10-12 10:29:56.525 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/index.html - - - 200 - text/html;charset=utf-8 6.6085ms
+2023-10-12 10:29:56.576 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/_framework/aspnetcore-browser-refresh.js - -
+2023-10-12 10:29:56.577 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 0.3219ms
+2023-10-12 10:29:56.806 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - -
+2023-10-12 10:29:56.832 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 26.1261ms
+2023-10-12 10:30:46.837 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/index.html - -
+2023-10-12 10:30:46.846 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/index.html - - - 200 - text/html;charset=utf-8 8.5675ms
+2023-10-12 10:30:46.919 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/_framework/aspnetcore-browser-refresh.js - -
+2023-10-12 10:30:46.919 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 0.2210ms
+2023-10-12 10:30:47.134 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - -
+2023-10-12 10:30:47.144 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 9.5566ms
+2023-10-12 10:31:00.550 +08:00 [INF] Starting Sample.Novel.HttpApi.Host.
+2023-10-12 10:31:01.985 +08:00 [INF] Loaded ABP modules:
+2023-10-12 10:31:01.986 +08:00 [INF] - Sample.Novel.NovelHttpApiHostModule
+2023-10-12 10:31:01.987 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2023-10-12 10:31:01.987 +08:00 [INF]     - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-10-12 10:31:01.987 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-10-12 10:31:01.987 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-10-12 10:31:01.987 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2023-10-12 10:31:01.987 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2023-10-12 10:31:01.987 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-10-12 10:31:01.987 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-10-12 10:31:01.987 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-10-12 10:31:01.987 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-10-12 10:31:01.987 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-10-12 10:31:01.987 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2023-10-12 10:31:01.987 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-10-12 10:31:01.987 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-10-12 10:31:01.987 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2023-10-12 10:31:01.987 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationModule
+2023-10-12 10:31:01.987 +08:00 [INF]                   - Volo.Abp.Settings.AbpSettingsModule
+2023-10-12 10:31:01.987 +08:00 [INF]                     - Volo.Abp.Security.AbpSecurityModule
+2023-10-12 10:31:01.987 +08:00 [INF]                   - Volo.Abp.Threading.AbpThreadingModule
+2023-10-12 10:31:01.987 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-10-12 10:31:01.987 +08:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-10-12 10:31:01.987 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-10-12 10:31:01.987 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2023-10-12 10:31:01.987 +08:00 [INF]           - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-10-12 10:31:01.987 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2023-10-12 10:31:01.987 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-10-12 10:31:01.987 +08:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-10-12 10:31:01.987 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2023-10-12 10:31:01.987 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-10-12 10:31:01.987 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-10-12 10:31:01.987 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-10-12 10:31:01.987 +08:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-10-12 10:31:01.987 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-10-12 10:31:01.987 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2023-10-12 10:31:01.987 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-10-12 10:31:01.987 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationModule
+2023-10-12 10:31:01.987 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2023-10-12 10:31:01.987 +08:00 [INF]           - Volo.Abp.EventBus.AbpEventBusModule
+2023-10-12 10:31:01.987 +08:00 [INF]             - Volo.Abp.Guids.AbpGuidsModule
+2023-10-12 10:31:01.987 +08:00 [INF]             - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-10-12 10:31:01.987 +08:00 [INF]             - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-10-12 10:31:01.987 +08:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-10-12 10:31:01.987 +08:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-10-12 10:31:01.987 +08:00 [INF]           - Volo.Abp.Caching.AbpCachingModule
+2023-10-12 10:31:01.987 +08:00 [INF]             - Volo.Abp.Serialization.AbpSerializationModule
+2023-10-12 10:31:01.987 +08:00 [INF]           - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-10-12 10:31:01.987 +08:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2023-10-12 10:31:01.987 +08:00 [INF]   - Sample.Novel.NovelApplicationModule
+2023-10-12 10:31:01.987 +08:00 [INF]     - Sample.Novel.NovelDomainModule
+2023-10-12 10:31:01.987 +08:00 [INF]     - Sample.Novel.NovelApplicationContractsModule
+2023-10-12 10:31:01.987 +08:00 [INF]       - Sample.Novel.NovelDomainSharedModule
+2023-10-12 10:31:01.987 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2023-10-12 10:31:01.987 +08:00 [INF]   - Sample.Novel.EntityFrameworkCore.NovelEntityFrameworkCoreModule
+2023-10-12 10:31:01.987 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-10-12 10:31:01.987 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2023-10-12 10:31:01.987 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2023-10-12 10:31:01.987 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2023-10-12 10:31:01.987 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2023-10-12 10:31:02.294 +08:00 [INF] User profile is available. Using 'C:\Users\liudd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-12 10:31:02.360 +08:00 [INF] Initialized all ABP modules.
+2023-10-12 10:31:02.462 +08:00 [INF] Now listening on: http://localhost:5057
+2023-10-12 10:31:02.462 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-12 10:31:02.462 +08:00 [INF] Hosting environment: Development
+2023-10-12 10:31:02.462 +08:00 [INF] Content root path: D:\Test\Sample.Novel\src\Sample.Novel.HttpApi.Host
+2023-10-12 10:31:03.392 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/index.html - -
+2023-10-12 10:31:03.518 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/index.html - - - 200 - text/html;charset=utf-8 123.1479ms
+2023-10-12 10:31:03.562 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/_framework/aspnetcore-browser-refresh.js - -
+2023-10-12 10:31:03.567 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 5.0724ms
+2023-10-12 10:31:03.961 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - -
+2023-10-12 10:31:04.220 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 258.9042ms
+2023-10-12 10:58:38.236 +08:00 [INF] Starting Sample.Novel.HttpApi.Host.
+2023-10-12 10:58:41.580 +08:00 [INF] Loaded ABP modules:
+2023-10-12 10:58:41.581 +08:00 [INF] - Sample.Novel.NovelHttpApiHostModule
+2023-10-12 10:58:41.581 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2023-10-12 10:58:41.581 +08:00 [INF]     - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-10-12 10:58:41.581 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-10-12 10:58:41.581 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-10-12 10:58:41.581 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2023-10-12 10:58:41.581 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2023-10-12 10:58:41.581 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-10-12 10:58:41.581 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-10-12 10:58:41.581 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-10-12 10:58:41.581 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-10-12 10:58:41.581 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-10-12 10:58:41.581 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2023-10-12 10:58:41.581 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-10-12 10:58:41.581 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-10-12 10:58:41.581 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2023-10-12 10:58:41.581 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationModule
+2023-10-12 10:58:41.581 +08:00 [INF]                   - Volo.Abp.Settings.AbpSettingsModule
+2023-10-12 10:58:41.581 +08:00 [INF]                     - Volo.Abp.Security.AbpSecurityModule
+2023-10-12 10:58:41.581 +08:00 [INF]                   - Volo.Abp.Threading.AbpThreadingModule
+2023-10-12 10:58:41.581 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-10-12 10:58:41.581 +08:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-10-12 10:58:41.581 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-10-12 10:58:41.581 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2023-10-12 10:58:41.581 +08:00 [INF]           - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-10-12 10:58:41.581 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2023-10-12 10:58:41.581 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-10-12 10:58:41.581 +08:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-10-12 10:58:41.581 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2023-10-12 10:58:41.581 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-10-12 10:58:41.581 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-10-12 10:58:41.581 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-10-12 10:58:41.581 +08:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-10-12 10:58:41.581 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-10-12 10:58:41.581 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2023-10-12 10:58:41.581 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-10-12 10:58:41.581 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationModule
+2023-10-12 10:58:41.581 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2023-10-12 10:58:41.581 +08:00 [INF]           - Volo.Abp.EventBus.AbpEventBusModule
+2023-10-12 10:58:41.581 +08:00 [INF]             - Volo.Abp.Guids.AbpGuidsModule
+2023-10-12 10:58:41.581 +08:00 [INF]             - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-10-12 10:58:41.581 +08:00 [INF]             - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-10-12 10:58:41.581 +08:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-10-12 10:58:41.581 +08:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-10-12 10:58:41.581 +08:00 [INF]           - Volo.Abp.Caching.AbpCachingModule
+2023-10-12 10:58:41.581 +08:00 [INF]             - Volo.Abp.Serialization.AbpSerializationModule
+2023-10-12 10:58:41.581 +08:00 [INF]           - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-10-12 10:58:41.581 +08:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2023-10-12 10:58:41.581 +08:00 [INF]   - Sample.Novel.NovelApplicationModule
+2023-10-12 10:58:41.581 +08:00 [INF]     - Sample.Novel.NovelDomainModule
+2023-10-12 10:58:41.581 +08:00 [INF]     - Sample.Novel.NovelApplicationContractsModule
+2023-10-12 10:58:41.581 +08:00 [INF]       - Sample.Novel.NovelDomainSharedModule
+2023-10-12 10:58:41.581 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2023-10-12 10:58:41.581 +08:00 [INF]   - Sample.Novel.EntityFrameworkCore.NovelEntityFrameworkCoreModule
+2023-10-12 10:58:41.581 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-10-12 10:58:41.581 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2023-10-12 10:58:41.581 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2023-10-12 10:58:41.581 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2023-10-12 10:58:41.581 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2023-10-12 10:58:42.112 +08:00 [INF] User profile is available. Using 'C:\Users\liudd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-12 10:58:42.186 +08:00 [INF] Initialized all ABP modules.
+2023-10-12 10:58:42.314 +08:00 [INF] Now listening on: http://localhost:5057
+2023-10-12 10:58:42.315 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-12 10:58:42.315 +08:00 [INF] Hosting environment: Development
+2023-10-12 10:58:42.315 +08:00 [INF] Content root path: D:\Test\Sample.Novel\src\Sample.Novel.HttpApi.Host
+2023-10-12 10:58:42.841 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/index.html - -
+2023-10-12 10:59:37.211 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/index.html - - - 200 - text/html;charset=utf-8 54370.4435ms
+2023-10-12 10:59:37.328 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/_framework/aspnetcore-browser-refresh.js - -
+2023-10-12 10:59:37.330 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 1.8950ms
+2023-10-12 10:59:37.707 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - -
+2023-10-12 10:59:38.169 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 461.3501ms
+2023-10-12 11:00:52.586 +08:00 [INF] Starting Sample.Novel.HttpApi.Host.
+2023-10-12 11:00:54.686 +08:00 [INF] Loaded ABP modules:
+2023-10-12 11:00:54.687 +08:00 [INF] - Sample.Novel.NovelHttpApiHostModule
+2023-10-12 11:00:54.687 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2023-10-12 11:00:54.687 +08:00 [INF]     - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-10-12 11:00:54.687 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-10-12 11:00:54.687 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-10-12 11:00:54.687 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2023-10-12 11:00:54.687 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2023-10-12 11:00:54.687 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-10-12 11:00:54.687 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-10-12 11:00:54.687 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-10-12 11:00:54.687 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-10-12 11:00:54.687 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-10-12 11:00:54.687 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2023-10-12 11:00:54.687 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-10-12 11:00:54.687 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-10-12 11:00:54.687 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2023-10-12 11:00:54.687 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationModule
+2023-10-12 11:00:54.687 +08:00 [INF]                   - Volo.Abp.Settings.AbpSettingsModule
+2023-10-12 11:00:54.687 +08:00 [INF]                     - Volo.Abp.Security.AbpSecurityModule
+2023-10-12 11:00:54.687 +08:00 [INF]                   - Volo.Abp.Threading.AbpThreadingModule
+2023-10-12 11:00:54.687 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-10-12 11:00:54.687 +08:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-10-12 11:00:54.687 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-10-12 11:00:54.687 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2023-10-12 11:00:54.687 +08:00 [INF]           - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-10-12 11:00:54.687 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2023-10-12 11:00:54.687 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-10-12 11:00:54.687 +08:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-10-12 11:00:54.687 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2023-10-12 11:00:54.687 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-10-12 11:00:54.687 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-10-12 11:00:54.687 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-10-12 11:00:54.687 +08:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-10-12 11:00:54.687 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-10-12 11:00:54.687 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2023-10-12 11:00:54.687 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-10-12 11:00:54.687 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationModule
+2023-10-12 11:00:54.687 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2023-10-12 11:00:54.687 +08:00 [INF]           - Volo.Abp.EventBus.AbpEventBusModule
+2023-10-12 11:00:54.687 +08:00 [INF]             - Volo.Abp.Guids.AbpGuidsModule
+2023-10-12 11:00:54.687 +08:00 [INF]             - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-10-12 11:00:54.687 +08:00 [INF]             - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-10-12 11:00:54.687 +08:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-10-12 11:00:54.687 +08:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-10-12 11:00:54.687 +08:00 [INF]           - Volo.Abp.Caching.AbpCachingModule
+2023-10-12 11:00:54.687 +08:00 [INF]             - Volo.Abp.Serialization.AbpSerializationModule
+2023-10-12 11:00:54.687 +08:00 [INF]           - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-10-12 11:00:54.687 +08:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2023-10-12 11:00:54.687 +08:00 [INF]   - Sample.Novel.NovelApplicationModule
+2023-10-12 11:00:54.687 +08:00 [INF]     - Sample.Novel.NovelDomainModule
+2023-10-12 11:00:54.687 +08:00 [INF]     - Sample.Novel.NovelApplicationContractsModule
+2023-10-12 11:00:54.687 +08:00 [INF]       - Sample.Novel.NovelDomainSharedModule
+2023-10-12 11:00:54.687 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2023-10-12 11:00:54.687 +08:00 [INF]   - Sample.Novel.EntityFrameworkCore.NovelEntityFrameworkCoreModule
+2023-10-12 11:00:54.687 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-10-12 11:00:54.687 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2023-10-12 11:00:54.687 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2023-10-12 11:00:54.687 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2023-10-12 11:00:54.687 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2023-10-12 11:00:55.028 +08:00 [INF] User profile is available. Using 'C:\Users\liudd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-12 11:00:55.095 +08:00 [INF] Initialized all ABP modules.
+2023-10-12 11:00:55.199 +08:00 [INF] Now listening on: http://localhost:5057
+2023-10-12 11:00:55.199 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-12 11:00:55.199 +08:00 [INF] Hosting environment: Development
+2023-10-12 11:00:55.199 +08:00 [INF] Content root path: D:\Test\Sample.Novel\src\Sample.Novel.HttpApi.Host
+2023-10-12 11:00:55.732 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/index.html - -
+2023-10-12 11:01:15.859 +08:00 [INF] Starting Sample.Novel.HttpApi.Host.
+2023-10-12 11:01:17.588 +08:00 [INF] Loaded ABP modules:
+2023-10-12 11:01:17.589 +08:00 [INF] - Sample.Novel.NovelHttpApiHostModule
+2023-10-12 11:01:17.589 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2023-10-12 11:01:17.589 +08:00 [INF]     - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-10-12 11:01:17.589 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-10-12 11:01:17.589 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-10-12 11:01:17.589 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2023-10-12 11:01:17.589 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2023-10-12 11:01:17.589 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-10-12 11:01:17.589 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-10-12 11:01:17.589 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-10-12 11:01:17.589 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-10-12 11:01:17.589 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-10-12 11:01:17.589 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2023-10-12 11:01:17.589 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-10-12 11:01:17.589 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-10-12 11:01:17.589 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2023-10-12 11:01:17.589 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationModule
+2023-10-12 11:01:17.589 +08:00 [INF]                   - Volo.Abp.Settings.AbpSettingsModule
+2023-10-12 11:01:17.589 +08:00 [INF]                     - Volo.Abp.Security.AbpSecurityModule
+2023-10-12 11:01:17.589 +08:00 [INF]                   - Volo.Abp.Threading.AbpThreadingModule
+2023-10-12 11:01:17.589 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-10-12 11:01:17.589 +08:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-10-12 11:01:17.589 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-10-12 11:01:17.589 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2023-10-12 11:01:17.589 +08:00 [INF]           - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-10-12 11:01:17.589 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2023-10-12 11:01:17.589 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-10-12 11:01:17.589 +08:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-10-12 11:01:17.589 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2023-10-12 11:01:17.589 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-10-12 11:01:17.589 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-10-12 11:01:17.589 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-10-12 11:01:17.589 +08:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-10-12 11:01:17.589 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-10-12 11:01:17.589 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2023-10-12 11:01:17.589 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-10-12 11:01:17.589 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationModule
+2023-10-12 11:01:17.589 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2023-10-12 11:01:17.589 +08:00 [INF]           - Volo.Abp.EventBus.AbpEventBusModule
+2023-10-12 11:01:17.589 +08:00 [INF]             - Volo.Abp.Guids.AbpGuidsModule
+2023-10-12 11:01:17.589 +08:00 [INF]             - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-10-12 11:01:17.589 +08:00 [INF]             - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-10-12 11:01:17.589 +08:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-10-12 11:01:17.589 +08:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-10-12 11:01:17.589 +08:00 [INF]           - Volo.Abp.Caching.AbpCachingModule
+2023-10-12 11:01:17.589 +08:00 [INF]             - Volo.Abp.Serialization.AbpSerializationModule
+2023-10-12 11:01:17.589 +08:00 [INF]           - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-10-12 11:01:17.589 +08:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2023-10-12 11:01:17.589 +08:00 [INF]   - Sample.Novel.NovelApplicationModule
+2023-10-12 11:01:17.589 +08:00 [INF]     - Sample.Novel.NovelDomainModule
+2023-10-12 11:01:17.589 +08:00 [INF]     - Sample.Novel.NovelApplicationContractsModule
+2023-10-12 11:01:17.589 +08:00 [INF]       - Sample.Novel.NovelDomainSharedModule
+2023-10-12 11:01:17.589 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2023-10-12 11:01:17.589 +08:00 [INF]   - Sample.Novel.EntityFrameworkCore.NovelEntityFrameworkCoreModule
+2023-10-12 11:01:17.589 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-10-12 11:01:17.589 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2023-10-12 11:01:17.589 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2023-10-12 11:01:17.589 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2023-10-12 11:01:17.589 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2023-10-12 11:01:17.901 +08:00 [INF] User profile is available. Using 'C:\Users\liudd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-12 11:01:18.027 +08:00 [INF] Initialized all ABP modules.
+2023-10-12 11:01:18.160 +08:00 [INF] Now listening on: http://localhost:5057
+2023-10-12 11:01:18.160 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-12 11:01:18.160 +08:00 [INF] Hosting environment: Development
+2023-10-12 11:01:18.160 +08:00 [INF] Content root path: D:\Test\Sample.Novel\src\Sample.Novel.HttpApi.Host
+2023-10-12 11:01:19.024 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/index.html - -
+2023-10-12 11:01:19.155 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/index.html - - - 200 - text/html;charset=utf-8 128.4095ms
+2023-10-12 11:01:19.209 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/_framework/aspnetcore-browser-refresh.js - -
+2023-10-12 11:01:19.213 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 3.8340ms
+2023-10-12 11:01:19.605 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - -
+2023-10-12 11:01:19.932 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 326.2750ms
+2023-10-12 11:09:33.624 +08:00 [INF] Starting Sample.Novel.HttpApi.Host.
+2023-10-12 11:09:35.148 +08:00 [INF] Loaded ABP modules:
+2023-10-12 11:09:35.149 +08:00 [INF] - Sample.Novel.NovelHttpApiHostModule
+2023-10-12 11:09:35.149 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2023-10-12 11:09:35.149 +08:00 [INF]     - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-10-12 11:09:35.149 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-10-12 11:09:35.149 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-10-12 11:09:35.149 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2023-10-12 11:09:35.149 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2023-10-12 11:09:35.149 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-10-12 11:09:35.149 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-10-12 11:09:35.149 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-10-12 11:09:35.149 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-10-12 11:09:35.149 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-10-12 11:09:35.149 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2023-10-12 11:09:35.149 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-10-12 11:09:35.149 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-10-12 11:09:35.149 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2023-10-12 11:09:35.149 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationModule
+2023-10-12 11:09:35.149 +08:00 [INF]                   - Volo.Abp.Settings.AbpSettingsModule
+2023-10-12 11:09:35.149 +08:00 [INF]                     - Volo.Abp.Security.AbpSecurityModule
+2023-10-12 11:09:35.149 +08:00 [INF]                   - Volo.Abp.Threading.AbpThreadingModule
+2023-10-12 11:09:35.149 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-10-12 11:09:35.149 +08:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-10-12 11:09:35.149 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-10-12 11:09:35.149 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2023-10-12 11:09:35.149 +08:00 [INF]           - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-10-12 11:09:35.149 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2023-10-12 11:09:35.149 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-10-12 11:09:35.149 +08:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-10-12 11:09:35.149 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2023-10-12 11:09:35.149 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-10-12 11:09:35.149 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-10-12 11:09:35.149 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-10-12 11:09:35.149 +08:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-10-12 11:09:35.149 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-10-12 11:09:35.149 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2023-10-12 11:09:35.149 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-10-12 11:09:35.149 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationModule
+2023-10-12 11:09:35.149 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2023-10-12 11:09:35.149 +08:00 [INF]           - Volo.Abp.EventBus.AbpEventBusModule
+2023-10-12 11:09:35.149 +08:00 [INF]             - Volo.Abp.Guids.AbpGuidsModule
+2023-10-12 11:09:35.149 +08:00 [INF]             - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-10-12 11:09:35.149 +08:00 [INF]             - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-10-12 11:09:35.149 +08:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-10-12 11:09:35.149 +08:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-10-12 11:09:35.149 +08:00 [INF]           - Volo.Abp.Caching.AbpCachingModule
+2023-10-12 11:09:35.149 +08:00 [INF]             - Volo.Abp.Serialization.AbpSerializationModule
+2023-10-12 11:09:35.149 +08:00 [INF]           - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-10-12 11:09:35.149 +08:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2023-10-12 11:09:35.149 +08:00 [INF]   - Sample.Novel.NovelApplicationModule
+2023-10-12 11:09:35.149 +08:00 [INF]     - Sample.Novel.NovelDomainModule
+2023-10-12 11:09:35.149 +08:00 [INF]     - Sample.Novel.NovelApplicationContractsModule
+2023-10-12 11:09:35.149 +08:00 [INF]       - Sample.Novel.NovelDomainSharedModule
+2023-10-12 11:09:35.149 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2023-10-12 11:09:35.149 +08:00 [INF]   - Sample.Novel.EntityFrameworkCore.NovelEntityFrameworkCoreModule
+2023-10-12 11:09:35.149 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-10-12 11:09:35.149 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2023-10-12 11:09:35.149 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2023-10-12 11:09:35.149 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2023-10-12 11:09:35.149 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2023-10-12 11:09:35.462 +08:00 [INF] User profile is available. Using 'C:\Users\liudd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-12 11:09:35.525 +08:00 [INF] Initialized all ABP modules.
+2023-10-12 11:09:35.623 +08:00 [INF] Now listening on: http://localhost:5057
+2023-10-12 11:09:35.623 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-12 11:09:35.623 +08:00 [INF] Hosting environment: Development
+2023-10-12 11:09:35.623 +08:00 [INF] Content root path: D:\Test\Sample.Novel\src\Sample.Novel.HttpApi.Host
+2023-10-12 11:09:36.114 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/index.html - -
+2023-10-12 11:09:36.253 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/index.html - - - 200 - text/html;charset=utf-8 139.2165ms
+2023-10-12 11:09:36.305 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/_framework/aspnetcore-browser-refresh.js - -
+2023-10-12 11:09:36.312 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 6.3486ms
+2023-10-12 11:09:36.698 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - -
+2023-10-12 11:09:36.981 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 282.9866ms
+2023-10-12 11:11:30.513 +08:00 [INF] Starting Sample.Novel.HttpApi.Host.
+2023-10-12 11:11:32.265 +08:00 [INF] Loaded ABP modules:
+2023-10-12 11:11:32.266 +08:00 [INF] - Sample.Novel.NovelHttpApiHostModule
+2023-10-12 11:11:32.266 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2023-10-12 11:11:32.266 +08:00 [INF]     - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-10-12 11:11:32.266 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-10-12 11:11:32.266 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-10-12 11:11:32.266 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2023-10-12 11:11:32.266 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2023-10-12 11:11:32.266 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-10-12 11:11:32.266 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-10-12 11:11:32.266 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-10-12 11:11:32.266 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-10-12 11:11:32.266 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-10-12 11:11:32.266 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2023-10-12 11:11:32.266 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-10-12 11:11:32.266 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-10-12 11:11:32.266 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2023-10-12 11:11:32.266 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationModule
+2023-10-12 11:11:32.266 +08:00 [INF]                   - Volo.Abp.Settings.AbpSettingsModule
+2023-10-12 11:11:32.266 +08:00 [INF]                     - Volo.Abp.Security.AbpSecurityModule
+2023-10-12 11:11:32.266 +08:00 [INF]                   - Volo.Abp.Threading.AbpThreadingModule
+2023-10-12 11:11:32.266 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-10-12 11:11:32.266 +08:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-10-12 11:11:32.266 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-10-12 11:11:32.266 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2023-10-12 11:11:32.266 +08:00 [INF]           - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-10-12 11:11:32.266 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2023-10-12 11:11:32.266 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-10-12 11:11:32.266 +08:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-10-12 11:11:32.266 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2023-10-12 11:11:32.266 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-10-12 11:11:32.266 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-10-12 11:11:32.266 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-10-12 11:11:32.266 +08:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-10-12 11:11:32.266 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-10-12 11:11:32.266 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2023-10-12 11:11:32.266 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-10-12 11:11:32.266 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationModule
+2023-10-12 11:11:32.266 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2023-10-12 11:11:32.266 +08:00 [INF]           - Volo.Abp.EventBus.AbpEventBusModule
+2023-10-12 11:11:32.266 +08:00 [INF]             - Volo.Abp.Guids.AbpGuidsModule
+2023-10-12 11:11:32.266 +08:00 [INF]             - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-10-12 11:11:32.266 +08:00 [INF]             - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-10-12 11:11:32.266 +08:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-10-12 11:11:32.266 +08:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-10-12 11:11:32.266 +08:00 [INF]           - Volo.Abp.Caching.AbpCachingModule
+2023-10-12 11:11:32.266 +08:00 [INF]             - Volo.Abp.Serialization.AbpSerializationModule
+2023-10-12 11:11:32.266 +08:00 [INF]           - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-10-12 11:11:32.266 +08:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2023-10-12 11:11:32.266 +08:00 [INF]   - Sample.Novel.NovelApplicationModule
+2023-10-12 11:11:32.266 +08:00 [INF]     - Sample.Novel.NovelDomainModule
+2023-10-12 11:11:32.266 +08:00 [INF]     - Sample.Novel.NovelApplicationContractsModule
+2023-10-12 11:11:32.266 +08:00 [INF]       - Sample.Novel.NovelDomainSharedModule
+2023-10-12 11:11:32.266 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2023-10-12 11:11:32.266 +08:00 [INF]   - Sample.Novel.EntityFrameworkCore.NovelEntityFrameworkCoreModule
+2023-10-12 11:11:32.266 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-10-12 11:11:32.266 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2023-10-12 11:11:32.266 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2023-10-12 11:11:32.266 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2023-10-12 11:11:32.266 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2023-10-12 11:11:32.574 +08:00 [INF] User profile is available. Using 'C:\Users\liudd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-12 11:11:32.638 +08:00 [INF] Initialized all ABP modules.
+2023-10-12 11:11:32.788 +08:00 [INF] Now listening on: http://localhost:5057
+2023-10-12 11:11:32.788 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-12 11:11:32.788 +08:00 [INF] Hosting environment: Development
+2023-10-12 11:11:32.788 +08:00 [INF] Content root path: D:\Test\Sample.Novel\src\Sample.Novel.HttpApi.Host
+2023-10-12 11:11:33.416 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/index.html - -
+2023-10-12 11:11:33.567 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/index.html - - - 200 - text/html;charset=utf-8 150.3574ms
+2023-10-12 11:11:33.612 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/_framework/aspnetcore-browser-refresh.js - -
+2023-10-12 11:11:33.616 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 3.5788ms
+2023-10-12 11:11:34.008 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - -
+2023-10-12 11:11:34.317 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 308.7949ms
