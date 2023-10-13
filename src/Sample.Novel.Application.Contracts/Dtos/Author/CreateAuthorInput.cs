@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Volo.Abp.Application.Dtos;
 
-namespace Sample.Novel.Application.Contracts.Dtos.Author
+namespace Sample.Novel.Application.Contracts.Dtos
 {
     public class CreateAuthorInput:EntityDto
     {

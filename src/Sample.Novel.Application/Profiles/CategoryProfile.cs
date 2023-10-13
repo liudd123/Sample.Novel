@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Sample.Novel.Application.Contracts.Dtos.Category;
+using Sample.Novel.Application.Contracts.Dtos;
 using Sample.Novel.Domain.Category.Entities;
 using System;
 using System.Collections.Generic;

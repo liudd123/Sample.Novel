@@ -6,7 +6,7 @@ using System.Linq.Dynamic.Core;
 using Volo.Abp.Domain.Repositories.EntityFrameworkCore;
 using Volo.Abp.EntityFrameworkCore;
 
-namespace Sample.Novel.EntityFrameworkCore.Repositories.Identity
+namespace Sample.Novel.EntityFrameworkCore.Repositories
 {
     public class IdentityRoleRepository : EfCoreRepository<NovelDbContext, IdentityRole, Guid>, IIdentityRoleRepository
     {

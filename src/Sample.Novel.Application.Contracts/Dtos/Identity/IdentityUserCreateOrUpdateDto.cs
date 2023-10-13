@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using Volo.Abp.ObjectExtending;
 using Volo.Abp.Validation;
 
-namespace Sample.Novel.Application.Contracts.Dtos.Identity
+namespace Sample.Novel.Application.Contracts.Dtos
 {
     public class IdentityUserCreateOrUpdateDto : ExtensibleObject
     {

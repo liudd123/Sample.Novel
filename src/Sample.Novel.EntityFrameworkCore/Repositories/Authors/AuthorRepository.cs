@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using Volo.Abp.Domain.Repositories.EntityFrameworkCore;
 using Volo.Abp.EntityFrameworkCore;
 
-namespace Sample.Novel.EntityFrameworkCore.Repositories.Authors
+namespace Sample.Novel.EntityFrameworkCore.Repositories
 {
     public class AuthorRepository : EfCoreRepository<NovelDbContext, Author, Guid>, IAuthorRepository
     {

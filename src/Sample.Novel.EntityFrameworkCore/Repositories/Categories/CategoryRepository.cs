@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using Volo.Abp.Domain.Repositories.EntityFrameworkCore;
 using Volo.Abp.EntityFrameworkCore;
 
-namespace Sample.Novel.EntityFrameworkCore.Repositories.Categories
+namespace Sample.Novel.EntityFrameworkCore.Repositories
 {
     public class CategoryRepository : EfCoreRepository<NovelDbContext, Category, Guid>, ICategoryRepository
     {

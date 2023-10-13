@@ -1,6 +1,6 @@
 ﻿using Volo.Abp.Application.Dtos;
 
-namespace Sample.Novel.Application.Contracts.Dtos.Author
+namespace Sample.Novel.Application.Contracts.Dtos
 {
     /// <summary>
     /// 作者

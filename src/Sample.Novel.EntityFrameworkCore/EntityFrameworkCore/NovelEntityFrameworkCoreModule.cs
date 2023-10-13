@@ -2,10 +2,9 @@
 using Sample.Novel.Domain.Author.Entities;
 using Sample.Novel.Domain.Book.Entities;
 using Sample.Novel.Domain.Category.Entities;
+using Sample.Novel.Domain.Identity.Entities;
 using Sample.Novel.EntityFrameworkCore.EntityFrameworkCore;
-using Sample.Novel.EntityFrameworkCore.Repositories.Authors;
-using Sample.Novel.EntityFrameworkCore.Repositories.Books;
-using Sample.Novel.EntityFrameworkCore.Repositories.Categories;
+using Sample.Novel.EntityFrameworkCore.Repositories;
 using Volo.Abp.EntityFrameworkCore;
 using Volo.Abp.EntityFrameworkCore.SqlServer;
 using Volo.Abp.Modularity;
@@ -29,6 +28,10 @@ namespace Sample.Novel.EntityFrameworkCore
                 options.AddRepository<Book, BookRepository>();
                 options.AddRepository<Author, AuthorRepository>();
                 options.AddRepository<Category, CategoryRepository>();
+
+                options.AddRepository<IdentityRole, IdentityRoleRepository>();
+                options.AddRepository<IdentityUser, IdentityUserRepository>();
+
             });
             Configure<AbpDbContextOptions>(options =>
             {

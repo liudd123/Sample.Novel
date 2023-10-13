@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sample.Novel.Application.Contracts.Dtos.Identity
+namespace Sample.Novel.Application.Contracts.Dtos
 {
     public class IdentityRoleWithUserCountDot
     {

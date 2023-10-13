@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Sample.Novel.Application.Contracts.Dtos.Author;
+using Sample.Novel.Application.Contracts.Dtos;
 using Sample.Novel.Domain.Author.Entities;
 
 namespace Sample.Novel.Application.Profiles

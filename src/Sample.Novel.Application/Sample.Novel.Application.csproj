@@ -16,4 +16,8 @@
     <ProjectReference Include="..\Sample.Novel.Domain\Sample.Novel.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Services\Identity\" />
+  </ItemGroup>
+
 </Project>

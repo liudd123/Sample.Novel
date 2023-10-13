@@ -1,20 +1,13 @@
-﻿using Sample.Novel.Application.Contracts.Dtos.Category;
+﻿using Sample.Novel.Application.Contracts.Dtos;
 using Sample.Novel.Application.Contracts.Interfaces;
+using Sample.Novel.Domain.Author.Entities;
 using Sample.Novel.Domain.Category.Entities;
 using Sample.Novel.Domain.Category.Repository;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Linq.Dynamic.Core;
 using Volo.Abp.Application.Dtos;
 using Volo.Abp.Application.Services;
-using Volo.Abp.ObjectMapping;
-using System.Linq.Dynamic.Core;
-using Sample.Novel.Application.Contracts.Dtos.Author;
-using Sample.Novel.Domain.Author.Entities;
 
-namespace Sample.Novel.Application.Services.Categories
+namespace Sample.Novel.Application.Services
 {
     public class CategoryAppService : ApplicationService, ICategoryAppService
     {

@@ -1,5 +1,4 @@
-﻿using Sample.Novel.Application.Contracts.Dtos.Author;
-using Sample.Novel.Application.Contracts.Dtos.Book;
+﻿using Sample.Novel.Application.Contracts.Dtos;
 using Volo.Abp.Application.Dtos;
 using Volo.Abp.Application.Services;
 

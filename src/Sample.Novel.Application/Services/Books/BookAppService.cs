@@ -1,4 +1,4 @@
-﻿using Sample.Novel.Application.Contracts.Dtos.Book;
+﻿using Sample.Novel.Application.Contracts.Dtos;
 using Sample.Novel.Application.Contracts.Interfaces;
 using Sample.Novel.Domain.Author.Entities;
 using Sample.Novel.Domain.Book.Entities;
@@ -6,7 +6,7 @@ using Sample.Novel.Domain.Book.Repository;
 using System.Linq.Dynamic.Core;
 using Volo.Abp.Application.Dtos;
 using Volo.Abp.Application.Services;
-namespace Sample.Novel.Application.Services.Books
+namespace Sample.Novel.Application.Services
 {
     public class BookAppService : ApplicationService, IBookAppService
     {

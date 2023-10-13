@@ -1,9 +1,4 @@
-﻿using Sample.Novel.Application.Contracts.Dtos.Author;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Sample.Novel.Application.Contracts.Dtos;
 using Volo.Abp.Application.Dtos;
 using Volo.Abp.Application.Services;
 

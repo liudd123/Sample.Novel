@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Sample.Novel.Application.Contracts.Dtos.Author;
+using Sample.Novel.Application.Contracts.Dtos;
 using Sample.Novel.Application.Contracts.Interfaces;
 using Volo.Abp.Application.Dtos;
 using Volo.Abp.AspNetCore.Mvc;
