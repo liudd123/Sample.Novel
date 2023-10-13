@@ -6,7 +6,7 @@ using System.Linq.Dynamic.Core;
 using Volo.Abp.Application.Dtos;
 using Volo.Abp.Application.Services;
 
-namespace Sample.Novel.Application.Services.Author
+namespace Sample.Novel.Application.Services.Authors
 {
     public class AuthorAppService : ApplicationService, IAuthorAppService
     {

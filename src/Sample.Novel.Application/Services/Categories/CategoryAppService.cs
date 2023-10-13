@@ -14,7 +14,7 @@ using System.Linq.Dynamic.Core;
 using Sample.Novel.Application.Contracts.Dtos.Author;
 using Sample.Novel.Domain.Author.Entities;
 
-namespace Sample.Novel.Application.Services.Category
+namespace Sample.Novel.Application.Services.Categories
 {
     public class CategoryAppService : ApplicationService, ICategoryAppService
     {

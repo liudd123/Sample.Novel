@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 using Volo.Abp.Domain.Repositories.EntityFrameworkCore;
 using Volo.Abp.EntityFrameworkCore;
 
-namespace Sample.Novel.EntityFrameworkCore.Repositories.Book
+namespace Sample.Novel.EntityFrameworkCore.Repositories.Books
 {
     public class BookRepository : EfCoreRepository<NovelDbContext, Book, Guid>, IBookRepository
     {

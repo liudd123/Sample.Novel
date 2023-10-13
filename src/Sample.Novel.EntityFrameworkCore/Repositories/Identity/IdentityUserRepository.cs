@@ -129,6 +129,7 @@ namespace Sample.Novel.EntityFrameworkCore.Repositories.Identity
             var dbContext = await GetDbContextAsync();
 
             var query = from userRole in dbContext.Set<IdentityUserRole>()
+                        join role in dbContext.Roles on userRole.RoleId equals role.Id
                         where userRole.UserId == id
                         select role;
 

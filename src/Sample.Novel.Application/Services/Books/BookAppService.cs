@@ -6,7 +6,7 @@ using Sample.Novel.Domain.Book.Repository;
 using System.Linq.Dynamic.Core;
 using Volo.Abp.Application.Dtos;
 using Volo.Abp.Application.Services;
-namespace Sample.Novel.Application.Services.Book
+namespace Sample.Novel.Application.Services.Books
 {
     public class BookAppService : ApplicationService, IBookAppService
     {
