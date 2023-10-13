@@ -3,7 +3,6 @@ using Sample.Novel.Application.Contracts.Dtos;
 using Sample.Novel.Application.Contracts.Interfaces;
 using Volo.Abp.Application.Dtos;
 using Volo.Abp.AspNetCore.Mvc;
-using static Volo.Abp.UI.Navigation.DefaultMenuNames.Application;
 
 namespace Sample.Novel.HttpApi.Host.Controllers
 {
