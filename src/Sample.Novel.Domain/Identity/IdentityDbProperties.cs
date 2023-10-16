@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Volo.Abp.Modularity;
 
-namespace Sample.Novel
+namespace Sample.Novel.Domain.Identity
 {
-    public class NovelDomainSharedModule:AbpModule
+    public class IdentityDbProperties
     {
+        public const string DbTablePrefix = "Sys_";
     }
 }

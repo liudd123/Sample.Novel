@@ -1,72 +1,67 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Sample.Novel.Application.Contracts.Dtos;
+using Sample.Novel.Application.Contracts.Interfaces;
 using Volo.Abp.Application.Dtos;
-using Volo.Abp.Identity;
+using Volo.Abp.AspNetCore.Mvc;
 
 namespace Sample.Novel.HttpApi.Host.Controllers
 {
     [ControllerName("User(用户)")]
     [Route("api/[controller]/[action]")]
-    public class UserController : IIdentityUserAppService
+    public class UserController : AbpControllerBase, IUserAppService
     {
-        private readonly IIdentityUserAppService userAppService;
+        private readonly IUserAppService userAppService;
 
-        public UserController(IIdentityUserAppService userAppService)
+        public UserController(IUserAppService userAppService)
         {
             this.userAppService = userAppService;
         }
-        [HttpPost]
-        public async Task<IdentityUserDto> CreateAsync(IdentityUserCreateDto input)
-        {
-            return await userAppService.CreateAsync(input);
-        }
-
-        [HttpGet]
-        public async Task DeleteAsync(Guid id)
-        {
-            await userAppService.DeleteAsync(id);
-        }
-
+        /// <summary>
+        /// 根据email获取用户
+        /// </summary>
+        /// <param name="email"></param>
+        /// <returns></returns>
         [HttpGet]
         public async Task<IdentityUserDto> FindByEmailAsync(string email)
         {
             return await userAppService.FindByEmailAsync(email);
         }
-
+        /// <summary>
+        /// 根据userName获取用户
+        /// </summary>
+        /// <param name="email"></param>
+        /// <returns></returns>
         [HttpGet]
-        public async Task<IdentityUserDto> FindByUsernameAsync(string userName)
+        public async Task<IdentityUserDto> FindByUserNameAsync(string userName)
         {
-            return await userAppService.FindByUsernameAsync(userName);
+            return await userAppService.FindByUserNameAsync(userName);
         }
-
+        /// <summary>
+        /// 获取所有角色
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public async Task<ListResultDto<IdentityRoleDto>> GetAssignableRolesAsync()
         {
             return await userAppService.GetAssignableRolesAsync();
         }
-
-        [HttpGet]
-        public async Task<IdentityUserDto> GetAsync(Guid id)
-        {
-            return await userAppService.GetAsync(id);
-        }
-
-        [HttpPost]
-        public async Task<PagedResultDto<IdentityUserDto>> GetListAsync(GetIdentityUsersInput input)
-        {
-            return await userAppService.GetListAsync(input);
-        }
+        /// <summary>
+        /// 获取用户的角色
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet]
         public async Task<ListResultDto<IdentityRoleDto>> GetRolesAsync(Guid id)
         {
             return await userAppService.GetRolesAsync(id);
         }
 
-        [HttpPost]
-        public async Task<IdentityUserDto> UpdateAsync(Guid id, IdentityUserUpdateDto input)
-        {
-            return await userAppService.UpdateAsync(id, input);
-        }
-
+        /// <summary>
+        /// 修改用户的角色
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="input"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task UpdateRolesAsync(Guid id, IdentityUserUpdateRolesDto input)
         {
