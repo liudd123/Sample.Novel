@@ -12,6 +12,7 @@ namespace Sample.Novel.Domain.Shared.Identity
         public const int MaxNameLength = 5;
         public const int MaxEmailLength = 50;
         public const int MaxPhoneNumberLength = 11;
-        public const int MaxPasswordHashLength  = 256;
+        public const int MaxPasswordHashLength = 256;
+        public const int MaxPasswordLength = 20;
     }
 }

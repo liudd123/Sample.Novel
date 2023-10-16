@@ -4,7 +4,7 @@ using Sample.Novel.Domain.Author.Entities;
 
 namespace Sample.Novel.Application.Profiles
 {
-    public class AuthorProfile: Profile
+    public class AuthorProfile : Profile
     {
         public AuthorProfile()
         {

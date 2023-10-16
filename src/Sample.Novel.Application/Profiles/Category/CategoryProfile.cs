@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Sample.Novel.Application.Profiles
 {
-    public class CategoryProfile:Profile
+    public class CategoryProfile : Profile
     {
         public CategoryProfile()
         {

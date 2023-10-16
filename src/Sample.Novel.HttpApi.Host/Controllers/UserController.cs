@@ -6,7 +6,9 @@ using Volo.Abp.AspNetCore.Mvc;
 
 namespace Sample.Novel.HttpApi.Host.Controllers
 {
-    [ControllerName("User(用户)")]
+    /// <summary>
+    /// 用户
+    /// </summary>
     [Route("api/[controller]/[action]")]
     public class UserController : AbpControllerBase, IUserAppService
     {
@@ -16,6 +18,27 @@ namespace Sample.Novel.HttpApi.Host.Controllers
         {
             this.userAppService = userAppService;
         }
+        /// <summary>
+        /// 新增用户
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public async Task<IdentityUserDto> CreateAsync(IdentityUserCreateInput input)
+        {
+            return await userAppService.CreateAsync(input);
+        }
+        /// <summary>
+        /// 删除用户
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpGet]
+        public async Task DeleteAsync(Guid id)
+        {
+            await userAppService.DeleteAsync(id);
+        }
+
         /// <summary>
         /// 根据email获取用户
         /// </summary>
@@ -46,6 +69,17 @@ namespace Sample.Novel.HttpApi.Host.Controllers
             return await userAppService.GetAssignableRolesAsync();
         }
         /// <summary>
+        /// 根据id获取用户详情
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpGet]
+        public async Task<IdentityUserDto> GetAsync(Guid id)
+        {
+           return await userAppService.GetAsync(id);
+        }
+
+        /// <summary>
         /// 获取用户的角色
         /// </summary>
         /// <param name="id"></param>
@@ -54,6 +88,17 @@ namespace Sample.Novel.HttpApi.Host.Controllers
         public async Task<ListResultDto<IdentityRoleDto>> GetRolesAsync(Guid id)
         {
             return await userAppService.GetRolesAsync(id);
+        }
+        /// <summary>
+        /// 更新用户
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public async Task<IdentityUserDto> UpdateAsync(Guid id, IdentityUserUpdateInput input)
+        {
+          return await userAppService.UpdateAsync(id, input);
         }
 
         /// <summary>

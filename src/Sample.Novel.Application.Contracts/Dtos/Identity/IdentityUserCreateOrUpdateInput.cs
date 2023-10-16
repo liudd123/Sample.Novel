@@ -14,18 +14,18 @@ namespace Sample.Novel.Application.Contracts.Dtos
     public class IdentityUserCreateOrUpdateInput : ExtensibleObject
     {
         [Required]
-        [DynamicStringLength(typeof(IdentityUserConsts), nameof(IdentityUserConsts.MaxUserNameLength))]
+        [MaxLength(IdentityUserConsts.MaxUserNameLength)]
         public string UserName { get; set; }
 
-        [DynamicStringLength(typeof(IdentityUserConsts), nameof(IdentityUserConsts.MaxNameLength))]
+        [MaxLength(IdentityUserConsts.MaxNameLength)]
         public string Name { get; set; }
 
         [Required]
         [EmailAddress]
-        [DynamicStringLength(typeof(IdentityUserConsts), nameof(IdentityUserConsts.MaxEmailLength))]
+        [MaxLength(IdentityUserConsts.MaxEmailLength)]
         public string Email { get; set; }
 
-        [DynamicStringLength(typeof(IdentityUserConsts), nameof(IdentityUserConsts.MaxPhoneNumberLength))]
+        [MaxLength(IdentityUserConsts.MaxPhoneNumberLength)]
         public string PhoneNumber { get; set; }
 
         public bool IsActive { get; set; }
@@ -33,7 +33,7 @@ namespace Sample.Novel.Application.Contracts.Dtos
         public bool LockoutEnabled { get; set; }
 
         [CanBeNull]
-        public string[] RoleIds { get; set; }
+        public Guid[] RoleIds { get; set; }
 
         protected IdentityUserCreateOrUpdateInput() : base(false)
         {

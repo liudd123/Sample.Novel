@@ -143,5 +143,56 @@ namespace Sample.Novel.Domain.Identity.Entities
 
             return Roles.Any(r => r.RoleId == roleId);
         }
+
+        /// <summary>
+        /// Use <see cref="IdentityUserManager.ConfirmEmailAsync"/> for regular email confirmation.
+        /// Using this skips the confirmation process and directly sets the <see cref="EmailConfirmed"/>.
+        /// </summary>
+        public virtual void SetEmailConfirmed(bool confirmed)
+        {
+            EmailConfirmed = confirmed;
+        }
+        public virtual void SetEmail(string email,bool confirmed)
+        {
+            Email = email;
+            EmailConfirmed = confirmed;
+        }
+        public virtual void SetPhoneNumberConfirmed(bool confirmed)
+        {
+            PhoneNumberConfirmed = confirmed;
+        }
+
+        /// <summary>
+        /// Normally use <see cref="IdentityUserManager.ChangePhoneNumberAsync"/> to change the phone number
+        /// in the application code.
+        /// This method is to directly set it with a confirmation information.
+        /// </summary>
+        /// <param name="phoneNumber"></param>
+        /// <param name="confirmed"></param>
+        /// <exception cref="NotImplementedException"></exception>
+        public void SetPhoneNumber(string phoneNumber, bool confirmed)
+        {
+            PhoneNumber = phoneNumber;
+            PhoneNumberConfirmed = !phoneNumber.IsNullOrWhiteSpace() && confirmed;
+        }
+
+        public virtual void SetIsActive(bool isActive)
+        {
+            IsActive = isActive;
+        }
+
+        public virtual void SetShouldChangePasswordOnNextLogin(bool shouldChangePasswordOnNextLogin)
+        {
+            ShouldChangePasswordOnNextLogin = shouldChangePasswordOnNextLogin;
+        }
+
+        public virtual void SetLastPasswordChangeTime(DateTimeOffset? lastPasswordChangeTime)
+        {
+            LastPasswordChangeTime = lastPasswordChangeTime;
+        }
+        public void SetPasswordHash(string passwordHash)
+        {
+            PasswordHash = passwordHash;
+        }
     }
 }

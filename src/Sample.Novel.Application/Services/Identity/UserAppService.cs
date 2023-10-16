@@ -3,9 +3,12 @@ using Sample.Novel.Application.Contracts.Dtos;
 using Sample.Novel.Application.Contracts.Interfaces;
 using Sample.Novel.Domain.Identity.Entities;
 using Sample.Novel.Domain.Identity.Repository;
+using Volo.Abp;
 using Volo.Abp.Application.Dtos;
 using Volo.Abp.Application.Services;
+using Volo.Abp.Data;
 using Volo.Abp.Domain.Repositories;
+using Volo.Abp.Users;
 
 namespace Sample.Novel.Application.Services
 {
@@ -56,18 +59,26 @@ namespace Sample.Novel.Application.Services
                 ObjectMapper.Map<List<IdentityRole>, List<IdentityRoleDto>>(list));
         }
 
-        public virtual async Task<IdentityUserDto> CreateAsync(IdentityUserCreateOrUpdateInput input)
+        public virtual async Task<IdentityUserDto> CreateAsync(IdentityUserCreateInput input)
         {
-            var user = ObjectMapper.Map<IdentityUserCreateOrUpdateInput, IdentityUser>(input);
+            var user = ObjectMapper.Map<IdentityUserCreateInput, IdentityUser>(input);
+            Check.NotNullOrWhiteSpace(input.Password, "密码");
+            user.SetPasswordHash(EncryptHelper.ToMD5(input.Password));
             user = await userRepository.InsertAsync(user);
             return ObjectMapper.Map<IdentityUser, IdentityUserDto>(user);
         }
 
-        public virtual async Task<IdentityUserDto> UpdateAsync(Guid id, IdentityUserCreateOrUpdateInput input)
+        public virtual async Task<IdentityUserDto> UpdateAsync(Guid id, IdentityUserUpdateInput input)
         {
             var user = await userRepository.GetAsync(id);
+            user.SetConcurrencyStampIfNotNull(input.ConcurrencyStamp);
 
-            user = ObjectMapper.Map<IdentityUserCreateOrUpdateInput, IdentityUser>(input);
+            if (!input.Password.IsNullOrWhiteSpace())
+            {
+                user.SetPasswordHash(EncryptHelper.ToMD5(input.Password));
+            }
+            await UpdateUserByInput(user, input);
+
             user = await userRepository.UpdateAsync(user);
             return ObjectMapper.Map<IdentityUser, IdentityUserDto>(user);
         }
@@ -105,6 +116,22 @@ namespace Sample.Novel.Application.Services
             return ObjectMapper.Map<IdentityUser, IdentityUserDto>(
                 await userRepository.FindByEmailAsync(email)
             );
+        }
+
+        protected virtual async Task UpdateUserByInput(IdentityUser user, IdentityUserUpdateInput input)
+        {
+            if (!string.Equals(user.Email, input.Email, StringComparison.InvariantCultureIgnoreCase))
+            {
+                user.SetEmail(input.Email, false);
+            }
+
+            if (!string.Equals(user.PhoneNumber, input.PhoneNumber, StringComparison.InvariantCultureIgnoreCase))
+            {
+                user.SetPhoneNumber(input.PhoneNumber, false);
+            }
+
+            user.Name = input.Name;
+            user.SetIsActive(input.IsActive);
         }
     }
 }
