@@ -140,7 +140,7 @@ namespace Sample.Novel.Application.Services
             {
                 await userRepository.RemoveRoles(user.Id, input.RoleIds.ToList());
                 var userRoles = input.RoleIds.Select(s => new IdentityUserRole(user.Id,s)).ToList();
-                await userRepository.AddRoles(userRoles);
+                await userRepository.AddRolesAsync(userRoles);
             }
         }
     }

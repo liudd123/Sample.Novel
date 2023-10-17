@@ -16,6 +16,7 @@ namespace Sample.Novel.Application.Contracts.Dtos
         [MaxLength(IdentityRoleConsts.MaxNameLength)]
         [Display(Name = "RoleName")]
         public string Name { get; set; }
+        public bool IsDefault { get; set; }
 
         protected IdentityRoleCreateOrUpdateDto() : base(false)
         {

@@ -36,5 +36,6 @@ namespace Sample.Novel.Domain.Identity.Repository
             string filter = null,
             CancellationToken cancellationToken = default
         );
+        Task<List<IdentityRole>> GetDefaultRolesAsync();
     }
 }

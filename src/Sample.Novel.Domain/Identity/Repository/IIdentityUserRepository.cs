@@ -67,6 +67,6 @@ namespace Sample.Novel.Domain.Identity.Repository
         CancellationToken cancellationToken = default
     );
         Task RemoveRoles(Guid userId, List<Guid> roleIds);
-        Task AddRoles(List<IdentityUserRole> userRoles);
+        Task AddRolesAsync(IEnumerable<IdentityUserRole> userRoles);
     }
 }

@@ -164,7 +164,7 @@ namespace Sample.Novel.EntityFrameworkCore.Repositories
             var list = await UserRoles.Where(w => w.UserId == userId && roleIds.Contains(w.RoleId)).ToListAsync();
             UserRoles.RemoveRange(list);
         }
-        public async Task AddRoles(List<IdentityUserRole> userRoles)
+        public async Task AddRolesAsync(IEnumerable<IdentityUserRole> userRoles)
         {
             var dbContext = await GetDbContextAsync();
             var UserRoles = dbContext.Set<IdentityUserRole>();

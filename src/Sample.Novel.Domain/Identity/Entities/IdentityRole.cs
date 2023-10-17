@@ -13,6 +13,10 @@ namespace Sample.Novel.Domain.Identity.Entities
         /// A static role can not be deleted/renamed
         /// </summary>
         public virtual bool IsStatic { get; set; }
+        /// <summary>
+        /// A default role is automatically assigned to a new user
+        /// </summary>
+        public virtual bool IsDefault { get; set; }
         protected IdentityRole() { }
 
         public IdentityRole(Guid id, [NotNull] string name)

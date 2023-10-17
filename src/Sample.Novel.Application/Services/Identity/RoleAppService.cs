@@ -29,6 +29,7 @@ namespace Sample.Novel.Application.Services
         public async Task CreateAsync(IdentityRoleCreateDto input)
         {
             var role = ObjectMapper.Map<IdentityRoleCreateDto, IdentityRole>(input);
+           
             await roleRepository.InsertAsync(role);
         }
 
