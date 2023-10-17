@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Volo.Abp.Application.Dtos;
+﻿using Volo.Abp.Application.Dtos;
+using Volo.Abp.Domain.Entities;
 
 namespace Sample.Novel.Application.Contracts.Dtos
 {
-    public class IdentityUserDto: ExtensibleFullAuditedEntityDto<Guid>
+    public class IdentityUserDto : ExtensibleFullAuditedEntityDto<Guid>, IHasConcurrencyStamp
     {
         public string UserName { get; set; }
 
@@ -30,5 +26,7 @@ namespace Sample.Novel.Application.Contracts.Dtos
         public DateTimeOffset? LockoutEnd { get; set; }
 
         public DateTimeOffset? LastPasswordChangeTime { get; set; }
+        public string ConcurrencyStamp { get; set; }
+
     }
 }

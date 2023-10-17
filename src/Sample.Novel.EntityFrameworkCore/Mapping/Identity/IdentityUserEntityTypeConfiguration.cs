@@ -35,7 +35,7 @@ namespace Sample.Novel.EntityFrameworkCore.Mapping.Identity
 
             builder.HasIndex(u => u.UserName);
             builder.HasIndex(u => u.Email);
-
+            builder.HasMany(u => u.Roles).WithOne().HasForeignKey(ur => ur.UserId).IsRequired();
             builder.ApplyObjectExtensionMappings();
 
         }

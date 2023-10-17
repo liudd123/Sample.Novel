@@ -14,3 +14,6 @@ bld/
 *.v2
 .vs/Sample.Novel/v17/.suo
 *.v2
+.vs/Sample.Novel/v17/.suo
+.vs/Sample.Novel/DesignTimeBuild/.dtbcache.v2
+src/Sample.Novel.HttpApi.Host/Logs/logs.txt

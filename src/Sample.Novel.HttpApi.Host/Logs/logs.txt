@@ -5533,3 +5533,635 @@ System.NotSupportedException: Deserialization of types without a parameterless c
 2023-10-17 13:54:31.384 +08:00 [INF] Executed action Sample.Novel.HttpApi.Host.Controllers.RoleController.UpdateAsync (Sample.Novel.HttpApi.Host) in 64.5973ms
 2023-10-17 13:54:31.384 +08:00 [INF] Executed endpoint 'Sample.Novel.HttpApi.Host.Controllers.RoleController.UpdateAsync (Sample.Novel.HttpApi.Host)'
 2023-10-17 13:54:31.385 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:5057/api/Role/Update?id=05035d41-2396-f276-1c6a-3a0e4dd90a9f application/json 57 - 200 - application/json;+charset=utf-8 93.9132ms
+2023-10-17 18:24:38.352 +08:00 [INF] Starting Sample.Novel.HttpApi.Host.
+2023-10-17 18:24:44.181 +08:00 [INF] Loaded ABP modules:
+2023-10-17 18:24:44.182 +08:00 [INF] - Sample.Novel.NovelHttpApiHostModule
+2023-10-17 18:24:44.182 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2023-10-17 18:24:44.182 +08:00 [INF]     - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-10-17 18:24:44.182 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-10-17 18:24:44.182 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-10-17 18:24:44.182 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2023-10-17 18:24:44.182 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2023-10-17 18:24:44.182 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-10-17 18:24:44.182 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-10-17 18:24:44.182 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-10-17 18:24:44.182 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-10-17 18:24:44.182 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-10-17 18:24:44.182 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2023-10-17 18:24:44.182 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-10-17 18:24:44.182 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-10-17 18:24:44.182 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2023-10-17 18:24:44.182 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationModule
+2023-10-17 18:24:44.182 +08:00 [INF]                   - Volo.Abp.Settings.AbpSettingsModule
+2023-10-17 18:24:44.182 +08:00 [INF]                     - Volo.Abp.Security.AbpSecurityModule
+2023-10-17 18:24:44.182 +08:00 [INF]                   - Volo.Abp.Threading.AbpThreadingModule
+2023-10-17 18:24:44.182 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-10-17 18:24:44.182 +08:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-10-17 18:24:44.182 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-10-17 18:24:44.182 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2023-10-17 18:24:44.182 +08:00 [INF]           - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-10-17 18:24:44.182 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2023-10-17 18:24:44.182 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-10-17 18:24:44.182 +08:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-10-17 18:24:44.182 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2023-10-17 18:24:44.182 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-10-17 18:24:44.182 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-10-17 18:24:44.182 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-10-17 18:24:44.182 +08:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-10-17 18:24:44.182 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-10-17 18:24:44.182 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2023-10-17 18:24:44.182 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-10-17 18:24:44.182 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationModule
+2023-10-17 18:24:44.182 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2023-10-17 18:24:44.182 +08:00 [INF]           - Volo.Abp.EventBus.AbpEventBusModule
+2023-10-17 18:24:44.182 +08:00 [INF]             - Volo.Abp.Guids.AbpGuidsModule
+2023-10-17 18:24:44.182 +08:00 [INF]             - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-10-17 18:24:44.182 +08:00 [INF]             - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-10-17 18:24:44.182 +08:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-10-17 18:24:44.182 +08:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-10-17 18:24:44.182 +08:00 [INF]           - Volo.Abp.Caching.AbpCachingModule
+2023-10-17 18:24:44.182 +08:00 [INF]             - Volo.Abp.Serialization.AbpSerializationModule
+2023-10-17 18:24:44.182 +08:00 [INF]           - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-10-17 18:24:44.182 +08:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2023-10-17 18:24:44.182 +08:00 [INF]   - Sample.Novel.NovelApplicationModule
+2023-10-17 18:24:44.182 +08:00 [INF]     - Sample.Novel.NovelDomainModule
+2023-10-17 18:24:44.182 +08:00 [INF]     - Sample.Novel.NovelApplicationContractsModule
+2023-10-17 18:24:44.182 +08:00 [INF]       - Sample.Novel.NovelDomainSharedModule
+2023-10-17 18:24:44.182 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2023-10-17 18:24:44.182 +08:00 [INF]   - Sample.Novel.EntityFrameworkCore.NovelEntityFrameworkCoreModule
+2023-10-17 18:24:44.182 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-10-17 18:24:44.182 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2023-10-17 18:24:44.182 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2023-10-17 18:24:44.182 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2023-10-17 18:24:44.182 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2023-10-17 18:24:44.716 +08:00 [INF] User profile is available. Using 'C:\Users\liudd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-17 18:24:44.796 +08:00 [INF] Initialized all ABP modules.
+2023-10-17 18:24:44.990 +08:00 [INF] Now listening on: http://localhost:5057
+2023-10-17 18:24:44.991 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-17 18:24:44.991 +08:00 [INF] Hosting environment: Development
+2023-10-17 18:24:44.991 +08:00 [INF] Content root path: D:\Test\Sample.Novel\src\Sample.Novel.HttpApi.Host
+2023-10-17 18:24:45.536 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/index.html - -
+2023-10-17 18:24:45.712 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/index.html - - - 200 - text/html;charset=utf-8 174.9901ms
+2023-10-17 18:24:45.758 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/_framework/aspnetcore-browser-refresh.js - -
+2023-10-17 18:24:45.762 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 3.8564ms
+2023-10-17 18:24:46.189 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - -
+2023-10-17 18:24:46.525 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 336.1233ms
+2023-10-17 18:25:32.912 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/abp/Swashbuckle/SetCsrfCookie - -
+2023-10-17 18:25:32.916 +08:00 [WRN] Failed to determine the https port for redirect.
+2023-10-17 18:25:32.977 +08:00 [INF] Executing endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2023-10-17 18:25:33.000 +08:00 [INF] Route matched with {area = "Abp", action = "SetCsrfCookie", controller = "AbpSwashbuckle"}. Executing controller action with signature Void SetCsrfCookie() on controller Volo.Abp.Swashbuckle.AbpSwashbuckleController (Volo.Abp.Swashbuckle).
+2023-10-17 18:25:33.060 +08:00 [WRN] The cookie 'XSRF-TOKEN' has set 'SameSite=None' and must also set 'Secure'.
+2023-10-17 18:25:33.071 +08:00 [INF] Executed action Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle) in 66.9107ms
+2023-10-17 18:25:33.071 +08:00 [INF] Executed endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2023-10-17 18:25:33.072 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/abp/Swashbuckle/SetCsrfCookie - - - 204 - - 161.1991ms
+2023-10-17 18:25:33.106 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/Role/GetAllList - -
+2023-10-17 18:25:33.108 +08:00 [INF] Executing endpoint 'Sample.Novel.HttpApi.Host.Controllers.RoleController.GetAllListAsync (Sample.Novel.HttpApi.Host)'
+2023-10-17 18:25:33.117 +08:00 [INF] Route matched with {action = "GetAllList", controller = "Role", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.ListResultDto`1[Sample.Novel.Application.Contracts.Dtos.IdentityRoleDto]] GetAllListAsync() on controller Sample.Novel.HttpApi.Host.Controllers.RoleController (Sample.Novel.HttpApi.Host).
+2023-10-17 18:25:35.646 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.ListResultDto`1[[Sample.Novel.Application.Contracts.Dtos.IdentityRoleDto, Sample.Novel.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-10-17 18:25:35.667 +08:00 [INF] Executed action Sample.Novel.HttpApi.Host.Controllers.RoleController.GetAllListAsync (Sample.Novel.HttpApi.Host) in 2549.8233ms
+2023-10-17 18:25:35.667 +08:00 [INF] Executed endpoint 'Sample.Novel.HttpApi.Host.Controllers.RoleController.GetAllListAsync (Sample.Novel.HttpApi.Host)'
+2023-10-17 18:25:35.672 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/Role/GetAllList - - - 200 - application/json;+charset=utf-8 2565.4664ms
+2023-10-17 18:27:24.568 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5057/api/User/Create application/json 236
+2023-10-17 18:27:24.571 +08:00 [INF] Executing endpoint 'Sample.Novel.HttpApi.Host.Controllers.UserController.CreateAsync (Sample.Novel.HttpApi.Host)'
+2023-10-17 18:27:24.591 +08:00 [INF] Route matched with {action = "Create", controller = "User", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Sample.Novel.Application.Contracts.Dtos.IdentityUserDto] CreateAsync(Sample.Novel.Application.Contracts.Dtos.IdentityUserCreateDto) on controller Sample.Novel.HttpApi.Host.Controllers.UserController (Sample.Novel.HttpApi.Host).
+2023-10-17 18:27:53.866 +08:00 [ERR] Failed executing DbCommand (20ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (DbType = Guid), @p3='?' (Size = 40), @p4='?' (DbType = DateTime2), @p5='?' (DbType = Guid), @p6='?' (DbType = Guid), @p7='?' (DbType = DateTime2), @p8='?' (Size = 450), @p9='?' (DbType = Boolean), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (DbType = DateTime2), @p13='?' (DbType = Guid), @p14='?' (DbType = DateTimeOffset), @p15='?' (DbType = Boolean), @p16='?' (DbType = DateTimeOffset), @p17='?' (Size = 4000), @p18='?' (Size = 256), @p19='?' (Size = 4000), @p20='?' (DbType = Boolean), @p21='?' (DbType = Boolean), @p22='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Sys_UserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+INSERT INTO [Sys_Users] ([Id], [ConcurrencyStamp], [CreationTime], [CreatorId], [DeleterId], [DeletionTime], [Email], [EmailConfirmed], [ExtraProperties], [IsActive], [LastModificationTime], [LastModifierId], [LastPasswordChangeTime], [LockoutEnabled], [LockoutEnd], [Name], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [ShouldChangePasswordOnNextLogin], [UserName])
+OUTPUT INSERTED.[AccessFailedCount], INSERTED.[IsDeleted]
+VALUES (@p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21, @p22);
+2023-10-17 18:27:53.896 +08:00 [ERR] An exception occurred in the database while saving changes for context type 'Sample.Novel.EntityFrameworkCore.EntityFrameworkCore.NovelDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): INSERT 语句与 FOREIGN KEY 约束"FK_Sys_UserRoles_Sys_Roles_RoleId"冲突。该冲突发生于数据库"Novel"，表"dbo.Sys_Roles", column 'Id'。
+语句已终止。
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:55fc5232-c118-4eee-8f90-c6b724f113b8
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): INSERT 语句与 FOREIGN KEY 约束"FK_Sys_UserRoles_Sys_Roles_RoleId"冲突。该冲突发生于数据库"Novel"，表"dbo.Sys_Roles", column 'Id'。
+语句已终止。
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:55fc5232-c118-4eee-8f90-c6b724f113b8
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2023-10-17 18:27:53.907 +08:00 [INF] AUDIT LOG: [500: POST   ] /api/User/Create
+- UserName - UserId                 :  - 
+- ClientIpAddress        : ::1
+- ExecutionDuration      : 29113
+- Actions:
+  - Sample.Novel.Application.Services.UserAppService.CreateAsync (28950 ms.)
+    {"input":{"userName":"123","name":"123","email":"user@example.com","phoneNumber":"15210014259","isActive":true,"lockoutEnabled":true,"roleIds":["05035d41-2396-f276-1c6a-3a0e4dd90a9f"],"extraProperties":{}}
+- Exceptions:
+  - An error occurred while saving the entity changes. See the inner exception for details.
+    Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): INSERT 语句与 FOREIGN KEY 约束"FK_Sys_UserRoles_Sys_Roles_RoleId"冲突。该冲突发生于数据库"Novel"，表"dbo.Sys_Roles", column 'Id'。
+语句已终止。
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:55fc5232-c118-4eee-8f90-c6b724f113b8
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Volo.Abp.EntityFrameworkCore.AbpDbContext`1.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Volo.Abp.Uow.UnitOfWork.SaveChangesAsync(CancellationToken cancellationToken)
+   at Volo.Abp.Auditing.AuditingInterceptor.ProcessWithNewAuditingScopeAsync(IAbpMethodInvocation invocation, AbpAuditingOptions options, ICurrentUser currentUser, IAuditingManager auditingManager, IAuditingHelper auditingHelper, IUnitOfWorkManager unitOfWorkManager)
+
+2023-10-17 18:27:53.912 +08:00 [ERR] Failed executing DbCommand (0ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (DbType = Guid), @p3='?' (Size = 40), @p4='?' (DbType = DateTime2), @p5='?' (DbType = Guid), @p6='?' (DbType = Guid), @p7='?' (DbType = DateTime2), @p8='?' (Size = 450), @p9='?' (DbType = Boolean), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (DbType = DateTime2), @p13='?' (DbType = Guid), @p14='?' (DbType = DateTimeOffset), @p15='?' (DbType = Boolean), @p16='?' (DbType = DateTimeOffset), @p17='?' (Size = 4000), @p18='?' (Size = 256), @p19='?' (Size = 4000), @p20='?' (DbType = Boolean), @p21='?' (DbType = Boolean), @p22='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Sys_UserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);
+INSERT INTO [Sys_Users] ([Id], [ConcurrencyStamp], [CreationTime], [CreatorId], [DeleterId], [DeletionTime], [Email], [EmailConfirmed], [ExtraProperties], [IsActive], [LastModificationTime], [LastModifierId], [LastPasswordChangeTime], [LockoutEnabled], [LockoutEnd], [Name], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [ShouldChangePasswordOnNextLogin], [UserName])
+OUTPUT INSERTED.[AccessFailedCount], INSERTED.[IsDeleted]
+VALUES (@p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21, @p22);
+2023-10-17 18:27:53.914 +08:00 [ERR] An exception occurred in the database while saving changes for context type 'Sample.Novel.EntityFrameworkCore.EntityFrameworkCore.NovelDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): INSERT 语句与 FOREIGN KEY 约束"FK_Sys_UserRoles_Sys_Roles_RoleId"冲突。该冲突发生于数据库"Novel"，表"dbo.Sys_Roles", column 'Id'。
+语句已终止。
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:55fc5232-c118-4eee-8f90-c6b724f113b8
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): INSERT 语句与 FOREIGN KEY 约束"FK_Sys_UserRoles_Sys_Roles_RoleId"冲突。该冲突发生于数据库"Novel"，表"dbo.Sys_Roles", column 'Id'。
+语句已终止。
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:55fc5232-c118-4eee-8f90-c6b724f113b8
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Volo.Abp.EntityFrameworkCore.AbpDbContext`1.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Volo.Abp.Uow.UnitOfWork.SaveChangesAsync(CancellationToken cancellationToken)
+2023-10-17 18:27:53.939 +08:00 [ERR] ---------- RemoteServiceErrorInfo ----------
+{
+  "code": null,
+  "message": "对不起,在处理你的请求期间,产生了一个服务器内部错误!",
+  "details": null,
+  "data": {},
+  "validationErrors": null
+}
+
+2023-10-17 18:27:53.940 +08:00 [ERR] An error occurred while saving the entity changes. See the inner exception for details.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): INSERT 语句与 FOREIGN KEY 约束"FK_Sys_UserRoles_Sys_Roles_RoleId"冲突。该冲突发生于数据库"Novel"，表"dbo.Sys_Roles", column 'Id'。
+语句已终止。
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__208_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:55fc5232-c118-4eee-8f90-c6b724f113b8
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Volo.Abp.EntityFrameworkCore.AbpDbContext`1.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Volo.Abp.Uow.UnitOfWork.SaveChangesAsync(CancellationToken cancellationToken)
+   at Volo.Abp.Uow.UnitOfWork.CompleteAsync(CancellationToken cancellationToken)
+   at Volo.Abp.AspNetCore.Mvc.Uow.AbpUowActionFilter.OnActionExecutionAsync(ActionExecutingContext context, ActionExecutionDelegate next)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2023-10-17 18:27:53.943 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.RemoteServiceErrorResponse'.
+2023-10-17 18:27:53.945 +08:00 [INF] Executed action Sample.Novel.HttpApi.Host.Controllers.UserController.CreateAsync (Sample.Novel.HttpApi.Host) in 29353.4729ms
+2023-10-17 18:27:53.945 +08:00 [INF] Executed endpoint 'Sample.Novel.HttpApi.Host.Controllers.UserController.CreateAsync (Sample.Novel.HttpApi.Host)'
+2023-10-17 18:27:53.945 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:5057/api/User/Create application/json 236 - 500 - application/json;+charset=utf-8 29376.8100ms
+2023-10-17 18:30:17.851 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/index.html - -
+2023-10-17 18:30:17.862 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/index.html - - - 200 - text/html;charset=utf-8 11.5170ms
+2023-10-17 18:30:17.976 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/_framework/aspnetcore-browser-refresh.js - -
+2023-10-17 18:30:17.977 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 0.5983ms
+2023-10-17 18:30:18.355 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - -
+2023-10-17 18:30:18.432 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 76.9094ms
+2023-10-17 18:30:48.576 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/abp/Swashbuckle/SetCsrfCookie application/json -
+2023-10-17 18:30:48.609 +08:00 [INF] Executing endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2023-10-17 18:30:48.641 +08:00 [INF] Route matched with {area = "Abp", action = "SetCsrfCookie", controller = "AbpSwashbuckle"}. Executing controller action with signature Void SetCsrfCookie() on controller Volo.Abp.Swashbuckle.AbpSwashbuckleController (Volo.Abp.Swashbuckle).
+2023-10-17 18:30:48.649 +08:00 [WRN] The cookie 'XSRF-TOKEN' has set 'SameSite=None' and must also set 'Secure'.
+2023-10-17 18:30:48.649 +08:00 [INF] Executed action Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle) in 8.318ms
+2023-10-17 18:30:48.649 +08:00 [INF] Executed endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2023-10-17 18:30:48.650 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/abp/Swashbuckle/SetCsrfCookie application/json - - 204 - - 73.2131ms
+2023-10-17 18:30:48.684 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5057/api/User/Create application/json 236
+2023-10-17 18:30:48.685 +08:00 [INF] Executing endpoint 'Sample.Novel.HttpApi.Host.Controllers.UserController.CreateAsync (Sample.Novel.HttpApi.Host)'
+2023-10-17 18:30:48.689 +08:00 [INF] Route matched with {action = "Create", controller = "User", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Sample.Novel.Application.Contracts.Dtos.IdentityUserDto] CreateAsync(Sample.Novel.Application.Contracts.Dtos.IdentityUserCreateDto) on controller Sample.Novel.HttpApi.Host.Controllers.UserController (Sample.Novel.HttpApi.Host).
+2023-10-17 18:30:50.215 +08:00 [DBG] Added 0 entity changes to the current audit log
+2023-10-17 18:30:50.216 +08:00 [INF] AUDIT LOG: [200: POST   ] /api/User/Create
+- UserName - UserId                 :  - 
+- ClientIpAddress        : ::1
+- ExecutionDuration      : 1520
+- Actions:
+  - Sample.Novel.Application.Services.UserAppService.CreateAsync (1491 ms.)
+    {"input":{"userName":"123","name":"123","email":"user@example.com","phoneNumber":"15210011111","isActive":true,"lockoutEnabled":true,"roleIds":["05035d41-2396-f276-1c6a-3a0e4dd90a9f"],"extraProperties":{}}
+
+2023-10-17 18:30:50.239 +08:00 [INF] Executing ObjectResult, writing value of type 'Sample.Novel.Application.Contracts.Dtos.IdentityUserDto'.
+2023-10-17 18:30:50.272 +08:00 [INF] Executed action Sample.Novel.HttpApi.Host.Controllers.UserController.CreateAsync (Sample.Novel.HttpApi.Host) in 1583.2932ms
+2023-10-17 18:30:50.272 +08:00 [INF] Executed endpoint 'Sample.Novel.HttpApi.Host.Controllers.UserController.CreateAsync (Sample.Novel.HttpApi.Host)'
+2023-10-17 18:30:50.272 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:5057/api/User/Create application/json 236 - 200 - application/json;+charset=utf-8 1588.9583ms
+2023-10-17 18:35:07.089 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/User/Get?id=0ece85a8-009f-a13c-94e3-3a0e4f5d07ff - -
+2023-10-17 18:35:07.097 +08:00 [INF] Executing endpoint 'Sample.Novel.HttpApi.Host.Controllers.UserController.GetAsync (Sample.Novel.HttpApi.Host)'
+2023-10-17 18:35:07.102 +08:00 [INF] Route matched with {action = "Get", controller = "User", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Sample.Novel.Application.Contracts.Dtos.IdentityUserDto] GetAsync(System.Guid) on controller Sample.Novel.HttpApi.Host.Controllers.UserController (Sample.Novel.HttpApi.Host).
+2023-10-17 18:35:38.911 +08:00 [INF] Executing ObjectResult, writing value of type 'Sample.Novel.Application.Contracts.Dtos.IdentityUserDto'.
+2023-10-17 18:35:42.352 +08:00 [INF] Executed action Sample.Novel.HttpApi.Host.Controllers.UserController.GetAsync (Sample.Novel.HttpApi.Host) in 35249.6838ms
+2023-10-17 18:35:42.352 +08:00 [INF] Executed endpoint 'Sample.Novel.HttpApi.Host.Controllers.UserController.GetAsync (Sample.Novel.HttpApi.Host)'
+2023-10-17 18:35:42.352 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/User/Get?id=0ece85a8-009f-a13c-94e3-3a0e4f5d07ff - - - 200 - application/json;+charset=utf-8 35263.2039ms
+2023-10-17 18:38:49.978 +08:00 [INF] Starting Sample.Novel.HttpApi.Host.
+2023-10-17 18:38:51.644 +08:00 [INF] Loaded ABP modules:
+2023-10-17 18:38:51.645 +08:00 [INF] - Sample.Novel.NovelHttpApiHostModule
+2023-10-17 18:38:51.645 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2023-10-17 18:38:51.645 +08:00 [INF]     - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-10-17 18:38:51.645 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-10-17 18:38:51.645 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-10-17 18:38:51.645 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2023-10-17 18:38:51.645 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2023-10-17 18:38:51.645 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-10-17 18:38:51.645 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-10-17 18:38:51.645 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-10-17 18:38:51.645 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-10-17 18:38:51.645 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-10-17 18:38:51.645 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2023-10-17 18:38:51.645 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-10-17 18:38:51.645 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-10-17 18:38:51.645 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2023-10-17 18:38:51.645 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationModule
+2023-10-17 18:38:51.645 +08:00 [INF]                   - Volo.Abp.Settings.AbpSettingsModule
+2023-10-17 18:38:51.645 +08:00 [INF]                     - Volo.Abp.Security.AbpSecurityModule
+2023-10-17 18:38:51.645 +08:00 [INF]                   - Volo.Abp.Threading.AbpThreadingModule
+2023-10-17 18:38:51.645 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-10-17 18:38:51.645 +08:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-10-17 18:38:51.645 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-10-17 18:38:51.645 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2023-10-17 18:38:51.645 +08:00 [INF]           - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-10-17 18:38:51.645 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2023-10-17 18:38:51.645 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-10-17 18:38:51.645 +08:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-10-17 18:38:51.645 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2023-10-17 18:38:51.645 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-10-17 18:38:51.645 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-10-17 18:38:51.645 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-10-17 18:38:51.645 +08:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-10-17 18:38:51.645 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-10-17 18:38:51.645 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2023-10-17 18:38:51.645 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-10-17 18:38:51.645 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationModule
+2023-10-17 18:38:51.645 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2023-10-17 18:38:51.645 +08:00 [INF]           - Volo.Abp.EventBus.AbpEventBusModule
+2023-10-17 18:38:51.645 +08:00 [INF]             - Volo.Abp.Guids.AbpGuidsModule
+2023-10-17 18:38:51.645 +08:00 [INF]             - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-10-17 18:38:51.645 +08:00 [INF]             - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-10-17 18:38:51.645 +08:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-10-17 18:38:51.645 +08:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-10-17 18:38:51.645 +08:00 [INF]           - Volo.Abp.Caching.AbpCachingModule
+2023-10-17 18:38:51.645 +08:00 [INF]             - Volo.Abp.Serialization.AbpSerializationModule
+2023-10-17 18:38:51.645 +08:00 [INF]           - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-10-17 18:38:51.645 +08:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2023-10-17 18:38:51.645 +08:00 [INF]   - Sample.Novel.NovelApplicationModule
+2023-10-17 18:38:51.645 +08:00 [INF]     - Sample.Novel.NovelDomainModule
+2023-10-17 18:38:51.645 +08:00 [INF]     - Sample.Novel.NovelApplicationContractsModule
+2023-10-17 18:38:51.645 +08:00 [INF]       - Sample.Novel.NovelDomainSharedModule
+2023-10-17 18:38:51.645 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2023-10-17 18:38:51.645 +08:00 [INF]   - Sample.Novel.EntityFrameworkCore.NovelEntityFrameworkCoreModule
+2023-10-17 18:38:51.645 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-10-17 18:38:51.645 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2023-10-17 18:38:51.645 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2023-10-17 18:38:51.645 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2023-10-17 18:38:51.645 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2023-10-17 18:38:51.967 +08:00 [INF] User profile is available. Using 'C:\Users\liudd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-17 18:38:52.039 +08:00 [INF] Initialized all ABP modules.
+2023-10-17 18:38:52.159 +08:00 [INF] Now listening on: http://localhost:5057
+2023-10-17 18:38:52.159 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-17 18:38:52.159 +08:00 [INF] Hosting environment: Development
+2023-10-17 18:38:52.159 +08:00 [INF] Content root path: D:\Test\Sample.Novel\src\Sample.Novel.HttpApi.Host
+2023-10-17 18:38:52.399 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/index.html - -
+2023-10-17 18:38:52.545 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/index.html - - - 200 - text/html;charset=utf-8 146.2412ms
+2023-10-17 18:38:52.600 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/_framework/aspnetcore-browser-refresh.js - -
+2023-10-17 18:38:52.605 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 5.2303ms
+2023-10-17 18:38:53.066 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - -
+2023-10-17 18:38:53.410 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 343.1766ms
+2023-10-17 18:39:11.500 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/abp/Swashbuckle/SetCsrfCookie - -
+2023-10-17 18:39:11.505 +08:00 [WRN] Failed to determine the https port for redirect.
+2023-10-17 18:39:11.549 +08:00 [INF] Executing endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2023-10-17 18:39:11.567 +08:00 [INF] Route matched with {area = "Abp", action = "SetCsrfCookie", controller = "AbpSwashbuckle"}. Executing controller action with signature Void SetCsrfCookie() on controller Volo.Abp.Swashbuckle.AbpSwashbuckleController (Volo.Abp.Swashbuckle).
+2023-10-17 18:39:11.625 +08:00 [WRN] The cookie 'XSRF-TOKEN' has set 'SameSite=None' and must also set 'Secure'.
+2023-10-17 18:39:11.639 +08:00 [INF] Executed action Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle) in 66.388ms
+2023-10-17 18:39:11.639 +08:00 [INF] Executed endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2023-10-17 18:39:11.640 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/abp/Swashbuckle/SetCsrfCookie - - - 204 - - 139.3204ms
+2023-10-17 18:39:11.676 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/User/GetList - -
+2023-10-17 18:39:11.678 +08:00 [INF] Executing endpoint 'Sample.Novel.HttpApi.Host.Controllers.UserController.GetListAsync (Sample.Novel.HttpApi.Host)'
+2023-10-17 18:39:11.692 +08:00 [INF] Route matched with {action = "GetList", controller = "User", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Sample.Novel.Application.Contracts.Dtos.IdentityUserDto]] GetListAsync(Sample.Novel.Application.Contracts.Dtos.GetIdentityUsersInput) on controller Sample.Novel.HttpApi.Host.Controllers.UserController (Sample.Novel.HttpApi.Host).
+2023-10-17 18:39:14.173 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Sample.Novel.Application.Contracts.Dtos.IdentityUserDto, Sample.Novel.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-10-17 18:39:14.226 +08:00 [INF] Executed action Sample.Novel.HttpApi.Host.Controllers.UserController.GetListAsync (Sample.Novel.HttpApi.Host) in 2533.6831ms
+2023-10-17 18:39:14.226 +08:00 [INF] Executed endpoint 'Sample.Novel.HttpApi.Host.Controllers.UserController.GetListAsync (Sample.Novel.HttpApi.Host)'
+2023-10-17 18:39:14.229 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/User/GetList - - - 200 - application/json;+charset=utf-8 2552.8566ms
+2023-10-17 18:39:53.663 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/User/Get?id=0ece85a8-009f-a13c-94e3-3a0e4f5d07ff - -
+2023-10-17 18:39:53.670 +08:00 [INF] Executing endpoint 'Sample.Novel.HttpApi.Host.Controllers.UserController.GetAsync (Sample.Novel.HttpApi.Host)'
+2023-10-17 18:39:53.673 +08:00 [INF] Route matched with {action = "Get", controller = "User", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Sample.Novel.Application.Contracts.Dtos.IdentityUserDto] GetAsync(System.Guid) on controller Sample.Novel.HttpApi.Host.Controllers.UserController (Sample.Novel.HttpApi.Host).
+2023-10-17 18:39:53.770 +08:00 [INF] Executing ObjectResult, writing value of type 'Sample.Novel.Application.Contracts.Dtos.IdentityUserDto'.
+2023-10-17 18:39:53.770 +08:00 [INF] Executed action Sample.Novel.HttpApi.Host.Controllers.UserController.GetAsync (Sample.Novel.HttpApi.Host) in 96.9301ms
+2023-10-17 18:39:53.770 +08:00 [INF] Executed endpoint 'Sample.Novel.HttpApi.Host.Controllers.UserController.GetAsync (Sample.Novel.HttpApi.Host)'
+2023-10-17 18:39:53.771 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/User/Get?id=0ece85a8-009f-a13c-94e3-3a0e4f5d07ff - - - 200 - application/json;+charset=utf-8 108.8980ms
+2023-10-17 18:40:05.339 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/User/GetRoles?id=0ece85a8-009f-a13c-94e3-3a0e4f5d07ff - -
+2023-10-17 18:40:05.339 +08:00 [INF] Executing endpoint 'Sample.Novel.HttpApi.Host.Controllers.UserController.GetRolesAsync (Sample.Novel.HttpApi.Host)'
+2023-10-17 18:40:05.342 +08:00 [INF] Route matched with {action = "GetRoles", controller = "User", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.ListResultDto`1[Sample.Novel.Application.Contracts.Dtos.IdentityRoleDto]] GetRolesAsync(System.Guid) on controller Sample.Novel.HttpApi.Host.Controllers.UserController (Sample.Novel.HttpApi.Host).
+2023-10-17 18:40:05.473 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.ListResultDto`1[[Sample.Novel.Application.Contracts.Dtos.IdentityRoleDto, Sample.Novel.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-10-17 18:40:05.475 +08:00 [INF] Executed action Sample.Novel.HttpApi.Host.Controllers.UserController.GetRolesAsync (Sample.Novel.HttpApi.Host) in 132.6634ms
+2023-10-17 18:40:05.475 +08:00 [INF] Executed endpoint 'Sample.Novel.HttpApi.Host.Controllers.UserController.GetRolesAsync (Sample.Novel.HttpApi.Host)'
+2023-10-17 18:40:05.475 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/User/GetRoles?id=0ece85a8-009f-a13c-94e3-3a0e4f5d07ff - - - 200 - application/json;+charset=utf-8 135.9023ms
+2023-10-17 18:42:40.036 +08:00 [INF] Starting Sample.Novel.HttpApi.Host.
+2023-10-17 18:42:41.734 +08:00 [INF] Loaded ABP modules:
+2023-10-17 18:42:41.735 +08:00 [INF] - Sample.Novel.NovelHttpApiHostModule
+2023-10-17 18:42:41.735 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2023-10-17 18:42:41.735 +08:00 [INF]     - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-10-17 18:42:41.735 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-10-17 18:42:41.735 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-10-17 18:42:41.735 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2023-10-17 18:42:41.735 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2023-10-17 18:42:41.735 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-10-17 18:42:41.735 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-10-17 18:42:41.735 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-10-17 18:42:41.735 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-10-17 18:42:41.735 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-10-17 18:42:41.735 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2023-10-17 18:42:41.735 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-10-17 18:42:41.735 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-10-17 18:42:41.735 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2023-10-17 18:42:41.735 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationModule
+2023-10-17 18:42:41.735 +08:00 [INF]                   - Volo.Abp.Settings.AbpSettingsModule
+2023-10-17 18:42:41.735 +08:00 [INF]                     - Volo.Abp.Security.AbpSecurityModule
+2023-10-17 18:42:41.735 +08:00 [INF]                   - Volo.Abp.Threading.AbpThreadingModule
+2023-10-17 18:42:41.735 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-10-17 18:42:41.735 +08:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-10-17 18:42:41.735 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-10-17 18:42:41.735 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2023-10-17 18:42:41.735 +08:00 [INF]           - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-10-17 18:42:41.735 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2023-10-17 18:42:41.735 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-10-17 18:42:41.735 +08:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-10-17 18:42:41.735 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2023-10-17 18:42:41.735 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-10-17 18:42:41.735 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-10-17 18:42:41.735 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-10-17 18:42:41.735 +08:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-10-17 18:42:41.735 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-10-17 18:42:41.735 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2023-10-17 18:42:41.735 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-10-17 18:42:41.735 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationModule
+2023-10-17 18:42:41.735 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2023-10-17 18:42:41.735 +08:00 [INF]           - Volo.Abp.EventBus.AbpEventBusModule
+2023-10-17 18:42:41.735 +08:00 [INF]             - Volo.Abp.Guids.AbpGuidsModule
+2023-10-17 18:42:41.736 +08:00 [INF]             - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-10-17 18:42:41.736 +08:00 [INF]             - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-10-17 18:42:41.736 +08:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-10-17 18:42:41.736 +08:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-10-17 18:42:41.736 +08:00 [INF]           - Volo.Abp.Caching.AbpCachingModule
+2023-10-17 18:42:41.736 +08:00 [INF]             - Volo.Abp.Serialization.AbpSerializationModule
+2023-10-17 18:42:41.736 +08:00 [INF]           - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-10-17 18:42:41.736 +08:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2023-10-17 18:42:41.736 +08:00 [INF]   - Sample.Novel.NovelApplicationModule
+2023-10-17 18:42:41.736 +08:00 [INF]     - Sample.Novel.NovelDomainModule
+2023-10-17 18:42:41.736 +08:00 [INF]     - Sample.Novel.NovelApplicationContractsModule
+2023-10-17 18:42:41.736 +08:00 [INF]       - Sample.Novel.NovelDomainSharedModule
+2023-10-17 18:42:41.736 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2023-10-17 18:42:41.736 +08:00 [INF]   - Sample.Novel.EntityFrameworkCore.NovelEntityFrameworkCoreModule
+2023-10-17 18:42:41.736 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-10-17 18:42:41.736 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2023-10-17 18:42:41.736 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2023-10-17 18:42:41.736 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2023-10-17 18:42:41.736 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2023-10-17 18:42:42.077 +08:00 [INF] User profile is available. Using 'C:\Users\liudd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-17 18:42:42.158 +08:00 [INF] Initialized all ABP modules.
+2023-10-17 18:42:42.254 +08:00 [INF] Now listening on: http://localhost:5057
+2023-10-17 18:42:42.254 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-17 18:42:42.254 +08:00 [INF] Hosting environment: Development
+2023-10-17 18:42:42.255 +08:00 [INF] Content root path: D:\Test\Sample.Novel\src\Sample.Novel.HttpApi.Host
+2023-10-17 18:42:42.833 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/index.html - -
+2023-10-17 18:42:42.975 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/index.html - - - 200 - text/html;charset=utf-8 141.5554ms
+2023-10-17 18:42:43.027 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/_framework/aspnetcore-browser-refresh.js - -
+2023-10-17 18:42:43.030 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 3.1174ms
+2023-10-17 18:42:43.455 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - -
+2023-10-17 18:42:43.800 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 345.4974ms
+2023-10-17 18:42:59.707 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/abp/Swashbuckle/SetCsrfCookie - -
+2023-10-17 18:42:59.711 +08:00 [WRN] Failed to determine the https port for redirect.
+2023-10-17 18:42:59.760 +08:00 [INF] Executing endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2023-10-17 18:42:59.778 +08:00 [INF] Route matched with {area = "Abp", action = "SetCsrfCookie", controller = "AbpSwashbuckle"}. Executing controller action with signature Void SetCsrfCookie() on controller Volo.Abp.Swashbuckle.AbpSwashbuckleController (Volo.Abp.Swashbuckle).
+2023-10-17 18:42:59.841 +08:00 [WRN] The cookie 'XSRF-TOKEN' has set 'SameSite=None' and must also set 'Secure'.
+2023-10-17 18:42:59.849 +08:00 [INF] Executed action Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle) in 68.6397ms
+2023-10-17 18:42:59.849 +08:00 [INF] Executed endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2023-10-17 18:42:59.850 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/abp/Swashbuckle/SetCsrfCookie - - - 204 - - 142.5318ms
+2023-10-17 18:42:59.886 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/User/GetList - -
+2023-10-17 18:42:59.888 +08:00 [INF] Executing endpoint 'Sample.Novel.HttpApi.Host.Controllers.UserController.GetListAsync (Sample.Novel.HttpApi.Host)'
+2023-10-17 18:42:59.903 +08:00 [INF] Route matched with {action = "GetList", controller = "User", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Sample.Novel.Application.Contracts.Dtos.IdentityUserDto]] GetListAsync(Sample.Novel.Application.Contracts.Dtos.GetIdentityUsersInput) on controller Sample.Novel.HttpApi.Host.Controllers.UserController (Sample.Novel.HttpApi.Host).
+2023-10-17 18:43:01.797 +08:00 [INF] Executed DbCommand (52ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT_BIG(*)
+FROM [Sys_Users] AS [s]
+WHERE @__ef_filter__p_0 = CAST(1 AS bit) OR [s].[IsDeleted] = CAST(0 AS bit)
+2023-10-17 18:43:02.148 +08:00 [INF] Executed DbCommand (10ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[AccessFailedCount], [s].[ConcurrencyStamp], [s].[CreationTime], [s].[CreatorId], [s].[DeleterId], [s].[DeletionTime], [s].[Email], [s].[EmailConfirmed], [s].[ExtraProperties], [s].[IsActive], [s].[IsDeleted], [s].[LastModificationTime], [s].[LastModifierId], [s].[LastPasswordChangeTime], [s].[LockoutEnabled], [s].[LockoutEnd], [s].[Name], [s].[PasswordHash], [s].[PhoneNumber], [s].[PhoneNumberConfirmed], [s].[ShouldChangePasswordOnNextLogin], [s].[UserName]
+FROM [Sys_Users] AS [s]
+WHERE @__ef_filter__p_0 = CAST(1 AS bit) OR [s].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [s].[UserName]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2023-10-17 18:43:02.431 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Sample.Novel.Application.Contracts.Dtos.IdentityUserDto, Sample.Novel.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-10-17 18:43:02.491 +08:00 [INF] Executed action Sample.Novel.HttpApi.Host.Controllers.UserController.GetListAsync (Sample.Novel.HttpApi.Host) in 2588.0407ms
+2023-10-17 18:43:02.491 +08:00 [INF] Executed endpoint 'Sample.Novel.HttpApi.Host.Controllers.UserController.GetListAsync (Sample.Novel.HttpApi.Host)'
+2023-10-17 18:43:02.496 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/User/GetList - - - 200 - application/json;+charset=utf-8 2610.2974ms
+2023-10-17 18:43:25.020 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/User/Get?id=0ece85a8-009f-a13c-94e3-3a0e4f5d07ff - -
+2023-10-17 18:43:25.049 +08:00 [INF] Executing endpoint 'Sample.Novel.HttpApi.Host.Controllers.UserController.GetAsync (Sample.Novel.HttpApi.Host)'
+2023-10-17 18:43:25.055 +08:00 [INF] Route matched with {action = "Get", controller = "User", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Sample.Novel.Application.Contracts.Dtos.IdentityUserDto] GetAsync(System.Guid) on controller Sample.Novel.HttpApi.Host.Controllers.UserController (Sample.Novel.HttpApi.Host).
+2023-10-17 18:43:25.131 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[AccessFailedCount], [s].[ConcurrencyStamp], [s].[CreationTime], [s].[CreatorId], [s].[DeleterId], [s].[DeletionTime], [s].[Email], [s].[EmailConfirmed], [s].[ExtraProperties], [s].[IsActive], [s].[IsDeleted], [s].[LastModificationTime], [s].[LastModifierId], [s].[LastPasswordChangeTime], [s].[LockoutEnabled], [s].[LockoutEnd], [s].[Name], [s].[PasswordHash], [s].[PhoneNumber], [s].[PhoneNumberConfirmed], [s].[ShouldChangePasswordOnNextLogin], [s].[UserName]
+FROM [Sys_Users] AS [s]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [s].[IsDeleted] = CAST(0 AS bit)) AND [s].[Id] = @__id_0
+ORDER BY [s].[Id]
+2023-10-17 18:43:25.181 +08:00 [INF] Executing ObjectResult, writing value of type 'Sample.Novel.Application.Contracts.Dtos.IdentityUserDto'.
+2023-10-17 18:43:25.182 +08:00 [INF] Executed action Sample.Novel.HttpApi.Host.Controllers.UserController.GetAsync (Sample.Novel.HttpApi.Host) in 126.4673ms
+2023-10-17 18:43:25.182 +08:00 [INF] Executed endpoint 'Sample.Novel.HttpApi.Host.Controllers.UserController.GetAsync (Sample.Novel.HttpApi.Host)'
+2023-10-17 18:43:25.182 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/User/Get?id=0ece85a8-009f-a13c-94e3-3a0e4f5d07ff - - - 200 - application/json;+charset=utf-8 163.2806ms
+2023-10-17 18:44:47.617 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/User/Get?id=0ece85a8-009f-a13c-94e3-3a0e4f5d07ff - -
+2023-10-17 18:44:47.617 +08:00 [INF] Executing endpoint 'Sample.Novel.HttpApi.Host.Controllers.UserController.GetAsync (Sample.Novel.HttpApi.Host)'
+2023-10-17 18:44:47.618 +08:00 [INF] Route matched with {action = "Get", controller = "User", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Sample.Novel.Application.Contracts.Dtos.IdentityUserDto] GetAsync(System.Guid) on controller Sample.Novel.HttpApi.Host.Controllers.UserController (Sample.Novel.HttpApi.Host).
+2023-10-17 18:44:47.706 +08:00 [INF] Executed DbCommand (12ms) [Parameters=[@__ef_filter__p_0='?' (DbType = Boolean), @__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[AccessFailedCount], [s].[ConcurrencyStamp], [s].[CreationTime], [s].[CreatorId], [s].[DeleterId], [s].[DeletionTime], [s].[Email], [s].[EmailConfirmed], [s].[ExtraProperties], [s].[IsActive], [s].[IsDeleted], [s].[LastModificationTime], [s].[LastModifierId], [s].[LastPasswordChangeTime], [s].[LockoutEnabled], [s].[LockoutEnd], [s].[Name], [s].[PasswordHash], [s].[PhoneNumber], [s].[PhoneNumberConfirmed], [s].[ShouldChangePasswordOnNextLogin], [s].[UserName]
+FROM [Sys_Users] AS [s]
+WHERE (@__ef_filter__p_0 = CAST(1 AS bit) OR [s].[IsDeleted] = CAST(0 AS bit)) AND [s].[Id] = @__id_0
+ORDER BY [s].[Id]
+2023-10-17 18:44:47.707 +08:00 [INF] Executing ObjectResult, writing value of type 'Sample.Novel.Application.Contracts.Dtos.IdentityUserDto'.
+2023-10-17 18:44:47.707 +08:00 [INF] Executed action Sample.Novel.HttpApi.Host.Controllers.UserController.GetAsync (Sample.Novel.HttpApi.Host) in 89.62ms
+2023-10-17 18:44:47.707 +08:00 [INF] Executed endpoint 'Sample.Novel.HttpApi.Host.Controllers.UserController.GetAsync (Sample.Novel.HttpApi.Host)'
+2023-10-17 18:44:47.708 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/User/Get?id=0ece85a8-009f-a13c-94e3-3a0e4f5d07ff - - - 200 - application/json;+charset=utf-8 92.0160ms
+2023-10-17 18:59:51.802 +08:00 [INF] Starting Sample.Novel.HttpApi.Host.
+2023-10-17 18:59:53.576 +08:00 [INF] Loaded ABP modules:
+2023-10-17 18:59:53.577 +08:00 [INF] - Sample.Novel.NovelHttpApiHostModule
+2023-10-17 18:59:53.577 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2023-10-17 18:59:53.577 +08:00 [INF]     - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-10-17 18:59:53.577 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-10-17 18:59:53.577 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-10-17 18:59:53.577 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2023-10-17 18:59:53.577 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2023-10-17 18:59:53.577 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-10-17 18:59:53.577 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-10-17 18:59:53.577 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-10-17 18:59:53.577 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-10-17 18:59:53.577 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-10-17 18:59:53.577 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2023-10-17 18:59:53.577 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-10-17 18:59:53.577 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-10-17 18:59:53.577 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2023-10-17 18:59:53.577 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationModule
+2023-10-17 18:59:53.577 +08:00 [INF]                   - Volo.Abp.Settings.AbpSettingsModule
+2023-10-17 18:59:53.577 +08:00 [INF]                     - Volo.Abp.Security.AbpSecurityModule
+2023-10-17 18:59:53.577 +08:00 [INF]                   - Volo.Abp.Threading.AbpThreadingModule
+2023-10-17 18:59:53.577 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-10-17 18:59:53.577 +08:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-10-17 18:59:53.577 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-10-17 18:59:53.577 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2023-10-17 18:59:53.577 +08:00 [INF]           - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-10-17 18:59:53.577 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2023-10-17 18:59:53.577 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-10-17 18:59:53.577 +08:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-10-17 18:59:53.577 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2023-10-17 18:59:53.577 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-10-17 18:59:53.577 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-10-17 18:59:53.577 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-10-17 18:59:53.577 +08:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-10-17 18:59:53.577 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-10-17 18:59:53.577 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2023-10-17 18:59:53.577 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-10-17 18:59:53.577 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationModule
+2023-10-17 18:59:53.577 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2023-10-17 18:59:53.577 +08:00 [INF]           - Volo.Abp.EventBus.AbpEventBusModule
+2023-10-17 18:59:53.577 +08:00 [INF]             - Volo.Abp.Guids.AbpGuidsModule
+2023-10-17 18:59:53.577 +08:00 [INF]             - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-10-17 18:59:53.577 +08:00 [INF]             - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-10-17 18:59:53.577 +08:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-10-17 18:59:53.577 +08:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-10-17 18:59:53.577 +08:00 [INF]           - Volo.Abp.Caching.AbpCachingModule
+2023-10-17 18:59:53.577 +08:00 [INF]             - Volo.Abp.Serialization.AbpSerializationModule
+2023-10-17 18:59:53.577 +08:00 [INF]           - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-10-17 18:59:53.577 +08:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2023-10-17 18:59:53.577 +08:00 [INF]   - Sample.Novel.NovelApplicationModule
+2023-10-17 18:59:53.577 +08:00 [INF]     - Sample.Novel.NovelDomainModule
+2023-10-17 18:59:53.577 +08:00 [INF]     - Sample.Novel.NovelApplicationContractsModule
+2023-10-17 18:59:53.577 +08:00 [INF]       - Sample.Novel.NovelDomainSharedModule
+2023-10-17 18:59:53.577 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2023-10-17 18:59:53.577 +08:00 [INF]   - Sample.Novel.EntityFrameworkCore.NovelEntityFrameworkCoreModule
+2023-10-17 18:59:53.577 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-10-17 18:59:53.577 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2023-10-17 18:59:53.577 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2023-10-17 18:59:53.577 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2023-10-17 18:59:53.577 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2023-10-17 18:59:54.172 +08:00 [INF] User profile is available. Using 'C:\Users\liudd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-17 18:59:54.240 +08:00 [INF] Initialized all ABP modules.
+2023-10-17 18:59:54.341 +08:00 [INF] Now listening on: http://localhost:5057
+2023-10-17 18:59:54.341 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-17 18:59:54.341 +08:00 [INF] Hosting environment: Development
+2023-10-17 18:59:54.342 +08:00 [INF] Content root path: D:\Test\Sample.Novel\src\Sample.Novel.HttpApi.Host
+2023-10-17 18:59:54.856 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/index.html - -
+2023-10-17 18:59:55.212 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/index.html - - - 200 - text/html;charset=utf-8 357.8878ms
+2023-10-17 18:59:55.262 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/_framework/aspnetcore-browser-refresh.js - -
+2023-10-17 18:59:55.265 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 2.6350ms
+2023-10-17 18:59:55.716 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - -
+2023-10-17 18:59:56.027 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 311.5883ms
