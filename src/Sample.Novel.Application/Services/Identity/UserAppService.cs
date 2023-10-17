@@ -8,6 +8,7 @@ using Volo.Abp.Application.Dtos;
 using Volo.Abp.Application.Services;
 using Volo.Abp.Data;
 using Volo.Abp.Domain.Repositories;
+using Volo.Abp.ObjectExtending;
 using Volo.Abp.Users;
 
 namespace Sample.Novel.Application.Services
@@ -59,11 +60,14 @@ namespace Sample.Novel.Application.Services
                 ObjectMapper.Map<List<IdentityRole>, List<IdentityRoleDto>>(list));
         }
 
-        public virtual async Task<IdentityUserDto> CreateAsync(IdentityUserCreateInput input)
+        public virtual async Task<IdentityUserDto> CreateAsync(IdentityUserCreateDto input)
         {
-            var user = ObjectMapper.Map<IdentityUserCreateInput, IdentityUser>(input);
+            var user = new IdentityUser(GuidGenerator.Create(), input.UserName, input.Email);
+            //赋值扩展属性
+            input.MapExtraPropertiesTo(user);
             Check.NotNullOrWhiteSpace(input.Password, "密码");
             user.SetPasswordHash(EncryptHelper.ToMD5(input.Password));
+            await UpdateUserByInput(user, input);
             user = await userRepository.InsertAsync(user);
             return ObjectMapper.Map<IdentityUser, IdentityUserDto>(user);
         }
@@ -78,7 +82,7 @@ namespace Sample.Novel.Application.Services
                 user.SetPasswordHash(EncryptHelper.ToMD5(input.Password));
             }
             await UpdateUserByInput(user, input);
-
+            input.MapExtraPropertiesTo(user);
             user = await userRepository.UpdateAsync(user);
             return ObjectMapper.Map<IdentityUser, IdentityUserDto>(user);
         }
@@ -118,7 +122,7 @@ namespace Sample.Novel.Application.Services
             );
         }
 
-        protected virtual async Task UpdateUserByInput(IdentityUser user, IdentityUserUpdateInput input)
+        protected virtual async Task UpdateUserByInput(IdentityUser user, IdentityUserCreateOrUpdateDto input)
         {
             if (!string.Equals(user.Email, input.Email, StringComparison.InvariantCultureIgnoreCase))
             {
@@ -129,9 +133,15 @@ namespace Sample.Novel.Application.Services
             {
                 user.SetPhoneNumber(input.PhoneNumber, false);
             }
-
+            user.SetLockoutEnabled(input.LockoutEnabled);
             user.Name = input.Name;
             user.SetIsActive(input.IsActive);
+            if (input.RoleIds != null)
+            {
+                await userRepository.RemoveRoles(user.Id, input.RoleIds.ToList());
+                var userRoles = input.RoleIds.Select(s => new IdentityUserRole(s, user.Id)).ToList();
+                await userRepository.AddRoles(userRoles);
+            }
         }
     }
 }

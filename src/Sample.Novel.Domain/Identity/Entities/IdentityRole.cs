@@ -22,5 +22,12 @@ namespace Sample.Novel.Domain.Identity.Entities
             Id = id;
             Name = name;
         }
+        public virtual void ChangeName(string name)
+        {
+            Check.NotNullOrWhiteSpace(name, nameof(name));
+
+            Name = name;
+
+        }
     }
 }

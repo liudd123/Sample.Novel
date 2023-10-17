@@ -10,7 +10,7 @@ using Volo.Abp.Validation;
 
 namespace Sample.Novel.Application.Contracts.Dtos
 {
-    public class IdentityUserCreateInput: IdentityUserCreateOrUpdateInput
+    public class IdentityUserCreateDto: IdentityUserCreateOrUpdateDto
     {
         [DisableAuditing]
         [Required]

@@ -9,13 +9,13 @@ using System.Threading.Tasks;
 
 namespace Sample.Novel.Application.Profiles
 {
-    public class IdentityUserProfile:Profile
+    public class IdentityRoleProfile : Profile
     {
-        public IdentityUserProfile()
+        public IdentityRoleProfile()
         {
-            CreateMap<IdentityUserCreateDto, IdentityUser>();
-            CreateMap<IdentityUserUpdateInput, IdentityUser>();
-            CreateMap<IdentityUser, IdentityUserDto>();
+            CreateMap<IdentityRoleCreateDto, IdentityRole>();
+            CreateMap<IdentityRoleUpdateDto, IdentityRole>();
+            CreateMap<IdentityRole, IdentityRoleDto>();
         }
     }
 }

@@ -66,11 +66,7 @@ namespace Sample.Novel.Domain.Identity.Repository
         bool includeDetails = false,
         CancellationToken cancellationToken = default
     );
-
-        Task UpdateRoleAsync(
-            Guid sourceRoleId,
-            Guid? targetRoleId,
-            CancellationToken cancellationToken = default
-        );
+        Task RemoveRoles(Guid userId, List<Guid> roleIds);
+        Task AddRoles(List<IdentityUserRole> userRoles);
     }
 }

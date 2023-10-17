@@ -6,6 +6,7 @@ using Sample.Novel.EntityFrameworkCore.EntityFrameworkCore;
 using Sample.Novel.EntityFrameworkCore.Extensions;
 using System.Linq;
 using System.Linq.Dynamic.Core;
+using Volo.Abp.Domain.Entities;
 using Volo.Abp.Domain.Repositories.EntityFrameworkCore;
 using Volo.Abp.EntityFrameworkCore;
 
@@ -19,7 +20,7 @@ namespace Sample.Novel.EntityFrameworkCore.Repositories
 
         public async Task<IdentityUser> FindByEmailAsync([NotNull] string email, bool includeDetails = true, CancellationToken cancellationToken = default)
         {
-            return await(await GetDbSetAsync())
+            return await (await GetDbSetAsync())
             .IncludeDetails(includeDetails)
             .OrderBy(x => x.Id)
             .FirstOrDefaultAsync(u => u.Email == email, GetCancellationToken(cancellationToken));
@@ -156,18 +157,18 @@ namespace Sample.Novel.EntityFrameworkCore.Repositories
             return await query.ToListAsync(GetCancellationToken(cancellationToken));
         }
 
-        public virtual async Task UpdateRoleAsync(Guid sourceRoleId, Guid? targetRoleId, CancellationToken cancellationToken = default)
+        public async Task RemoveRoles(Guid userId, List<Guid> roleIds)
         {
-            if (targetRoleId != null)
-            {
-                var users = await (await GetDbContextAsync()).Set<IdentityUserRole>().Where(x => x.RoleId == targetRoleId).Select(x => x.UserId).ToArrayAsync(cancellationToken: cancellationToken);
-                await (await GetDbContextAsync()).Set<IdentityUserRole>().Where(x => x.RoleId == sourceRoleId && !users.Contains(x.UserId)).ExecuteUpdateAsync(t => t.SetProperty(e => e.RoleId, targetRoleId), GetCancellationToken(cancellationToken));
-                await (await GetDbContextAsync()).Set<IdentityUserRole>().Where(x => x.RoleId == sourceRoleId).ExecuteDeleteAsync(GetCancellationToken(cancellationToken));
-            }
-            else
-            {
-                await (await GetDbContextAsync()).Set<IdentityUserRole>().Where(x => x.RoleId == sourceRoleId).ExecuteDeleteAsync(GetCancellationToken(cancellationToken));
-            }
+            var dbContext = await GetDbContextAsync();
+            var UserRoles = dbContext.Set<IdentityUserRole>();
+            var list = await UserRoles.Where(w => w.UserId == userId && roleIds.Contains(w.RoleId)).ToListAsync();
+            UserRoles.RemoveRange(list);
+        }
+        public async Task AddRoles(List<IdentityUserRole> userRoles)
+        {
+            var dbContext = await GetDbContextAsync();
+            var UserRoles = dbContext.Set<IdentityUserRole>();
+            UserRoles.AddRange(userRoles);
         }
     }
 }

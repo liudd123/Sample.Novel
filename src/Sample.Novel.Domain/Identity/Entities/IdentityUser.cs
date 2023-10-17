@@ -99,8 +99,8 @@ namespace Sample.Novel.Domain.Identity.Entities
         public IdentityUser(
             Guid id,
             [NotNull] string userName,
-            [NotNull] string email,
-            Guid? tenantId = null)
+            [NotNull] string email
+          )
             : base(id)
         {
             Check.NotNull(userName, nameof(userName));
@@ -152,7 +152,7 @@ namespace Sample.Novel.Domain.Identity.Entities
         {
             EmailConfirmed = confirmed;
         }
-        public virtual void SetEmail(string email,bool confirmed)
+        public virtual void SetEmail(string email, bool confirmed)
         {
             Email = email;
             EmailConfirmed = confirmed;
@@ -193,6 +193,10 @@ namespace Sample.Novel.Domain.Identity.Entities
         public void SetPasswordHash(string passwordHash)
         {
             PasswordHash = passwordHash;
+        }
+        public void SetLockoutEnabled(bool lockoutEnabled)
+        {
+            LockoutEnabled = lockoutEnabled;
         }
     }
 }

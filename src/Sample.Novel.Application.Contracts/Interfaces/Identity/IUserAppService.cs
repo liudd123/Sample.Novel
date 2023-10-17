@@ -13,10 +13,13 @@ namespace Sample.Novel.Application.Contracts.Interfaces
         Task<IdentityUserDto> FindByUserNameAsync(string userName);
 
         Task<IdentityUserDto> FindByEmailAsync(string email);
-        Task<IdentityUserDto> CreateAsync(IdentityUserCreateInput input);
+        Task<IdentityUserDto> CreateAsync(IdentityUserCreateDto input);
         Task<IdentityUserDto> UpdateAsync(Guid id, IdentityUserUpdateInput input);
         Task DeleteAsync(Guid id);
         Task<IdentityUserDto> GetAsync(Guid id);
+        Task<PagedResultDto<IdentityUserDto>> GetListAsync(GetIdentityUsersInput input);
+
+       
     }
 }
  

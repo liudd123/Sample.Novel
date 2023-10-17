@@ -5,7 +5,7 @@ using Volo.Abp.Domain.Entities;
 
 namespace Sample.Novel.Application.Contracts.Dtos
 {
-    public class IdentityUserUpdateInput: IdentityUserCreateOrUpdateInput, IHasConcurrencyStamp
+    public class IdentityUserUpdateInput: IdentityUserCreateOrUpdateDto, IHasConcurrencyStamp
     {
         [DisableAuditing]
         [MaxLength(IdentityUserConsts.MaxPasswordLength)]

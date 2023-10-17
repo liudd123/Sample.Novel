@@ -24,7 +24,7 @@ namespace Sample.Novel.HttpApi.Host.Controllers
         /// <param name="input"></param>
         /// <returns></returns>
         [HttpPost]
-        public async Task<IdentityUserDto> CreateAsync(IdentityUserCreateInput input)
+        public async Task<IdentityUserDto> CreateAsync(IdentityUserCreateDto input)
         {
             return await userAppService.CreateAsync(input);
         }
@@ -76,7 +76,18 @@ namespace Sample.Novel.HttpApi.Host.Controllers
         [HttpGet]
         public async Task<IdentityUserDto> GetAsync(Guid id)
         {
-           return await userAppService.GetAsync(id);
+            return await userAppService.GetAsync(id);
+        }
+
+        /// <summary>
+        /// 分页查询
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        [HttpGet]
+        public async Task<PagedResultDto<IdentityUserDto>> GetListAsync(GetIdentityUsersInput input)
+        {
+            return await userAppService.GetListAsync(input);
         }
 
         /// <summary>
@@ -98,7 +109,7 @@ namespace Sample.Novel.HttpApi.Host.Controllers
         [HttpPost]
         public async Task<IdentityUserDto> UpdateAsync(Guid id, IdentityUserUpdateInput input)
         {
-          return await userAppService.UpdateAsync(id, input);
+            return await userAppService.UpdateAsync(id, input);
         }
 
         /// <summary>

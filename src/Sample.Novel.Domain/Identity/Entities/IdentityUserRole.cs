@@ -24,7 +24,7 @@ namespace Sample.Novel.Domain.Identity.Entities
 
         }
 
-        protected internal IdentityUserRole(Guid userId, Guid roleId)
+        public IdentityUserRole(Guid userId, Guid roleId)
         {
             UserId = userId;
             RoleId = roleId;
