@@ -6165,3 +6165,894 @@ ORDER BY [s].[Id]
 2023-10-17 18:59:55.265 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 2.6350ms
 2023-10-17 18:59:55.716 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - -
 2023-10-17 18:59:56.027 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 311.5883ms
+2023-10-18 19:46:05.857 +08:00 [INF] Starting Sample.Novel.HttpApi.Host.
+2023-10-18 19:46:07.658 +08:00 [INF] Loaded ABP modules:
+2023-10-18 19:46:07.659 +08:00 [INF] - Sample.Novel.NovelHttpApiHostModule
+2023-10-18 19:46:07.659 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2023-10-18 19:46:07.659 +08:00 [INF]     - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-10-18 19:46:07.659 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-10-18 19:46:07.659 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-10-18 19:46:07.659 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2023-10-18 19:46:07.659 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2023-10-18 19:46:07.659 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-10-18 19:46:07.659 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-10-18 19:46:07.659 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-10-18 19:46:07.659 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-10-18 19:46:07.659 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-10-18 19:46:07.659 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2023-10-18 19:46:07.659 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-10-18 19:46:07.659 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-10-18 19:46:07.659 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2023-10-18 19:46:07.659 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationModule
+2023-10-18 19:46:07.659 +08:00 [INF]                   - Volo.Abp.Settings.AbpSettingsModule
+2023-10-18 19:46:07.659 +08:00 [INF]                     - Volo.Abp.Security.AbpSecurityModule
+2023-10-18 19:46:07.659 +08:00 [INF]                   - Volo.Abp.Threading.AbpThreadingModule
+2023-10-18 19:46:07.659 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-10-18 19:46:07.659 +08:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-10-18 19:46:07.659 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-10-18 19:46:07.659 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2023-10-18 19:46:07.659 +08:00 [INF]           - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-10-18 19:46:07.659 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2023-10-18 19:46:07.659 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-10-18 19:46:07.659 +08:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-10-18 19:46:07.659 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2023-10-18 19:46:07.659 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-10-18 19:46:07.659 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-10-18 19:46:07.659 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-10-18 19:46:07.659 +08:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-10-18 19:46:07.659 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-10-18 19:46:07.659 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2023-10-18 19:46:07.659 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-10-18 19:46:07.659 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationModule
+2023-10-18 19:46:07.659 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2023-10-18 19:46:07.659 +08:00 [INF]           - Volo.Abp.EventBus.AbpEventBusModule
+2023-10-18 19:46:07.659 +08:00 [INF]             - Volo.Abp.Guids.AbpGuidsModule
+2023-10-18 19:46:07.659 +08:00 [INF]             - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-10-18 19:46:07.659 +08:00 [INF]             - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-10-18 19:46:07.659 +08:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-10-18 19:46:07.659 +08:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-10-18 19:46:07.659 +08:00 [INF]           - Volo.Abp.Caching.AbpCachingModule
+2023-10-18 19:46:07.659 +08:00 [INF]             - Volo.Abp.Serialization.AbpSerializationModule
+2023-10-18 19:46:07.659 +08:00 [INF]           - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-10-18 19:46:07.659 +08:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2023-10-18 19:46:07.659 +08:00 [INF]   - Sample.Novel.NovelApplicationModule
+2023-10-18 19:46:07.659 +08:00 [INF]     - Sample.Novel.NovelDomainModule
+2023-10-18 19:46:07.659 +08:00 [INF]     - Sample.Novel.NovelApplicationContractsModule
+2023-10-18 19:46:07.659 +08:00 [INF]       - Sample.Novel.NovelDomainSharedModule
+2023-10-18 19:46:07.659 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2023-10-18 19:46:07.659 +08:00 [INF]   - Sample.Novel.EntityFrameworkCore.NovelEntityFrameworkCoreModule
+2023-10-18 19:46:07.659 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-10-18 19:46:07.659 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2023-10-18 19:46:07.659 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2023-10-18 19:46:07.659 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2023-10-18 19:46:07.659 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2023-10-18 19:46:07.998 +08:00 [INF] User profile is available. Using 'C:\Users\liudd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-18 19:46:08.061 +08:00 [INF] Initialized all ABP modules.
+2023-10-18 19:46:08.169 +08:00 [INF] Now listening on: http://localhost:5057
+2023-10-18 19:46:08.169 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-18 19:46:08.169 +08:00 [INF] Hosting environment: Development
+2023-10-18 19:46:08.169 +08:00 [INF] Content root path: D:\Test\Sample.Novel\src\Sample.Novel.HttpApi.Host
+2023-10-18 19:46:08.644 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/index.html - -
+2023-10-18 19:46:08.877 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/index.html - - - 200 - text/html;charset=utf-8 232.6191ms
+2023-10-18 19:46:08.934 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/_framework/aspnetcore-browser-refresh.js - -
+2023-10-18 19:46:08.939 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 5.1164ms
+2023-10-18 19:46:08.941 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/_vs/browserLink - -
+2023-10-18 19:46:08.956 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 15.0004ms
+2023-10-18 19:46:09.317 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - -
+2023-10-18 19:46:09.629 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 311.7123ms
+2023-10-18 19:46:24.165 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/abp/Swashbuckle/SetCsrfCookie application/json -
+2023-10-18 19:46:24.169 +08:00 [WRN] Failed to determine the https port for redirect.
+2023-10-18 19:46:24.211 +08:00 [INF] Executing endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2023-10-18 19:46:24.234 +08:00 [INF] Route matched with {area = "Abp", action = "SetCsrfCookie", controller = "AbpSwashbuckle"}. Executing controller action with signature Void SetCsrfCookie() on controller Volo.Abp.Swashbuckle.AbpSwashbuckleController (Volo.Abp.Swashbuckle).
+2023-10-18 19:46:24.280 +08:00 [WRN] The cookie 'XSRF-TOKEN' has set 'SameSite=None' and must also set 'Secure'.
+2023-10-18 19:46:24.289 +08:00 [INF] Executed action Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle) in 52.1068ms
+2023-10-18 19:46:24.289 +08:00 [INF] Executed endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2023-10-18 19:46:24.289 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/abp/Swashbuckle/SetCsrfCookie application/json - - 204 - - 124.2250ms
+2023-10-18 19:46:24.328 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5057/api/Role/Create application/json 43
+2023-10-18 19:46:24.329 +08:00 [INF] Executing endpoint 'Sample.Novel.HttpApi.Host.Controllers.RoleController.CreateAsync (Sample.Novel.HttpApi.Host)'
+2023-10-18 19:46:24.342 +08:00 [INF] Route matched with {action = "Create", controller = "Role", area = ""}. Executing controller action with signature System.Threading.Tasks.Task CreateAsync(Sample.Novel.Application.Contracts.Dtos.IdentityRoleCreateDto) on controller Sample.Novel.HttpApi.Host.Controllers.RoleController (Sample.Novel.HttpApi.Host).
+2023-10-18 19:46:24.346 +08:00 [WRN] The antiforgery token could not be decrypted.
+2023-10-18 19:46:24.346 +08:00 [INF] Authorization failed for the request at filter 'Volo.Abp.AspNetCore.Mvc.AntiForgery.AbpAutoValidateAntiforgeryTokenAuthorizationFilter'.
+2023-10-18 19:46:24.349 +08:00 [INF] Executing StatusCodeResult, setting HTTP status code 400
+2023-10-18 19:46:24.349 +08:00 [INF] Executed action Sample.Novel.HttpApi.Host.Controllers.RoleController.CreateAsync (Sample.Novel.HttpApi.Host) in 6.895ms
+2023-10-18 19:46:24.349 +08:00 [INF] Executed endpoint 'Sample.Novel.HttpApi.Host.Controllers.RoleController.CreateAsync (Sample.Novel.HttpApi.Host)'
+2023-10-18 19:46:24.349 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:5057/api/Role/Create application/json 43 - 400 0 - 21.8032ms
+2023-10-18 19:47:48.102 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/Role/Create - -
+2023-10-18 19:47:48.142 +08:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2023-10-18 19:47:48.142 +08:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2023-10-18 19:47:48.142 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/Role/Create - - - 405 0 - 40.3453ms
+2023-10-18 19:48:30.906 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5057/api/Role/Create application/json 46
+2023-10-18 19:48:30.906 +08:00 [INF] Executing endpoint 'Sample.Novel.HttpApi.Host.Controllers.RoleController.CreateAsync (Sample.Novel.HttpApi.Host)'
+2023-10-18 19:48:30.907 +08:00 [INF] Route matched with {action = "Create", controller = "Role", area = ""}. Executing controller action with signature System.Threading.Tasks.Task CreateAsync(Sample.Novel.Application.Contracts.Dtos.IdentityRoleCreateDto) on controller Sample.Novel.HttpApi.Host.Controllers.RoleController (Sample.Novel.HttpApi.Host).
+2023-10-18 19:48:32.969 +08:00 [INF] Executed DbCommand (55ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 40), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Guid), @p4='?' (DbType = Guid), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = Boolean), @p9='?' (DbType = DateTime2), @p10='?' (DbType = Guid), @p11='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Sys_Roles] ([Id], [ConcurrencyStamp], [CreationTime], [CreatorId], [DeleterId], [DeletionTime], [ExtraProperties], [IsDefault], [IsStatic], [LastModificationTime], [LastModifierId], [Name])
+OUTPUT INSERTED.[IsDeleted]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+2023-10-18 19:48:33.018 +08:00 [INF] AUDIT LOG: [200: POST   ] /api/Role/Create
+- UserName - UserId                 :  - 
+- ClientIpAddress        : ::1
+- ExecutionDuration      : 1848
+- Actions:
+  - Sample.Novel.Application.Services.RoleAppService.CreateAsync (1537 ms.)
+    {"input":{"name":"123123","isDefault":true,"extraProperties":{}}
+
+2023-10-18 19:48:33.058 +08:00 [INF] Executed action Sample.Novel.HttpApi.Host.Controllers.RoleController.CreateAsync (Sample.Novel.HttpApi.Host) in 2151.0412ms
+2023-10-18 19:48:33.058 +08:00 [INF] Executed endpoint 'Sample.Novel.HttpApi.Host.Controllers.RoleController.CreateAsync (Sample.Novel.HttpApi.Host)'
+2023-10-18 19:48:33.059 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:5057/api/Role/Create application/json 46 - 204 - - 2186.6949ms
+2023-10-18 19:51:11.523 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5057/api/Role/Create application/json 46
+2023-10-18 19:51:11.524 +08:00 [INF] Executing endpoint 'Sample.Novel.HttpApi.Host.Controllers.RoleController.CreateAsync (Sample.Novel.HttpApi.Host)'
+2023-10-18 19:51:11.524 +08:00 [INF] Route matched with {action = "Create", controller = "Role", area = ""}. Executing controller action with signature System.Threading.Tasks.Task CreateAsync(Sample.Novel.Application.Contracts.Dtos.IdentityRoleCreateDto) on controller Sample.Novel.HttpApi.Host.Controllers.RoleController (Sample.Novel.HttpApi.Host).
+2023-10-18 19:51:11.526 +08:00 [WRN] The antiforgery token could not be decrypted.
+2023-10-18 19:51:11.526 +08:00 [INF] Authorization failed for the request at filter 'Volo.Abp.AspNetCore.Mvc.AntiForgery.AbpAutoValidateAntiforgeryTokenAuthorizationFilter'.
+2023-10-18 19:51:11.526 +08:00 [INF] Executing StatusCodeResult, setting HTTP status code 400
+2023-10-18 19:51:11.526 +08:00 [INF] Executed action Sample.Novel.HttpApi.Host.Controllers.RoleController.CreateAsync (Sample.Novel.HttpApi.Host) in 1.641ms
+2023-10-18 19:51:11.526 +08:00 [INF] Executed endpoint 'Sample.Novel.HttpApi.Host.Controllers.RoleController.CreateAsync (Sample.Novel.HttpApi.Host)'
+2023-10-18 19:51:11.526 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:5057/api/Role/Create application/json 46 - 400 0 - 3.7400ms
+2023-10-18 19:55:19.108 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5057/api/Role/Create text/json 46
+2023-10-18 19:55:19.112 +08:00 [INF] Executing endpoint 'Sample.Novel.HttpApi.Host.Controllers.RoleController.CreateAsync (Sample.Novel.HttpApi.Host)'
+2023-10-18 19:55:19.113 +08:00 [INF] Route matched with {action = "Create", controller = "Role", area = ""}. Executing controller action with signature System.Threading.Tasks.Task CreateAsync(Sample.Novel.Application.Contracts.Dtos.IdentityRoleCreateDto) on controller Sample.Novel.HttpApi.Host.Controllers.RoleController (Sample.Novel.HttpApi.Host).
+2023-10-18 19:55:19.114 +08:00 [WRN] The antiforgery token could not be decrypted.
+2023-10-18 19:55:19.114 +08:00 [INF] Authorization failed for the request at filter 'Volo.Abp.AspNetCore.Mvc.AntiForgery.AbpAutoValidateAntiforgeryTokenAuthorizationFilter'.
+2023-10-18 19:55:19.114 +08:00 [INF] Executing StatusCodeResult, setting HTTP status code 400
+2023-10-18 19:55:19.114 +08:00 [INF] Executed action Sample.Novel.HttpApi.Host.Controllers.RoleController.CreateAsync (Sample.Novel.HttpApi.Host) in 1.0889ms
+2023-10-18 19:55:19.114 +08:00 [INF] Executed endpoint 'Sample.Novel.HttpApi.Host.Controllers.RoleController.CreateAsync (Sample.Novel.HttpApi.Host)'
+2023-10-18 19:55:19.115 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:5057/api/Role/Create text/json 46 - 400 0 - 6.8805ms
+2023-10-18 19:55:32.451 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5057/api/Role/Create application/*+json 46
+2023-10-18 19:55:32.451 +08:00 [INF] Executing endpoint 'Sample.Novel.HttpApi.Host.Controllers.RoleController.CreateAsync (Sample.Novel.HttpApi.Host)'
+2023-10-18 19:55:32.451 +08:00 [INF] Route matched with {action = "Create", controller = "Role", area = ""}. Executing controller action with signature System.Threading.Tasks.Task CreateAsync(Sample.Novel.Application.Contracts.Dtos.IdentityRoleCreateDto) on controller Sample.Novel.HttpApi.Host.Controllers.RoleController (Sample.Novel.HttpApi.Host).
+2023-10-18 19:55:32.452 +08:00 [WRN] The antiforgery token could not be decrypted.
+2023-10-18 19:55:32.452 +08:00 [INF] Authorization failed for the request at filter 'Volo.Abp.AspNetCore.Mvc.AntiForgery.AbpAutoValidateAntiforgeryTokenAuthorizationFilter'.
+2023-10-18 19:55:32.452 +08:00 [INF] Executing StatusCodeResult, setting HTTP status code 400
+2023-10-18 19:55:32.452 +08:00 [INF] Executed action Sample.Novel.HttpApi.Host.Controllers.RoleController.CreateAsync (Sample.Novel.HttpApi.Host) in 0.9372ms
+2023-10-18 19:55:32.452 +08:00 [INF] Executed endpoint 'Sample.Novel.HttpApi.Host.Controllers.RoleController.CreateAsync (Sample.Novel.HttpApi.Host)'
+2023-10-18 19:55:32.452 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:5057/api/Role/Create application/*+json 46 - 400 0 - 1.4876ms
+2023-10-18 19:55:38.081 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5057/api/Role/Create application/json 46
+2023-10-18 19:55:38.081 +08:00 [INF] Executing endpoint 'Sample.Novel.HttpApi.Host.Controllers.RoleController.CreateAsync (Sample.Novel.HttpApi.Host)'
+2023-10-18 19:55:38.081 +08:00 [INF] Route matched with {action = "Create", controller = "Role", area = ""}. Executing controller action with signature System.Threading.Tasks.Task CreateAsync(Sample.Novel.Application.Contracts.Dtos.IdentityRoleCreateDto) on controller Sample.Novel.HttpApi.Host.Controllers.RoleController (Sample.Novel.HttpApi.Host).
+2023-10-18 19:55:38.082 +08:00 [WRN] The antiforgery token could not be decrypted.
+2023-10-18 19:55:38.082 +08:00 [INF] Authorization failed for the request at filter 'Volo.Abp.AspNetCore.Mvc.AntiForgery.AbpAutoValidateAntiforgeryTokenAuthorizationFilter'.
+2023-10-18 19:55:38.082 +08:00 [INF] Executing StatusCodeResult, setting HTTP status code 400
+2023-10-18 19:55:38.082 +08:00 [INF] Executed action Sample.Novel.HttpApi.Host.Controllers.RoleController.CreateAsync (Sample.Novel.HttpApi.Host) in 0.8638ms
+2023-10-18 19:55:38.082 +08:00 [INF] Executed endpoint 'Sample.Novel.HttpApi.Host.Controllers.RoleController.CreateAsync (Sample.Novel.HttpApi.Host)'
+2023-10-18 19:55:38.082 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:5057/api/Role/Create application/json 46 - 400 0 - 1.3716ms
+2023-10-18 19:55:41.684 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5057/api/Role/Create application/json 0
+2023-10-18 19:55:41.684 +08:00 [INF] Executing endpoint 'Sample.Novel.HttpApi.Host.Controllers.RoleController.CreateAsync (Sample.Novel.HttpApi.Host)'
+2023-10-18 19:55:41.684 +08:00 [INF] Route matched with {action = "Create", controller = "Role", area = ""}. Executing controller action with signature System.Threading.Tasks.Task CreateAsync(Sample.Novel.Application.Contracts.Dtos.IdentityRoleCreateDto) on controller Sample.Novel.HttpApi.Host.Controllers.RoleController (Sample.Novel.HttpApi.Host).
+2023-10-18 19:55:41.685 +08:00 [WRN] The antiforgery token could not be decrypted.
+2023-10-18 19:55:41.685 +08:00 [INF] Authorization failed for the request at filter 'Volo.Abp.AspNetCore.Mvc.AntiForgery.AbpAutoValidateAntiforgeryTokenAuthorizationFilter'.
+2023-10-18 19:55:41.685 +08:00 [INF] Executing StatusCodeResult, setting HTTP status code 400
+2023-10-18 19:55:41.685 +08:00 [INF] Executed action Sample.Novel.HttpApi.Host.Controllers.RoleController.CreateAsync (Sample.Novel.HttpApi.Host) in 1.0788ms
+2023-10-18 19:55:41.685 +08:00 [INF] Executed endpoint 'Sample.Novel.HttpApi.Host.Controllers.RoleController.CreateAsync (Sample.Novel.HttpApi.Host)'
+2023-10-18 19:55:41.685 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:5057/api/Role/Create application/json 0 - 400 0 - 1.5893ms
+2023-10-18 19:55:59.408 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/api/Book/GetBookListAsnyc - -
+2023-10-18 19:55:59.408 +08:00 [INF] Executing endpoint 'Sample.Novel.HttpApi.Host.Controllers.BookController.GetBookListAsnyc (Sample.Novel.HttpApi.Host)'
+2023-10-18 19:55:59.421 +08:00 [INF] Route matched with {controller = "Book(书籍)", action = "GetBookListAsnyc", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.PagedResultDto`1[Sample.Novel.Application.Contracts.Dtos.BookDto]] GetBookListAsnyc(Volo.Abp.Application.Dtos.PagedAndSortedResultRequestDto) on controller Sample.Novel.HttpApi.Host.Controllers.BookController (Sample.Novel.HttpApi.Host).
+2023-10-18 19:56:00.039 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AuthorId], [a].[AuthorName], [a].[CategoryId], [a].[CategoryName], [a].[CreationTime], [a].[Description], [a].[Name]
+FROM [AppBook] AS [a]
+2023-10-18 19:56:00.119 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT_BIG(*)
+FROM [AppBook] AS [a]
+2023-10-18 19:56:00.173 +08:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.PagedResultDto`1[[Sample.Novel.Application.Contracts.Dtos.BookDto, Sample.Novel.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-10-18 19:56:00.187 +08:00 [INF] Executed action Sample.Novel.HttpApi.Host.Controllers.BookController.GetBookListAsnyc (Sample.Novel.HttpApi.Host) in 766.2285ms
+2023-10-18 19:56:00.187 +08:00 [INF] Executed endpoint 'Sample.Novel.HttpApi.Host.Controllers.BookController.GetBookListAsnyc (Sample.Novel.HttpApi.Host)'
+2023-10-18 19:56:00.187 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/api/Book/GetBookListAsnyc - - - 200 - application/json;+charset=utf-8 779.2660ms
+2023-10-18 19:56:11.373 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5057/api/Book/CreateBook application/json 213
+2023-10-18 19:56:11.374 +08:00 [INF] Executing endpoint 'Sample.Novel.HttpApi.Host.Controllers.BookController.CreateBookAsync (Sample.Novel.HttpApi.Host)'
+2023-10-18 19:56:11.377 +08:00 [INF] Route matched with {controller = "Book(书籍)", action = "CreateBook", area = ""}. Executing controller action with signature System.Threading.Tasks.Task CreateBookAsync(Sample.Novel.Application.Contracts.Dtos.CreateBookInput) on controller Sample.Novel.HttpApi.Host.Controllers.BookController (Sample.Novel.HttpApi.Host).
+2023-10-18 19:56:11.378 +08:00 [WRN] The antiforgery token could not be decrypted.
+2023-10-18 19:56:11.378 +08:00 [INF] Authorization failed for the request at filter 'Volo.Abp.AspNetCore.Mvc.AntiForgery.AbpAutoValidateAntiforgeryTokenAuthorizationFilter'.
+2023-10-18 19:56:11.378 +08:00 [INF] Executing StatusCodeResult, setting HTTP status code 400
+2023-10-18 19:56:11.378 +08:00 [INF] Executed action Sample.Novel.HttpApi.Host.Controllers.BookController.CreateBookAsync (Sample.Novel.HttpApi.Host) in 1.1499ms
+2023-10-18 19:56:11.378 +08:00 [INF] Executed endpoint 'Sample.Novel.HttpApi.Host.Controllers.BookController.CreateBookAsync (Sample.Novel.HttpApi.Host)'
+2023-10-18 19:56:11.378 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:5057/api/Book/CreateBook application/json 213 - 400 0 - 5.0795ms
+2023-10-18 20:07:16.813 +08:00 [INF] Starting Sample.Novel.HttpApi.Host.
+2023-10-18 20:07:19.195 +08:00 [INF] Loaded ABP modules:
+2023-10-18 20:07:19.196 +08:00 [INF] - Sample.Novel.NovelHttpApiHostModule
+2023-10-18 20:07:19.196 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2023-10-18 20:07:19.196 +08:00 [INF]     - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-10-18 20:07:19.196 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-10-18 20:07:19.196 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-10-18 20:07:19.196 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2023-10-18 20:07:19.196 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2023-10-18 20:07:19.196 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-10-18 20:07:19.196 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-10-18 20:07:19.196 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-10-18 20:07:19.196 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-10-18 20:07:19.196 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-10-18 20:07:19.196 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2023-10-18 20:07:19.196 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-10-18 20:07:19.196 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-10-18 20:07:19.196 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2023-10-18 20:07:19.196 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationModule
+2023-10-18 20:07:19.196 +08:00 [INF]                   - Volo.Abp.Settings.AbpSettingsModule
+2023-10-18 20:07:19.196 +08:00 [INF]                     - Volo.Abp.Security.AbpSecurityModule
+2023-10-18 20:07:19.196 +08:00 [INF]                   - Volo.Abp.Threading.AbpThreadingModule
+2023-10-18 20:07:19.196 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-10-18 20:07:19.196 +08:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-10-18 20:07:19.196 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-10-18 20:07:19.196 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2023-10-18 20:07:19.196 +08:00 [INF]           - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-10-18 20:07:19.196 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2023-10-18 20:07:19.196 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-10-18 20:07:19.196 +08:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-10-18 20:07:19.196 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2023-10-18 20:07:19.196 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-10-18 20:07:19.196 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-10-18 20:07:19.196 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-10-18 20:07:19.196 +08:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-10-18 20:07:19.196 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-10-18 20:07:19.196 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2023-10-18 20:07:19.196 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-10-18 20:07:19.196 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationModule
+2023-10-18 20:07:19.196 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2023-10-18 20:07:19.196 +08:00 [INF]           - Volo.Abp.EventBus.AbpEventBusModule
+2023-10-18 20:07:19.196 +08:00 [INF]             - Volo.Abp.Guids.AbpGuidsModule
+2023-10-18 20:07:19.196 +08:00 [INF]             - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-10-18 20:07:19.196 +08:00 [INF]             - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-10-18 20:07:19.196 +08:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-10-18 20:07:19.196 +08:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-10-18 20:07:19.196 +08:00 [INF]           - Volo.Abp.Caching.AbpCachingModule
+2023-10-18 20:07:19.196 +08:00 [INF]             - Volo.Abp.Serialization.AbpSerializationModule
+2023-10-18 20:07:19.196 +08:00 [INF]           - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-10-18 20:07:19.196 +08:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2023-10-18 20:07:19.196 +08:00 [INF]   - Sample.Novel.NovelApplicationModule
+2023-10-18 20:07:19.196 +08:00 [INF]     - Sample.Novel.NovelDomainModule
+2023-10-18 20:07:19.196 +08:00 [INF]     - Sample.Novel.NovelApplicationContractsModule
+2023-10-18 20:07:19.196 +08:00 [INF]       - Sample.Novel.NovelDomainSharedModule
+2023-10-18 20:07:19.196 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2023-10-18 20:07:19.196 +08:00 [INF]   - Sample.Novel.EntityFrameworkCore.NovelEntityFrameworkCoreModule
+2023-10-18 20:07:19.196 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-10-18 20:07:19.196 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2023-10-18 20:07:19.196 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2023-10-18 20:07:19.196 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2023-10-18 20:07:19.196 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2023-10-18 20:07:19.507 +08:00 [INF] User profile is available. Using 'C:\Users\liudd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-18 20:07:19.593 +08:00 [INF] Initialized all ABP modules.
+2023-10-18 20:07:19.662 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-18 20:07:19.662 +08:00 [INF] Hosting environment: Development
+2023-10-18 20:07:19.662 +08:00 [INF] Content root path: D:\Test\Sample.Novel\src\Sample.Novel.HttpApi.Host
+2023-10-18 20:07:19.693 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44312/swagger - -
+2023-10-18 20:07:19.780 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44312/swagger - - - 301 - - 86.1800ms
+2023-10-18 20:07:19.786 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44312/swagger/index.html - -
+2023-10-18 20:07:19.929 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44312/swagger/index.html - - - 200 - text/html;charset=utf-8 142.8596ms
+2023-10-18 20:07:19.934 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44312/swagger/ui/abp.js - -
+2023-10-18 20:07:19.934 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44312/swagger/swagger-ui.css - -
+2023-10-18 20:07:19.938 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44312/swagger/ui/abp.swagger.js - -
+2023-10-18 20:07:19.938 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44312/swagger/swagger-ui-bundle.js - -
+2023-10-18 20:07:19.942 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - -
+2023-10-18 20:07:19.945 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44312/swagger/swagger-ui-standalone-preset.js - -
+2023-10-18 20:07:19.955 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 9.5607ms
+2023-10-18 20:07:19.968 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-10-18 20:07:19.968 +08:00 [INF] Sending file. Request path: '/swagger/ui/abp.swagger.js'. Physical path: 'N/A'
+2023-10-18 20:07:19.968 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-10-18 20:07:19.968 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44312/swagger/ui/abp.swagger.js - - - 200 1363 application/javascript 32.9503ms
+2023-10-18 20:07:19.968 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-10-18 20:07:19.968 +08:00 [INF] Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'N/A'
+2023-10-18 20:07:19.969 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44312/swagger/ui/abp.js - - - 200 3122 application/javascript 34.6748ms
+2023-10-18 20:07:19.971 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44312/swagger/swagger-ui.css - - - 200 143943 text/css 36.7562ms
+2023-10-18 20:07:19.979 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44312/swagger/swagger-ui-standalone-preset.js - - - 200 339486 text/javascript 33.7203ms
+2023-10-18 20:07:19.995 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44312/swagger/swagger-ui-bundle.js - - - 200 1095087 text/javascript 58.4035ms
+2023-10-18 20:07:20.012 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44312/_vs/browserLink - -
+2023-10-18 20:07:20.030 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44312/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 17.0955ms
+2023-10-18 20:07:20.638 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44312/swagger/v1/swagger.json - -
+2023-10-18 20:07:20.669 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44312/swagger/favicon-32x32.png - -
+2023-10-18 20:07:20.670 +08:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-10-18 20:07:20.671 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44312/swagger/favicon-32x32.png - - - 200 628 image/png 1.4062ms
+2023-10-18 20:07:20.930 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44312/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 292.1658ms
+2023-10-18 20:07:27.067 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44312/abp/Swashbuckle/SetCsrfCookie application/json -
+2023-10-18 20:07:27.105 +08:00 [INF] Executing endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2023-10-18 20:07:27.126 +08:00 [INF] Route matched with {area = "Abp", action = "SetCsrfCookie", controller = "AbpSwashbuckle"}. Executing controller action with signature Void SetCsrfCookie() on controller Volo.Abp.Swashbuckle.AbpSwashbuckleController (Volo.Abp.Swashbuckle).
+2023-10-18 20:07:27.183 +08:00 [INF] Executed action Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle) in 53.7399ms
+2023-10-18 20:07:27.183 +08:00 [INF] Executed endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2023-10-18 20:07:27.183 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44312/abp/Swashbuckle/SetCsrfCookie application/json - - 204 - - 116.4918ms
+2023-10-18 20:07:27.214 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44312/api/Author/Create application/json 48
+2023-10-18 20:07:27.216 +08:00 [INF] Executing endpoint 'Sample.Novel.HttpApi.Host.Controllers.AuthorController.CreateAsync (Sample.Novel.HttpApi.Host)'
+2023-10-18 20:07:27.229 +08:00 [INF] Route matched with {controller = "Author(作者)", action = "Create", area = ""}. Executing controller action with signature System.Threading.Tasks.Task CreateAsync(Sample.Novel.Application.Contracts.Dtos.CreateAuthorInput) on controller Sample.Novel.HttpApi.Host.Controllers.AuthorController (Sample.Novel.HttpApi.Host).
+2023-10-18 20:07:28.754 +08:00 [INF] Executed DbCommand (34ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 500), @p2='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AppAuthor] ([Id], [Description], [Name])
+VALUES (@p0, @p1, @p2);
+2023-10-18 20:07:28.777 +08:00 [INF] AUDIT LOG: [200: POST   ] /api/Author/Create
+- UserName - UserId                 :  - 
+- ClientIpAddress        : ::1
+- ExecutionDuration      : 1345
+- Actions:
+  - Sample.Novel.Application.Services.AuthorAppService.CreateAsync (1166 ms.)
+    {"input":{"name":"strin","description":"string"}}
+
+2023-10-18 20:07:28.816 +08:00 [INF] Executed action Sample.Novel.HttpApi.Host.Controllers.AuthorController.CreateAsync (Sample.Novel.HttpApi.Host) in 1586.4565ms
+2023-10-18 20:07:28.816 +08:00 [INF] Executed endpoint 'Sample.Novel.HttpApi.Host.Controllers.AuthorController.CreateAsync (Sample.Novel.HttpApi.Host)'
+2023-10-18 20:07:28.818 +08:00 [INF] Request finished HTTP/2 POST https://localhost:44312/api/Author/Create application/json 48 - 204 - - 1603.1351ms
+2023-10-18 20:07:41.838 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44312/api/Role/Create application/json 43
+2023-10-18 20:07:41.839 +08:00 [INF] Executing endpoint 'Sample.Novel.HttpApi.Host.Controllers.RoleController.CreateAsync (Sample.Novel.HttpApi.Host)'
+2023-10-18 20:07:41.843 +08:00 [INF] Route matched with {action = "Create", controller = "Role", area = ""}. Executing controller action with signature System.Threading.Tasks.Task CreateAsync(Sample.Novel.Application.Contracts.Dtos.IdentityRoleCreateDto) on controller Sample.Novel.HttpApi.Host.Controllers.RoleController (Sample.Novel.HttpApi.Host).
+2023-10-18 20:07:42.058 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 40), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Guid), @p4='?' (DbType = Guid), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = Boolean), @p9='?' (DbType = DateTime2), @p10='?' (DbType = Guid), @p11='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Sys_Roles] ([Id], [ConcurrencyStamp], [CreationTime], [CreatorId], [DeleterId], [DeletionTime], [ExtraProperties], [IsDefault], [IsStatic], [LastModificationTime], [LastModifierId], [Name])
+OUTPUT INSERTED.[IsDeleted]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+2023-10-18 20:07:42.073 +08:00 [INF] AUDIT LOG: [200: POST   ] /api/Role/Create
+- UserName - UserId                 :  - 
+- ClientIpAddress        : ::1
+- ExecutionDuration      : 105
+- Actions:
+  - Sample.Novel.Application.Services.RoleAppService.CreateAsync (51 ms.)
+    {"input":{"name":"string","isDefault":true,"extraProperties":{}}
+
+2023-10-18 20:07:42.076 +08:00 [INF] Executed action Sample.Novel.HttpApi.Host.Controllers.RoleController.CreateAsync (Sample.Novel.HttpApi.Host) in 232.8146ms
+2023-10-18 20:07:42.076 +08:00 [INF] Executed endpoint 'Sample.Novel.HttpApi.Host.Controllers.RoleController.CreateAsync (Sample.Novel.HttpApi.Host)'
+2023-10-18 20:07:42.077 +08:00 [INF] Request finished HTTP/2 POST https://localhost:44312/api/Role/Create application/json 43 - 204 - - 239.2119ms
+2023-10-18 20:07:53.020 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44312/api/Role/Create application/json 40
+2023-10-18 20:07:53.022 +08:00 [INF] Executing endpoint 'Sample.Novel.HttpApi.Host.Controllers.RoleController.CreateAsync (Sample.Novel.HttpApi.Host)'
+2023-10-18 20:07:53.022 +08:00 [INF] Route matched with {action = "Create", controller = "Role", area = ""}. Executing controller action with signature System.Threading.Tasks.Task CreateAsync(Sample.Novel.Application.Contracts.Dtos.IdentityRoleCreateDto) on controller Sample.Novel.HttpApi.Host.Controllers.RoleController (Sample.Novel.HttpApi.Host).
+2023-10-18 20:07:53.085 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 40), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Guid), @p4='?' (DbType = Guid), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = Boolean), @p9='?' (DbType = DateTime2), @p10='?' (DbType = Guid), @p11='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Sys_Roles] ([Id], [ConcurrencyStamp], [CreationTime], [CreatorId], [DeleterId], [DeletionTime], [ExtraProperties], [IsDefault], [IsStatic], [LastModificationTime], [LastModifierId], [Name])
+OUTPUT INSERTED.[IsDeleted]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+2023-10-18 20:07:53.086 +08:00 [INF] AUDIT LOG: [200: POST   ] /api/Role/Create
+- UserName - UserId                 :  - 
+- ClientIpAddress        : ::1
+- ExecutionDuration      : 61
+- Actions:
+  - Sample.Novel.Application.Services.RoleAppService.CreateAsync (56 ms.)
+    {"input":{"name":"123","isDefault":true,"extraProperties":{}}
+
+2023-10-18 20:07:53.088 +08:00 [INF] Executed action Sample.Novel.HttpApi.Host.Controllers.RoleController.CreateAsync (Sample.Novel.HttpApi.Host) in 65.1202ms
+2023-10-18 20:07:53.088 +08:00 [INF] Executed endpoint 'Sample.Novel.HttpApi.Host.Controllers.RoleController.CreateAsync (Sample.Novel.HttpApi.Host)'
+2023-10-18 20:07:53.088 +08:00 [INF] Request finished HTTP/2 POST https://localhost:44312/api/Role/Create application/json 40 - 204 - - 67.4535ms
+2023-10-19 18:16:44.806 +08:00 [INF] Starting Sample.Novel.HttpApi.Host.
+2023-10-19 18:16:51.031 +08:00 [INF] Loaded ABP modules:
+2023-10-19 18:16:51.032 +08:00 [INF] - Sample.Novel.NovelHttpApiHostModule
+2023-10-19 18:16:51.032 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2023-10-19 18:16:51.032 +08:00 [INF]     - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-10-19 18:16:51.032 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-10-19 18:16:51.032 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-10-19 18:16:51.032 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2023-10-19 18:16:51.032 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2023-10-19 18:16:51.032 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-10-19 18:16:51.032 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-10-19 18:16:51.032 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-10-19 18:16:51.032 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-10-19 18:16:51.032 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-10-19 18:16:51.032 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2023-10-19 18:16:51.032 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-10-19 18:16:51.032 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-10-19 18:16:51.032 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2023-10-19 18:16:51.032 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationModule
+2023-10-19 18:16:51.032 +08:00 [INF]                   - Volo.Abp.Settings.AbpSettingsModule
+2023-10-19 18:16:51.032 +08:00 [INF]                     - Volo.Abp.Security.AbpSecurityModule
+2023-10-19 18:16:51.032 +08:00 [INF]                   - Volo.Abp.Threading.AbpThreadingModule
+2023-10-19 18:16:51.032 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-10-19 18:16:51.032 +08:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-10-19 18:16:51.032 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-10-19 18:16:51.032 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2023-10-19 18:16:51.032 +08:00 [INF]           - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-10-19 18:16:51.032 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2023-10-19 18:16:51.032 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-10-19 18:16:51.032 +08:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-10-19 18:16:51.032 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2023-10-19 18:16:51.032 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-10-19 18:16:51.032 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-10-19 18:16:51.032 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-10-19 18:16:51.032 +08:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-10-19 18:16:51.032 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-10-19 18:16:51.032 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2023-10-19 18:16:51.032 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-10-19 18:16:51.032 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationModule
+2023-10-19 18:16:51.032 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2023-10-19 18:16:51.032 +08:00 [INF]           - Volo.Abp.EventBus.AbpEventBusModule
+2023-10-19 18:16:51.032 +08:00 [INF]             - Volo.Abp.Guids.AbpGuidsModule
+2023-10-19 18:16:51.032 +08:00 [INF]             - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-10-19 18:16:51.032 +08:00 [INF]             - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-10-19 18:16:51.032 +08:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-10-19 18:16:51.032 +08:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-10-19 18:16:51.032 +08:00 [INF]           - Volo.Abp.Caching.AbpCachingModule
+2023-10-19 18:16:51.032 +08:00 [INF]             - Volo.Abp.Serialization.AbpSerializationModule
+2023-10-19 18:16:51.032 +08:00 [INF]           - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-10-19 18:16:51.032 +08:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2023-10-19 18:16:51.032 +08:00 [INF]   - Sample.Novel.NovelApplicationModule
+2023-10-19 18:16:51.032 +08:00 [INF]     - Sample.Novel.NovelDomainModule
+2023-10-19 18:16:51.032 +08:00 [INF]     - Sample.Novel.NovelApplicationContractsModule
+2023-10-19 18:16:51.032 +08:00 [INF]       - Sample.Novel.NovelDomainSharedModule
+2023-10-19 18:16:51.032 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2023-10-19 18:16:51.032 +08:00 [INF]   - Sample.Novel.EntityFrameworkCore.NovelEntityFrameworkCoreModule
+2023-10-19 18:16:51.032 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-10-19 18:16:51.032 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2023-10-19 18:16:51.032 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2023-10-19 18:16:51.032 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2023-10-19 18:16:51.032 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2023-10-19 18:16:51.523 +08:00 [INF] User profile is available. Using 'C:\Users\liudd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-19 18:16:51.609 +08:00 [INF] Initialized all ABP modules.
+2023-10-19 18:16:51.729 +08:00 [INF] Now listening on: http://localhost:5057
+2023-10-19 18:16:51.730 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-19 18:16:51.730 +08:00 [INF] Hosting environment: Development
+2023-10-19 18:16:51.730 +08:00 [INF] Content root path: D:\Test\Sample.Novel\src\Sample.Novel.HttpApi.Host
+2023-10-19 18:16:53.251 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/index.html - -
+2023-10-19 18:16:53.688 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/index.html - - - 200 - text/html;charset=utf-8 438.3464ms
+2023-10-19 18:16:53.750 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/_framework/aspnetcore-browser-refresh.js - -
+2023-10-19 18:16:53.753 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 3.4359ms
+2023-10-19 18:16:54.317 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - -
+2023-10-19 18:16:54.665 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 347.3418ms
+2023-10-19 18:17:07.695 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/abp/Swashbuckle/SetCsrfCookie application/json -
+2023-10-19 18:17:07.699 +08:00 [WRN] Failed to determine the https port for redirect.
+2023-10-19 18:17:07.747 +08:00 [INF] Executing endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2023-10-19 18:17:07.772 +08:00 [INF] Route matched with {area = "Abp", action = "SetCsrfCookie", controller = "AbpSwashbuckle"}. Executing controller action with signature Void SetCsrfCookie() on controller Volo.Abp.Swashbuckle.AbpSwashbuckleController (Volo.Abp.Swashbuckle).
+2023-10-19 18:17:07.832 +08:00 [WRN] The cookie 'XSRF-TOKEN' has set 'SameSite=None' and must also set 'Secure'.
+2023-10-19 18:17:07.840 +08:00 [INF] Executed action Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle) in 65.3392ms
+2023-10-19 18:17:07.840 +08:00 [INF] Executed endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2023-10-19 18:17:07.842 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/abp/Swashbuckle/SetCsrfCookie application/json - - 204 - - 146.6046ms
+2023-10-19 18:17:07.875 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5057/api/User/Create application/json 198
+2023-10-19 18:17:07.877 +08:00 [INF] Executing endpoint 'Sample.Novel.HttpApi.Host.Controllers.UserController.CreateAsync (Sample.Novel.HttpApi.Host)'
+2023-10-19 18:17:07.890 +08:00 [INF] Route matched with {action = "Create", controller = "User", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Sample.Novel.Application.Contracts.Dtos.IdentityUserDto] CreateAsync(Sample.Novel.Application.Contracts.Dtos.IdentityUserCreateDto) on controller Sample.Novel.HttpApi.Host.Controllers.UserController (Sample.Novel.HttpApi.Host).
+2023-10-19 18:17:07.899 +08:00 [WRN] The antiforgery cookie token and request token do not match.
+2023-10-19 18:17:07.899 +08:00 [INF] Authorization failed for the request at filter 'Volo.Abp.AspNetCore.Mvc.AntiForgery.AbpAutoValidateAntiforgeryTokenAuthorizationFilter'.
+2023-10-19 18:17:07.901 +08:00 [INF] Executing StatusCodeResult, setting HTTP status code 400
+2023-10-19 18:17:07.901 +08:00 [INF] Executed action Sample.Novel.HttpApi.Host.Controllers.UserController.CreateAsync (Sample.Novel.HttpApi.Host) in 10.8593ms
+2023-10-19 18:17:07.901 +08:00 [INF] Executed endpoint 'Sample.Novel.HttpApi.Host.Controllers.UserController.CreateAsync (Sample.Novel.HttpApi.Host)'
+2023-10-19 18:17:07.902 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:5057/api/User/Create application/json 198 - 400 0 - 26.7442ms
+2023-10-19 18:19:48.852 +08:00 [INF] Starting Sample.Novel.HttpApi.Host.
+2023-10-19 18:19:50.441 +08:00 [INF] Loaded ABP modules:
+2023-10-19 18:19:50.442 +08:00 [INF] - Sample.Novel.NovelHttpApiHostModule
+2023-10-19 18:19:50.442 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2023-10-19 18:19:50.442 +08:00 [INF]     - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-10-19 18:19:50.442 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-10-19 18:19:50.442 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-10-19 18:19:50.442 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2023-10-19 18:19:50.442 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2023-10-19 18:19:50.442 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-10-19 18:19:50.442 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-10-19 18:19:50.442 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-10-19 18:19:50.442 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-10-19 18:19:50.442 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-10-19 18:19:50.442 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2023-10-19 18:19:50.442 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-10-19 18:19:50.442 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-10-19 18:19:50.442 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2023-10-19 18:19:50.442 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationModule
+2023-10-19 18:19:50.442 +08:00 [INF]                   - Volo.Abp.Settings.AbpSettingsModule
+2023-10-19 18:19:50.442 +08:00 [INF]                     - Volo.Abp.Security.AbpSecurityModule
+2023-10-19 18:19:50.442 +08:00 [INF]                   - Volo.Abp.Threading.AbpThreadingModule
+2023-10-19 18:19:50.442 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-10-19 18:19:50.442 +08:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-10-19 18:19:50.442 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-10-19 18:19:50.442 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2023-10-19 18:19:50.442 +08:00 [INF]           - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-10-19 18:19:50.442 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2023-10-19 18:19:50.442 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-10-19 18:19:50.442 +08:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-10-19 18:19:50.442 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2023-10-19 18:19:50.442 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-10-19 18:19:50.442 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-10-19 18:19:50.442 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-10-19 18:19:50.442 +08:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-10-19 18:19:50.442 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-10-19 18:19:50.442 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2023-10-19 18:19:50.442 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-10-19 18:19:50.442 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationModule
+2023-10-19 18:19:50.442 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2023-10-19 18:19:50.442 +08:00 [INF]           - Volo.Abp.EventBus.AbpEventBusModule
+2023-10-19 18:19:50.443 +08:00 [INF]             - Volo.Abp.Guids.AbpGuidsModule
+2023-10-19 18:19:50.443 +08:00 [INF]             - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-10-19 18:19:50.443 +08:00 [INF]             - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-10-19 18:19:50.443 +08:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-10-19 18:19:50.443 +08:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-10-19 18:19:50.443 +08:00 [INF]           - Volo.Abp.Caching.AbpCachingModule
+2023-10-19 18:19:50.443 +08:00 [INF]             - Volo.Abp.Serialization.AbpSerializationModule
+2023-10-19 18:19:50.443 +08:00 [INF]           - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-10-19 18:19:50.443 +08:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2023-10-19 18:19:50.443 +08:00 [INF]   - Sample.Novel.NovelApplicationModule
+2023-10-19 18:19:50.443 +08:00 [INF]     - Sample.Novel.NovelDomainModule
+2023-10-19 18:19:50.443 +08:00 [INF]     - Sample.Novel.NovelApplicationContractsModule
+2023-10-19 18:19:50.443 +08:00 [INF]       - Sample.Novel.NovelDomainSharedModule
+2023-10-19 18:19:50.443 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2023-10-19 18:19:50.443 +08:00 [INF]   - Sample.Novel.EntityFrameworkCore.NovelEntityFrameworkCoreModule
+2023-10-19 18:19:50.443 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-10-19 18:19:50.443 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2023-10-19 18:19:50.443 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2023-10-19 18:19:50.443 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2023-10-19 18:19:50.443 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2023-10-19 18:19:50.767 +08:00 [INF] User profile is available. Using 'C:\Users\liudd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-19 18:19:50.855 +08:00 [INF] Initialized all ABP modules.
+2023-10-19 18:19:50.927 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-19 18:19:50.927 +08:00 [INF] Hosting environment: Development
+2023-10-19 18:19:50.927 +08:00 [INF] Content root path: D:\Test\Sample.Novel\src\Sample.Novel.HttpApi.Host
+2023-10-19 18:19:50.958 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44312/swagger/index.html - -
+2023-10-19 18:19:51.107 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44312/swagger/index.html - - - 200 - text/html;charset=utf-8 149.3050ms
+2023-10-19 18:19:51.146 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - -
+2023-10-19 18:19:51.158 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44312/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 8.6149ms
+2023-10-19 18:19:51.880 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44312/swagger/v1/swagger.json - -
+2023-10-19 18:19:52.231 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44312/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 351.4097ms
+2023-10-19 18:20:21.229 +08:00 [INF] Request starting HTTP/2 GET https://localhost:44312/abp/Swashbuckle/SetCsrfCookie application/json -
+2023-10-19 18:20:21.286 +08:00 [INF] Executing endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2023-10-19 18:20:21.320 +08:00 [INF] Route matched with {area = "Abp", action = "SetCsrfCookie", controller = "AbpSwashbuckle"}. Executing controller action with signature Void SetCsrfCookie() on controller Volo.Abp.Swashbuckle.AbpSwashbuckleController (Volo.Abp.Swashbuckle).
+2023-10-19 18:20:21.381 +08:00 [INF] Executed action Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle) in 56.7037ms
+2023-10-19 18:20:21.381 +08:00 [INF] Executed endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2023-10-19 18:20:21.382 +08:00 [INF] Request finished HTTP/2 GET https://localhost:44312/abp/Swashbuckle/SetCsrfCookie application/json - - 204 - - 155.9587ms
+2023-10-19 18:20:21.426 +08:00 [INF] Request starting HTTP/2 POST https://localhost:44312/api/User/Create application/json 198
+2023-10-19 18:20:21.429 +08:00 [INF] Executing endpoint 'Sample.Novel.HttpApi.Host.Controllers.UserController.CreateAsync (Sample.Novel.HttpApi.Host)'
+2023-10-19 18:20:21.440 +08:00 [INF] Route matched with {action = "Create", controller = "User", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Sample.Novel.Application.Contracts.Dtos.IdentityUserDto] CreateAsync(Sample.Novel.Application.Contracts.Dtos.IdentityUserCreateDto) on controller Sample.Novel.HttpApi.Host.Controllers.UserController (Sample.Novel.HttpApi.Host).
+2023-10-19 18:20:27.990 +08:00 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[UserId], [s].[RoleId]
+FROM [Sys_UserRoles] AS [s]
+WHERE 0 = 1
+2023-10-19 18:20:28.429 +08:00 [INF] Executed DbCommand (54ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 40), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Guid), @p4='?' (DbType = Guid), @p5='?' (DbType = DateTime2), @p6='?' (Size = 450), @p7='?' (DbType = Boolean), @p8='?' (Size = 4000), @p9='?' (DbType = Boolean), @p10='?' (DbType = DateTime2), @p11='?' (DbType = Guid), @p12='?' (DbType = DateTimeOffset), @p13='?' (DbType = Boolean), @p14='?' (DbType = DateTimeOffset), @p15='?' (Size = 4000), @p16='?' (Size = 256), @p17='?' (Size = 4000), @p18='?' (DbType = Boolean), @p19='?' (DbType = Boolean), @p20='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Sys_Users] ([Id], [ConcurrencyStamp], [CreationTime], [CreatorId], [DeleterId], [DeletionTime], [Email], [EmailConfirmed], [ExtraProperties], [IsActive], [LastModificationTime], [LastModifierId], [LastPasswordChangeTime], [LockoutEnabled], [LockoutEnd], [Name], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [ShouldChangePasswordOnNextLogin], [UserName])
+OUTPUT INSERTED.[AccessFailedCount], INSERTED.[IsDeleted]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20);
+2023-10-19 18:20:28.458 +08:00 [INF] AUDIT LOG: [200: POST   ] /api/User/Create
+- UserName - UserId                 :  - 
+- ClientIpAddress        : ::1
+- ExecutionDuration      : 6596
+- Actions:
+  - Sample.Novel.Application.Services.UserAppService.CreateAsync (6381 ms.)
+    {"input":{"userName":"string","name":"strin","email":"user@example.com","phoneNumber":"string","isActive":true,"lockoutEnabled":true,"roleIds":[],"extraProperties":{}}
+
+2023-10-19 18:20:28.498 +08:00 [INF] Executing ObjectResult, writing value of type 'Sample.Novel.Application.Contracts.Dtos.IdentityUserDto'.
+2023-10-19 18:20:28.544 +08:00 [INF] Executed action Sample.Novel.HttpApi.Host.Controllers.UserController.CreateAsync (Sample.Novel.HttpApi.Host) in 7104.129ms
+2023-10-19 18:20:28.545 +08:00 [INF] Executed endpoint 'Sample.Novel.HttpApi.Host.Controllers.UserController.CreateAsync (Sample.Novel.HttpApi.Host)'
+2023-10-19 18:20:28.548 +08:00 [INF] Request finished HTTP/2 POST https://localhost:44312/api/User/Create application/json 198 - 200 - application/json;+charset=utf-8 7121.4505ms
+2023-10-19 18:22:44.819 +08:00 [INF] Starting Sample.Novel.HttpApi.Host.
+2023-10-19 18:22:46.735 +08:00 [INF] Loaded ABP modules:
+2023-10-19 18:22:46.736 +08:00 [INF] - Sample.Novel.NovelHttpApiHostModule
+2023-10-19 18:22:46.736 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2023-10-19 18:22:46.736 +08:00 [INF]     - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-10-19 18:22:46.736 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-10-19 18:22:46.736 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-10-19 18:22:46.736 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2023-10-19 18:22:46.736 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2023-10-19 18:22:46.736 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-10-19 18:22:46.736 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-10-19 18:22:46.736 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-10-19 18:22:46.736 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-10-19 18:22:46.736 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-10-19 18:22:46.736 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2023-10-19 18:22:46.736 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-10-19 18:22:46.736 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-10-19 18:22:46.736 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2023-10-19 18:22:46.736 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationModule
+2023-10-19 18:22:46.736 +08:00 [INF]                   - Volo.Abp.Settings.AbpSettingsModule
+2023-10-19 18:22:46.736 +08:00 [INF]                     - Volo.Abp.Security.AbpSecurityModule
+2023-10-19 18:22:46.736 +08:00 [INF]                   - Volo.Abp.Threading.AbpThreadingModule
+2023-10-19 18:22:46.736 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-10-19 18:22:46.736 +08:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-10-19 18:22:46.736 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-10-19 18:22:46.736 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2023-10-19 18:22:46.736 +08:00 [INF]           - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-10-19 18:22:46.736 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2023-10-19 18:22:46.736 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-10-19 18:22:46.736 +08:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-10-19 18:22:46.736 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2023-10-19 18:22:46.736 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-10-19 18:22:46.736 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-10-19 18:22:46.736 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-10-19 18:22:46.736 +08:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-10-19 18:22:46.736 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-10-19 18:22:46.736 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2023-10-19 18:22:46.736 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-10-19 18:22:46.736 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationModule
+2023-10-19 18:22:46.736 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2023-10-19 18:22:46.736 +08:00 [INF]           - Volo.Abp.EventBus.AbpEventBusModule
+2023-10-19 18:22:46.736 +08:00 [INF]             - Volo.Abp.Guids.AbpGuidsModule
+2023-10-19 18:22:46.736 +08:00 [INF]             - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-10-19 18:22:46.736 +08:00 [INF]             - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-10-19 18:22:46.736 +08:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-10-19 18:22:46.736 +08:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-10-19 18:22:46.736 +08:00 [INF]           - Volo.Abp.Caching.AbpCachingModule
+2023-10-19 18:22:46.736 +08:00 [INF]             - Volo.Abp.Serialization.AbpSerializationModule
+2023-10-19 18:22:46.736 +08:00 [INF]           - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-10-19 18:22:46.736 +08:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2023-10-19 18:22:46.736 +08:00 [INF]   - Sample.Novel.NovelApplicationModule
+2023-10-19 18:22:46.736 +08:00 [INF]     - Sample.Novel.NovelDomainModule
+2023-10-19 18:22:46.736 +08:00 [INF]     - Sample.Novel.NovelApplicationContractsModule
+2023-10-19 18:22:46.736 +08:00 [INF]       - Sample.Novel.NovelDomainSharedModule
+2023-10-19 18:22:46.736 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2023-10-19 18:22:46.736 +08:00 [INF]   - Sample.Novel.EntityFrameworkCore.NovelEntityFrameworkCoreModule
+2023-10-19 18:22:46.736 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-10-19 18:22:46.736 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2023-10-19 18:22:46.736 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2023-10-19 18:22:46.736 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2023-10-19 18:22:46.736 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2023-10-19 18:22:47.055 +08:00 [INF] User profile is available. Using 'C:\Users\liudd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-19 18:22:47.143 +08:00 [INF] Initialized all ABP modules.
+2023-10-19 18:22:47.301 +08:00 [INF] Now listening on: https://localhost:7295
+2023-10-19 18:22:47.301 +08:00 [INF] Now listening on: http://localhost:5057
+2023-10-19 18:22:47.301 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-19 18:22:47.301 +08:00 [INF] Hosting environment: Development
+2023-10-19 18:22:47.301 +08:00 [INF] Content root path: D:\Test\Sample.Novel\src\Sample.Novel.HttpApi.Host
+2023-10-19 18:22:48.111 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger - -
+2023-10-19 18:22:48.183 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger - - - 301 0 - 72.1604ms
+2023-10-19 18:22:48.191 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/index.html - -
+2023-10-19 18:22:48.265 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/index.html - - - 200 - text/html;charset=utf-8 73.9473ms
+2023-10-19 18:22:48.305 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/swagger-ui.css - -
+2023-10-19 18:22:48.307 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/ui/abp.js - -
+2023-10-19 18:22:48.307 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/ui/abp.swagger.js - -
+2023-10-19 18:22:48.307 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/swagger-ui-bundle.js - -
+2023-10-19 18:22:48.317 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/swagger-ui-standalone-preset.js - -
+2023-10-19 18:22:48.319 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - -
+2023-10-19 18:22:48.339 +08:00 [INF] Sending file. Request path: '/swagger/ui/abp.swagger.js'. Physical path: 'N/A'
+2023-10-19 18:22:48.339 +08:00 [INF] Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'N/A'
+2023-10-19 18:22:48.339 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/ui/abp.swagger.js - - - 200 1363 application/javascript 32.7219ms
+2023-10-19 18:22:48.339 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/ui/abp.js - - - 200 3122 application/javascript 32.7492ms
+2023-10-19 18:22:48.339 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7295/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 20.3920ms
+2023-10-19 18:22:48.358 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-10-19 18:22:48.358 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-10-19 18:22:48.363 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/swagger-ui.css - - - 200 143943 text/css 57.4240ms
+2023-10-19 18:22:48.363 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/swagger-ui-standalone-preset.js - - - 200 339486 text/javascript 46.7028ms
+2023-10-19 18:22:48.367 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-10-19 18:22:48.367 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/swagger-ui-bundle.js - - - 200 1095087 text/javascript 59.5901ms
+2023-10-19 18:22:49.011 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - -
+2023-10-19 18:22:49.035 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7295/swagger/favicon-32x32.png - -
+2023-10-19 18:22:49.036 +08:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-10-19 18:22:49.036 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/favicon-32x32.png - - - 200 628 image/png 1.2301ms
+2023-10-19 18:22:49.325 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7295/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 313.9074ms
+2023-10-19 18:23:02.301 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7295/abp/Swashbuckle/SetCsrfCookie application/json -
+2023-10-19 18:23:02.347 +08:00 [INF] Executing endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2023-10-19 18:23:02.376 +08:00 [INF] Route matched with {area = "Abp", action = "SetCsrfCookie", controller = "AbpSwashbuckle"}. Executing controller action with signature Void SetCsrfCookie() on controller Volo.Abp.Swashbuckle.AbpSwashbuckleController (Volo.Abp.Swashbuckle).
+2023-10-19 18:23:02.426 +08:00 [INF] Executed action Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle) in 48.0791ms
+2023-10-19 18:23:02.426 +08:00 [INF] Executed endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2023-10-19 18:23:02.427 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7295/abp/Swashbuckle/SetCsrfCookie application/json - - 204 - - 125.5046ms
+2023-10-19 18:23:02.461 +08:00 [INF] Request starting HTTP/2 POST https://localhost:7295/api/User/Create application/json 198
+2023-10-19 18:23:02.463 +08:00 [INF] Executing endpoint 'Sample.Novel.HttpApi.Host.Controllers.UserController.CreateAsync (Sample.Novel.HttpApi.Host)'
+2023-10-19 18:23:02.484 +08:00 [INF] Route matched with {action = "Create", controller = "User", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Sample.Novel.Application.Contracts.Dtos.IdentityUserDto] CreateAsync(Sample.Novel.Application.Contracts.Dtos.IdentityUserCreateDto) on controller Sample.Novel.HttpApi.Host.Controllers.UserController (Sample.Novel.HttpApi.Host).
+2023-10-19 18:23:04.391 +08:00 [INF] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[UserId], [s].[RoleId]
+FROM [Sys_UserRoles] AS [s]
+WHERE 0 = 1
+2023-10-19 18:23:04.832 +08:00 [INF] Executed DbCommand (27ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 40), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Guid), @p4='?' (DbType = Guid), @p5='?' (DbType = DateTime2), @p6='?' (Size = 450), @p7='?' (DbType = Boolean), @p8='?' (Size = 4000), @p9='?' (DbType = Boolean), @p10='?' (DbType = DateTime2), @p11='?' (DbType = Guid), @p12='?' (DbType = DateTimeOffset), @p13='?' (DbType = Boolean), @p14='?' (DbType = DateTimeOffset), @p15='?' (Size = 4000), @p16='?' (Size = 256), @p17='?' (Size = 4000), @p18='?' (DbType = Boolean), @p19='?' (DbType = Boolean), @p20='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Sys_Users] ([Id], [ConcurrencyStamp], [CreationTime], [CreatorId], [DeleterId], [DeletionTime], [Email], [EmailConfirmed], [ExtraProperties], [IsActive], [LastModificationTime], [LastModifierId], [LastPasswordChangeTime], [LockoutEnabled], [LockoutEnd], [Name], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [ShouldChangePasswordOnNextLogin], [UserName])
+OUTPUT INSERTED.[AccessFailedCount], INSERTED.[IsDeleted]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20);
+2023-10-19 18:23:04.862 +08:00 [INF] AUDIT LOG: [200: POST   ] /api/User/Create
+- UserName - UserId                 :  - 
+- ClientIpAddress        : ::1
+- ExecutionDuration      : 1982
+- Actions:
+  - Sample.Novel.Application.Services.UserAppService.CreateAsync (1796 ms.)
+    {"input":{"userName":"string","name":"strin","email":"user@example.com","phoneNumber":"string","isActive":true,"lockoutEnabled":true,"roleIds":[],"extraProperties":{}}
+
+2023-10-19 18:23:04.903 +08:00 [INF] Executing ObjectResult, writing value of type 'Sample.Novel.Application.Contracts.Dtos.IdentityUserDto'.
+2023-10-19 18:23:04.940 +08:00 [INF] Executed action Sample.Novel.HttpApi.Host.Controllers.UserController.CreateAsync (Sample.Novel.HttpApi.Host) in 2455.1185ms
+2023-10-19 18:23:04.940 +08:00 [INF] Executed endpoint 'Sample.Novel.HttpApi.Host.Controllers.UserController.CreateAsync (Sample.Novel.HttpApi.Host)'
+2023-10-19 18:23:04.942 +08:00 [INF] Request finished HTTP/2 POST https://localhost:7295/api/User/Create application/json 198 - 200 - application/json;+charset=utf-8 2480.4198ms
+2023-10-19 18:23:59.455 +08:00 [INF] Request starting HTTP/2 POST https://localhost:7295/api/User/Create application/json 198
+2023-10-19 18:23:59.463 +08:00 [INF] Executing endpoint 'Sample.Novel.HttpApi.Host.Controllers.UserController.CreateAsync (Sample.Novel.HttpApi.Host)'
+2023-10-19 18:23:59.463 +08:00 [INF] Route matched with {action = "Create", controller = "User", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Sample.Novel.Application.Contracts.Dtos.IdentityUserDto] CreateAsync(Sample.Novel.Application.Contracts.Dtos.IdentityUserCreateDto) on controller Sample.Novel.HttpApi.Host.Controllers.UserController (Sample.Novel.HttpApi.Host).
+2023-10-19 18:23:59.493 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[UserId], [s].[RoleId]
+FROM [Sys_UserRoles] AS [s]
+WHERE 0 = 1
+2023-10-19 18:23:59.502 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 40), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Guid), @p4='?' (DbType = Guid), @p5='?' (DbType = DateTime2), @p6='?' (Size = 450), @p7='?' (DbType = Boolean), @p8='?' (Size = 4000), @p9='?' (DbType = Boolean), @p10='?' (DbType = DateTime2), @p11='?' (DbType = Guid), @p12='?' (DbType = DateTimeOffset), @p13='?' (DbType = Boolean), @p14='?' (DbType = DateTimeOffset), @p15='?' (Size = 4000), @p16='?' (Size = 256), @p17='?' (Size = 4000), @p18='?' (DbType = Boolean), @p19='?' (DbType = Boolean), @p20='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Sys_Users] ([Id], [ConcurrencyStamp], [CreationTime], [CreatorId], [DeleterId], [DeletionTime], [Email], [EmailConfirmed], [ExtraProperties], [IsActive], [LastModificationTime], [LastModifierId], [LastPasswordChangeTime], [LockoutEnabled], [LockoutEnd], [Name], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [ShouldChangePasswordOnNextLogin], [UserName])
+OUTPUT INSERTED.[AccessFailedCount], INSERTED.[IsDeleted]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20);
+2023-10-19 18:23:59.503 +08:00 [INF] AUDIT LOG: [200: POST   ] /api/User/Create
+- UserName - UserId                 :  - 
+- ClientIpAddress        : ::1
+- ExecutionDuration      : 36
+- Actions:
+  - Sample.Novel.Application.Services.UserAppService.CreateAsync (30 ms.)
+    {"input":{"userName":"123123","name":"strin","email":"user@example.com","phoneNumber":"string","isActive":true,"lockoutEnabled":true,"roleIds":[],"extraProperties":{}}
+
+2023-10-19 18:23:59.506 +08:00 [INF] Executing ObjectResult, writing value of type 'Sample.Novel.Application.Contracts.Dtos.IdentityUserDto'.
+2023-10-19 18:23:59.506 +08:00 [INF] Executed action Sample.Novel.HttpApi.Host.Controllers.UserController.CreateAsync (Sample.Novel.HttpApi.Host) in 42.8448ms
+2023-10-19 18:23:59.506 +08:00 [INF] Executed endpoint 'Sample.Novel.HttpApi.Host.Controllers.UserController.CreateAsync (Sample.Novel.HttpApi.Host)'
+2023-10-19 18:23:59.506 +08:00 [INF] Request finished HTTP/2 POST https://localhost:7295/api/User/Create application/json 198 - 200 - application/json;+charset=utf-8 51.5185ms
+2023-10-19 18:24:53.904 +08:00 [INF] Starting Sample.Novel.HttpApi.Host.
+2023-10-19 18:24:55.461 +08:00 [INF] Loaded ABP modules:
+2023-10-19 18:24:55.462 +08:00 [INF] - Sample.Novel.NovelHttpApiHostModule
+2023-10-19 18:24:55.462 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2023-10-19 18:24:55.462 +08:00 [INF]     - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-10-19 18:24:55.462 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-10-19 18:24:55.462 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-10-19 18:24:55.462 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2023-10-19 18:24:55.462 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2023-10-19 18:24:55.462 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-10-19 18:24:55.462 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-10-19 18:24:55.462 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-10-19 18:24:55.462 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-10-19 18:24:55.462 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-10-19 18:24:55.462 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2023-10-19 18:24:55.462 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-10-19 18:24:55.462 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-10-19 18:24:55.462 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2023-10-19 18:24:55.462 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationModule
+2023-10-19 18:24:55.462 +08:00 [INF]                   - Volo.Abp.Settings.AbpSettingsModule
+2023-10-19 18:24:55.462 +08:00 [INF]                     - Volo.Abp.Security.AbpSecurityModule
+2023-10-19 18:24:55.462 +08:00 [INF]                   - Volo.Abp.Threading.AbpThreadingModule
+2023-10-19 18:24:55.462 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-10-19 18:24:55.462 +08:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-10-19 18:24:55.462 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-10-19 18:24:55.462 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2023-10-19 18:24:55.462 +08:00 [INF]           - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-10-19 18:24:55.462 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2023-10-19 18:24:55.462 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-10-19 18:24:55.462 +08:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-10-19 18:24:55.462 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2023-10-19 18:24:55.462 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-10-19 18:24:55.462 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-10-19 18:24:55.462 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-10-19 18:24:55.462 +08:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-10-19 18:24:55.462 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-10-19 18:24:55.462 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2023-10-19 18:24:55.462 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-10-19 18:24:55.462 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationModule
+2023-10-19 18:24:55.462 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2023-10-19 18:24:55.463 +08:00 [INF]           - Volo.Abp.EventBus.AbpEventBusModule
+2023-10-19 18:24:55.463 +08:00 [INF]             - Volo.Abp.Guids.AbpGuidsModule
+2023-10-19 18:24:55.463 +08:00 [INF]             - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-10-19 18:24:55.463 +08:00 [INF]             - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-10-19 18:24:55.463 +08:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-10-19 18:24:55.463 +08:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-10-19 18:24:55.463 +08:00 [INF]           - Volo.Abp.Caching.AbpCachingModule
+2023-10-19 18:24:55.463 +08:00 [INF]             - Volo.Abp.Serialization.AbpSerializationModule
+2023-10-19 18:24:55.463 +08:00 [INF]           - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-10-19 18:24:55.463 +08:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2023-10-19 18:24:55.463 +08:00 [INF]   - Sample.Novel.NovelApplicationModule
+2023-10-19 18:24:55.463 +08:00 [INF]     - Sample.Novel.NovelDomainModule
+2023-10-19 18:24:55.463 +08:00 [INF]     - Sample.Novel.NovelApplicationContractsModule
+2023-10-19 18:24:55.463 +08:00 [INF]       - Sample.Novel.NovelDomainSharedModule
+2023-10-19 18:24:55.463 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2023-10-19 18:24:55.463 +08:00 [INF]   - Sample.Novel.EntityFrameworkCore.NovelEntityFrameworkCoreModule
+2023-10-19 18:24:55.463 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-10-19 18:24:55.463 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2023-10-19 18:24:55.463 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2023-10-19 18:24:55.463 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2023-10-19 18:24:55.463 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2023-10-19 18:24:55.769 +08:00 [INF] User profile is available. Using 'C:\Users\liudd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-19 18:24:55.839 +08:00 [INF] Initialized all ABP modules.
+2023-10-19 18:24:55.950 +08:00 [INF] Now listening on: http://localhost:5057
+2023-10-19 18:24:55.950 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-19 18:24:55.950 +08:00 [INF] Hosting environment: Development
+2023-10-19 18:24:55.950 +08:00 [INF] Content root path: D:\Test\Sample.Novel\src\Sample.Novel.HttpApi.Host
+2023-10-19 18:24:56.164 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/index.html - -
+2023-10-19 18:24:56.314 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/index.html - - - 200 - text/html;charset=utf-8 149.5541ms
+2023-10-19 18:24:56.369 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/_framework/aspnetcore-browser-refresh.js - -
+2023-10-19 18:24:56.374 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 4.7430ms
+2023-10-19 18:24:56.802 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - -
+2023-10-19 18:24:57.145 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 343.4908ms
+2023-10-19 18:25:06.579 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/abp/Swashbuckle/SetCsrfCookie application/json -
+2023-10-19 18:25:06.626 +08:00 [INF] Executing endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2023-10-19 18:25:06.645 +08:00 [INF] Route matched with {area = "Abp", action = "SetCsrfCookie", controller = "AbpSwashbuckle"}. Executing controller action with signature Void SetCsrfCookie() on controller Volo.Abp.Swashbuckle.AbpSwashbuckleController (Volo.Abp.Swashbuckle).
+2023-10-19 18:25:06.693 +08:00 [WRN] The cookie 'XSRF-TOKEN' has set 'SameSite=None' and must also set 'Secure'.
+2023-10-19 18:25:06.703 +08:00 [INF] Executed action Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle) in 55.4489ms
+2023-10-19 18:25:06.703 +08:00 [INF] Executed endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2023-10-19 18:25:06.704 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/abp/Swashbuckle/SetCsrfCookie application/json - - 204 - - 124.8902ms
+2023-10-19 18:25:06.747 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5057/api/User/Create application/json 198
+2023-10-19 18:25:06.749 +08:00 [INF] Executing endpoint 'Sample.Novel.HttpApi.Host.Controllers.UserController.CreateAsync (Sample.Novel.HttpApi.Host)'
+2023-10-19 18:25:06.762 +08:00 [INF] Route matched with {action = "Create", controller = "User", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Sample.Novel.Application.Contracts.Dtos.IdentityUserDto] CreateAsync(Sample.Novel.Application.Contracts.Dtos.IdentityUserCreateDto) on controller Sample.Novel.HttpApi.Host.Controllers.UserController (Sample.Novel.HttpApi.Host).
+2023-10-19 18:25:08.628 +08:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[UserId], [s].[RoleId]
+FROM [Sys_UserRoles] AS [s]
+WHERE 0 = 1
+2023-10-19 18:25:09.074 +08:00 [INF] Executed DbCommand (27ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 40), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Guid), @p4='?' (DbType = Guid), @p5='?' (DbType = DateTime2), @p6='?' (Size = 450), @p7='?' (DbType = Boolean), @p8='?' (Size = 4000), @p9='?' (DbType = Boolean), @p10='?' (DbType = DateTime2), @p11='?' (DbType = Guid), @p12='?' (DbType = DateTimeOffset), @p13='?' (DbType = Boolean), @p14='?' (DbType = DateTimeOffset), @p15='?' (Size = 4000), @p16='?' (Size = 256), @p17='?' (Size = 4000), @p18='?' (DbType = Boolean), @p19='?' (DbType = Boolean), @p20='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Sys_Users] ([Id], [ConcurrencyStamp], [CreationTime], [CreatorId], [DeleterId], [DeletionTime], [Email], [EmailConfirmed], [ExtraProperties], [IsActive], [LastModificationTime], [LastModifierId], [LastPasswordChangeTime], [LockoutEnabled], [LockoutEnd], [Name], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [ShouldChangePasswordOnNextLogin], [UserName])
+OUTPUT INSERTED.[AccessFailedCount], INSERTED.[IsDeleted]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20);
+2023-10-19 18:25:09.108 +08:00 [INF] AUDIT LOG: [200: POST   ] /api/User/Create
+- UserName - UserId                 :  - 
+- ClientIpAddress        : ::1
+- ExecutionDuration      : 1980
+- Actions:
+  - Sample.Novel.Application.Services.UserAppService.CreateAsync (1784 ms.)
+    {"input":{"userName":"string","name":"strin","email":"user@example.com","phoneNumber":"string","isActive":true,"lockoutEnabled":true,"roleIds":[],"extraProperties":{}}
+
+2023-10-19 18:25:09.158 +08:00 [INF] Executing ObjectResult, writing value of type 'Sample.Novel.Application.Contracts.Dtos.IdentityUserDto'.
+2023-10-19 18:25:09.200 +08:00 [INF] Executed action Sample.Novel.HttpApi.Host.Controllers.UserController.CreateAsync (Sample.Novel.HttpApi.Host) in 2437.9282ms
+2023-10-19 18:25:09.200 +08:00 [INF] Executed endpoint 'Sample.Novel.HttpApi.Host.Controllers.UserController.CreateAsync (Sample.Novel.HttpApi.Host)'
+2023-10-19 18:25:09.203 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:5057/api/User/Create application/json 198 - 200 - application/json;+charset=utf-8 2456.1096ms
+2023-10-19 18:26:40.191 +08:00 [INF] Starting Sample.Novel.HttpApi.Host.
+2023-10-19 18:26:41.755 +08:00 [INF] Loaded ABP modules:
+2023-10-19 18:26:41.756 +08:00 [INF] - Sample.Novel.NovelHttpApiHostModule
+2023-10-19 18:26:41.756 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2023-10-19 18:26:41.756 +08:00 [INF]     - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2023-10-19 18:26:41.756 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2023-10-19 18:26:41.756 +08:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2023-10-19 18:26:41.756 +08:00 [INF]         - Volo.Abp.Auditing.AbpAuditingModule
+2023-10-19 18:26:41.756 +08:00 [INF]           - Volo.Abp.Data.AbpDataModule
+2023-10-19 18:26:41.756 +08:00 [INF]             - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2023-10-19 18:26:41.756 +08:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2023-10-19 18:26:41.756 +08:00 [INF]               - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2023-10-19 18:26:41.756 +08:00 [INF]             - Volo.Abp.Uow.AbpUnitOfWorkModule
+2023-10-19 18:26:41.756 +08:00 [INF]             - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2023-10-19 18:26:41.756 +08:00 [INF]           - Volo.Abp.Json.AbpJsonModule
+2023-10-19 18:26:41.756 +08:00 [INF]             - Volo.Abp.Json.SystemTextJson.AbpJsonSystemTextJsonModule
+2023-10-19 18:26:41.756 +08:00 [INF]               - Volo.Abp.Json.AbpJsonAbstractionsModule
+2023-10-19 18:26:41.756 +08:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2023-10-19 18:26:41.756 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationModule
+2023-10-19 18:26:41.756 +08:00 [INF]                   - Volo.Abp.Settings.AbpSettingsModule
+2023-10-19 18:26:41.756 +08:00 [INF]                     - Volo.Abp.Security.AbpSecurityModule
+2023-10-19 18:26:41.756 +08:00 [INF]                   - Volo.Abp.Threading.AbpThreadingModule
+2023-10-19 18:26:41.756 +08:00 [INF]           - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2023-10-19 18:26:41.756 +08:00 [INF]             - Volo.Abp.MultiTenancy.AbpMultiTenancyAbstractionsModule
+2023-10-19 18:26:41.756 +08:00 [INF]           - Volo.Abp.Auditing.AbpAuditingContractsModule
+2023-10-19 18:26:41.756 +08:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2023-10-19 18:26:41.756 +08:00 [INF]           - Volo.Abp.Http.AbpHttpAbstractionsModule
+2023-10-19 18:26:41.756 +08:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2023-10-19 18:26:41.756 +08:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationModule
+2023-10-19 18:26:41.756 +08:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2023-10-19 18:26:41.756 +08:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2023-10-19 18:26:41.756 +08:00 [INF]         - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2023-10-19 18:26:41.756 +08:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2023-10-19 18:26:41.756 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2023-10-19 18:26:41.756 +08:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2023-10-19 18:26:41.756 +08:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2023-10-19 18:26:41.756 +08:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2023-10-19 18:26:41.756 +08:00 [INF]       - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2023-10-19 18:26:41.756 +08:00 [INF]       - Volo.Abp.Application.AbpDddApplicationModule
+2023-10-19 18:26:41.756 +08:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2023-10-19 18:26:41.756 +08:00 [INF]           - Volo.Abp.EventBus.AbpEventBusModule
+2023-10-19 18:26:41.756 +08:00 [INF]             - Volo.Abp.Guids.AbpGuidsModule
+2023-10-19 18:26:41.756 +08:00 [INF]             - Volo.Abp.BackgroundWorkers.AbpBackgroundWorkersModule
+2023-10-19 18:26:41.756 +08:00 [INF]             - Volo.Abp.DistributedLocking.AbpDistributedLockingAbstractionsModule
+2023-10-19 18:26:41.756 +08:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2023-10-19 18:26:41.756 +08:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2023-10-19 18:26:41.756 +08:00 [INF]           - Volo.Abp.Caching.AbpCachingModule
+2023-10-19 18:26:41.756 +08:00 [INF]             - Volo.Abp.Serialization.AbpSerializationModule
+2023-10-19 18:26:41.756 +08:00 [INF]           - Volo.Abp.Domain.AbpDddDomainSharedModule
+2023-10-19 18:26:41.756 +08:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2023-10-19 18:26:41.756 +08:00 [INF]   - Sample.Novel.NovelApplicationModule
+2023-10-19 18:26:41.756 +08:00 [INF]     - Sample.Novel.NovelDomainModule
+2023-10-19 18:26:41.756 +08:00 [INF]     - Sample.Novel.NovelApplicationContractsModule
+2023-10-19 18:26:41.756 +08:00 [INF]       - Sample.Novel.NovelDomainSharedModule
+2023-10-19 18:26:41.756 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2023-10-19 18:26:41.756 +08:00 [INF]   - Sample.Novel.EntityFrameworkCore.NovelEntityFrameworkCoreModule
+2023-10-19 18:26:41.756 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2023-10-19 18:26:41.756 +08:00 [INF]     - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2023-10-19 18:26:41.756 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2023-10-19 18:26:41.756 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2023-10-19 18:26:41.756 +08:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2023-10-19 18:26:42.053 +08:00 [INF] User profile is available. Using 'C:\Users\liudd\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-19 18:26:42.150 +08:00 [INF] Initialized all ABP modules.
+2023-10-19 18:26:42.241 +08:00 [INF] Now listening on: http://localhost:5057
+2023-10-19 18:26:42.241 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-19 18:26:42.241 +08:00 [INF] Hosting environment: Development
+2023-10-19 18:26:42.241 +08:00 [INF] Content root path: D:\Test\Sample.Novel\src\Sample.Novel.HttpApi.Host
+2023-10-19 18:26:42.707 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/index.html - -
+2023-10-19 18:26:42.861 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/index.html - - - 200 - text/html;charset=utf-8 155.4330ms
+2023-10-19 18:26:42.906 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/_framework/aspnetcore-browser-refresh.js - -
+2023-10-19 18:26:42.911 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/_framework/aspnetcore-browser-refresh.js - - - 200 12382 application/javascript;+charset=utf-8 5.3054ms
+2023-10-19 18:26:43.344 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - -
+2023-10-19 18:26:43.684 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 340.0476ms
+2023-10-19 18:26:54.341 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5057/abp/Swashbuckle/SetCsrfCookie application/json -
+2023-10-19 18:26:54.345 +08:00 [WRN] Failed to determine the https port for redirect.
+2023-10-19 18:26:54.394 +08:00 [INF] Executing endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2023-10-19 18:26:54.420 +08:00 [INF] Route matched with {area = "Abp", action = "SetCsrfCookie", controller = "AbpSwashbuckle"}. Executing controller action with signature Void SetCsrfCookie() on controller Volo.Abp.Swashbuckle.AbpSwashbuckleController (Volo.Abp.Swashbuckle).
+2023-10-19 18:26:54.474 +08:00 [WRN] The cookie 'XSRF-TOKEN' has set 'SameSite=None' and must also set 'Secure'.
+2023-10-19 18:26:54.484 +08:00 [INF] Executed action Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle) in 60.6548ms
+2023-10-19 18:26:54.484 +08:00 [INF] Executed endpoint 'Volo.Abp.Swashbuckle.AbpSwashbuckleController.SetCsrfCookie (Volo.Abp.Swashbuckle)'
+2023-10-19 18:26:54.484 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5057/abp/Swashbuckle/SetCsrfCookie application/json - - 204 - - 142.9415ms
+2023-10-19 18:26:54.516 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5057/api/Role/Create application/json 43
+2023-10-19 18:26:54.517 +08:00 [INF] Executing endpoint 'Sample.Novel.HttpApi.Host.Controllers.RoleController.CreateAsync (Sample.Novel.HttpApi.Host)'
+2023-10-19 18:26:54.529 +08:00 [INF] Route matched with {action = "Create", controller = "Role", area = ""}. Executing controller action with signature System.Threading.Tasks.Task CreateAsync(Sample.Novel.Application.Contracts.Dtos.IdentityRoleCreateDto) on controller Sample.Novel.HttpApi.Host.Controllers.RoleController (Sample.Novel.HttpApi.Host).
+2023-10-19 18:26:56.439 +08:00 [INF] Executed DbCommand (46ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 40), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Guid), @p4='?' (DbType = Guid), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = Boolean), @p9='?' (DbType = DateTime2), @p10='?' (DbType = Guid), @p11='?' (Size = 10)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Sys_Roles] ([Id], [ConcurrencyStamp], [CreationTime], [CreatorId], [DeleterId], [DeletionTime], [ExtraProperties], [IsDefault], [IsStatic], [LastModificationTime], [LastModifierId], [Name])
+OUTPUT INSERTED.[IsDeleted]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+2023-10-19 18:26:56.485 +08:00 [INF] AUDIT LOG: [200: POST   ] /api/Role/Create
+- UserName - UserId                 :  - 
+- ClientIpAddress        : ::1
+- ExecutionDuration      : 1715
+- Actions:
+  - Sample.Novel.Application.Services.RoleAppService.CreateAsync (1437 ms.)
+    {"input":{"name":"string","isDefault":true,"extraProperties":{}}
+
+2023-10-19 18:26:56.526 +08:00 [INF] Executed action Sample.Novel.HttpApi.Host.Controllers.RoleController.CreateAsync (Sample.Novel.HttpApi.Host) in 1997.3812ms
+2023-10-19 18:26:56.527 +08:00 [INF] Executed endpoint 'Sample.Novel.HttpApi.Host.Controllers.RoleController.CreateAsync (Sample.Novel.HttpApi.Host)'
+2023-10-19 18:26:56.529 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:5057/api/Role/Create application/json 43 - 204 - - 2012.7406ms

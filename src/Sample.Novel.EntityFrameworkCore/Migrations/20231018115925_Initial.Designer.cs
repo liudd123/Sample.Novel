@@ -13,7 +13,7 @@ using Volo.Abp.EntityFrameworkCore;
 namespace Sample.Novel.EntityFrameworkCore.Migrations
 {
     [DbContext(typeof(NovelDbContext))]
-    [Migration("20231016105752_Initial")]
+    [Migration("20231018115925_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -211,6 +211,9 @@ namespace Sample.Novel.EntityFrameworkCore.Migrations
                     b.Property<string>("ExtraProperties")
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("ExtraProperties");
+
+                    b.Property<bool>("IsDefault")
+                        .HasColumnType("bit");
 
                     b.Property<bool>("IsDeleted")
                         .ValueGeneratedOnAdd()

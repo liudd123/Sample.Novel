@@ -15,11 +15,17 @@ public class RegisterDto : ExtensibleObject
     [Required]
     [MaxLength(IdentityUserConsts.MaxUserNameLength)]
     public string UserName { get; set; }
+    [Required]
+    [MaxLength(IdentityUserConsts.MaxNameLength)]
+    public string Name { get; set; }
 
     [Required]
     [EmailAddress]
     [MaxLength(IdentityUserConsts.MaxEmailLength)]
     public string EmailAddress { get; set; }
+
+    [MaxLength(IdentityUserConsts.MaxPhoneNumberLength)]
+    public string PhoneNumber { get; set; }
 
     [Required]
     [MaxLength(IdentityUserConsts.MaxPasswordLength)]

@@ -33,7 +33,10 @@ namespace Sample.Novel.Application.Services.Account
 
             //添加默认角色
             await AddDefaultRolesAsync(user.Id);
+            user.SetPhoneNumber(input.PhoneNumber, false);
+            user.SetName(input.Name);
 
+            await userRepository.InsertAsync(user);
             return ObjectMapper.Map<IdentityUser, IdentityUserDto>(user);
         }
 

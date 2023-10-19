@@ -12,10 +12,10 @@ namespace Sample.Novel.DbMigrator
         {
             Log.Logger = new LoggerConfiguration()
                 .MinimumLevel.Information()
-                .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
-                .MinimumLevel.Override("Volo.Abp", LogEventLevel.Warning)
+                .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
+                .MinimumLevel.Override("Volo.Abp", LogEventLevel.Information)
 #if DEBUG
-                    .MinimumLevel.Override("Sample.Novel", LogEventLevel.Debug)
+                    .MinimumLevel.Override("Sample.Novel", LogEventLevel.Information)
 #else
                 .MinimumLevel.Override("Sample.Novel", LogEventLevel.Information)
 #endif

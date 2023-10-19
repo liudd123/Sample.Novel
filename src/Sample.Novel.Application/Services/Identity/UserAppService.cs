@@ -134,12 +134,12 @@ namespace Sample.Novel.Application.Services
                 user.SetPhoneNumber(input.PhoneNumber, false);
             }
             user.SetLockoutEnabled(input.LockoutEnabled);
-            user.Name = input.Name;
+            user.SetName(input.Name);
             user.SetIsActive(input.IsActive);
             if (input.RoleIds != null)
             {
                 await userRepository.RemoveRoles(user.Id, input.RoleIds.ToList());
-                var userRoles = input.RoleIds.Select(s => new IdentityUserRole(user.Id,s)).ToList();
+                var userRoles = input.RoleIds.Select(s => new IdentityUserRole(user.Id, s)).ToList();
                 await userRepository.AddRolesAsync(userRoles);
             }
         }

@@ -17,7 +17,7 @@ namespace Sample.Novel.Domain.Identity.Entities
         /// Gets or sets the Name for the user.
         /// </summary>
         [CanBeNull]
-        public virtual string Name { get; set; }
+        public virtual string Name { get; protected internal set; }
 
 
         /// <summary>
@@ -193,6 +193,10 @@ namespace Sample.Novel.Domain.Identity.Entities
         public void SetPasswordHash(string passwordHash)
         {
             PasswordHash = passwordHash;
+        }
+        public void SetName(string name)
+        {
+            Name = name;
         }
         public void SetLockoutEnabled(bool lockoutEnabled)
         {
