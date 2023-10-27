@@ -25,6 +25,7 @@ namespace Sample.Novel.EntityFrameworkCore.Mapping.Book
             builder.Property(p => p.Description).HasMaxLength(BookConsts.MaxDescriptionLength);
             builder.Property(p => p.AuthorName).HasMaxLength(AuthorConsts.MaxNameLength);
             builder.Property(p => p.CategoryName).HasMaxLength(CategoryConsts.MaxNameLength);
+            builder.HasMany(e => e.Volumes).WithOne(e => e.Book).HasForeignKey(e => e.BookId);
         }
     }
 }

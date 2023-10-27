@@ -5,6 +5,7 @@ using Sample.Novel.Domain.Category.Entities;
 using Sample.Novel.Domain.Identity.Entities;
 using Sample.Novel.EntityFrameworkCore.EntityFrameworkCore;
 using Sample.Novel.EntityFrameworkCore.Repositories;
+using Sample.Novel.PermissionManagement;
 using Volo.Abp.EntityFrameworkCore;
 using Volo.Abp.EntityFrameworkCore.SqlServer;
 using Volo.Abp.Modularity;
@@ -31,6 +32,10 @@ namespace Sample.Novel.EntityFrameworkCore
 
                 options.AddRepository<IdentityRole, IdentityRoleRepository>();
                 options.AddRepository<IdentityUser, IdentityUserRepository>();
+
+                //options.AddRepository<PermissionGroupDefinitionRecord, EfCorePermissionGroupDefinitionRecordRepository>();
+                //options.AddRepository<PermissionDefinitionRecord, EfCorePermissionDefinitionRecordRepository>();
+                options.AddRepository<PermissionGrant, PermissionGrantRepository>();
 
             });
             Configure<AbpDbContextOptions>(options =>

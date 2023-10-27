@@ -14,7 +14,7 @@ namespace Sample.Novel.Domain.Book.Entities
 {
     public class ChapterText : Entity<Guid>
     {
-        public Chapter Chapter { get; set; }
+        public Chapter Chapter { get; set; }= null!;
         public Guid ChapterId { get; set; }
         [MaxLength(ChapterTextConsts.MaxContextLength)]
         public string Context { get; set; }

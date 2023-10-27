@@ -68,5 +68,7 @@ namespace Sample.Novel.Domain.Identity.Repository
     );
         Task RemoveRoles(Guid userId, List<Guid> roleIds);
         Task AddRolesAsync(IEnumerable<IdentityUserRole> userRoles);
+
+        Task<IdentityUser> LoginAsync(string userName, string passwordHash);
     }
 }

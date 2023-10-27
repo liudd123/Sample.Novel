@@ -16,7 +16,7 @@ namespace Sample.Novel.EntityFrameworkCore.Mapping.Book
             builder.Property(p => p.Title)
                 .IsRequired()
                 .HasMaxLength(ChapterConsts.MaxTitleLength);
-            builder.HasOne(chapter => chapter.ChapterText).WithOne(text => text.Chapter).HasForeignKey<ChapterText>(text => text.Id);
+            builder.HasOne(chapter => chapter.ChapterText).WithOne(text => text.Chapter).HasForeignKey<ChapterText>(text => text.ChapterId).IsRequired();
         }
     }
 }

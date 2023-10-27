@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Sample.Novel.Application.Contracts.Dtos;
 using Sample.Novel.Application.Contracts.Interfaces;
 using Volo.Abp.Application.Dtos;
@@ -10,6 +12,7 @@ namespace Sample.Novel.HttpApi.Host.Controllers
     /// 用户
     /// </summary>
     [Route("api/[controller]/[action]")]
+    [Authorize]
     public class UserController : AbpControllerBase, IUserAppService
     {
         private readonly IUserAppService userAppService;

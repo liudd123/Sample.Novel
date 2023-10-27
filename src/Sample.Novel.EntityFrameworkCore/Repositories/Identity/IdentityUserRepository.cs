@@ -170,5 +170,11 @@ namespace Sample.Novel.EntityFrameworkCore.Repositories
             var UserRoles = dbContext.Set<IdentityUserRole>();
             UserRoles.AddRange(userRoles);
         }
+
+        public async Task<IdentityUser> LoginAsync(string userName, string passwordHash)
+        {
+            var dbContext = await GetDbContextAsync();
+            return await dbContext.Users.Where(w => w.UserName == userName && w.PasswordHash == passwordHash).FirstOrDefaultAsync();
+        }
     }
 }

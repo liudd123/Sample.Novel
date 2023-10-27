@@ -19,7 +19,7 @@ namespace Sample.Novel.Domain.Book.Entities
         public int WordsNumber { get; set; }
 
         public virtual DateTime CreationTime { get; set; }
-        public ChapterText ChapterText { get; set; }
+        public ChapterText ChapterText { get; set; } = null!;
         protected Chapter()
         {
             

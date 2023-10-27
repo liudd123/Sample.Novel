@@ -3,6 +3,7 @@ using Sample.Novel.Domain.Author.Entities;
 using Sample.Novel.Domain.Book.Entities;
 using Sample.Novel.Domain.Category.Entities;
 using Sample.Novel.Domain.Identity.Entities;
+using Sample.Novel.PermissionManagement;
 using System.Diagnostics;
 using Volo.Abp.Data;
 using Volo.Abp.EntityFrameworkCore;
@@ -23,6 +24,10 @@ namespace Sample.Novel.EntityFrameworkCore.EntityFrameworkCore
 
         public DbSet<IdentityRole> Roles { get; set; }
         public DbSet<IdentityUserRole> UserRoles { get; set; }
+
+        public DbSet<PermissionGroupDefinitionRecord> PermissionGroups { get; set; }
+        public DbSet<PermissionDefinitionRecord> Permissions { get; set; }
+        public DbSet<PermissionGrant> PermissionGrants { get; set; }
 
         public NovelDbContext(DbContextOptions<NovelDbContext> options) : base(options)
         {
