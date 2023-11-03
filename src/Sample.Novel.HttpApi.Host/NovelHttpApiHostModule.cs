@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Newtonsoft.Json;
@@ -81,9 +82,11 @@ namespace Sample.Novel
 
         private void ConfiguraJwt(ServiceConfigurationContext context, IConfiguration configuration)
         {
-            var myConfiguration = configuration.GetSection(JwtOption.JWT);
-            context.Services.Configure<JwtOption>(myConfiguration);
-            var jwtOption = myConfiguration.Get<JwtOption>();
+            var jwtOption = context.Services.GetRequiredService<IOptions<JwtOption>>().Value;
+
+            //var myConfiguration = configuration.GetSection(JwtOption.JWT);
+            //context.Services.Configure<JwtOption>(myConfiguration);
+            //var jwtOption = myConfiguration.Get<JwtOption>();
             context.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
              .AddJwtBearer(options =>
              {
